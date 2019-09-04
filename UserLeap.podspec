@@ -3,15 +3,18 @@ Pod::Spec.new do |s|
     s.version               = "0.1.0"
     s.summary               = "UserLeap surveys in iOS"
     s.description           = <<-DESC
-      An extended description of MyFramework project.
+      Access the power of UserLeap inside of your iOS applications. Track visitor progress and deliver surveys natively across
+      all  of your platforms.
       DESC
-    s.homepage              = "http://www.userleap.com"
-    s.license               = { :type => 'Copyright', :text => <<-LICENSE
-                                   Copyright 2019
-                                   Permission is granted to...
-                                   LICENSE
+    s.homepage              = "http://userleap.com"
+    s.license               = { :type => 'CUSTOM', :text => <<-LICENSE
+****************************************************************************************************************************
+UserLeap iOS SDK is offered under UserLeap's END USER LICENSE AGREEMENT. A copy of the license is available upon request
+from your UserLeap Sales contact.
+****************************************************************************************************************************
+    LICENSE
                               }
-    s.author                = { "The UserLeap Team" => "hello@userleap.com" }
+    s.author                = { "The UserLeap Team" => "ios@userleap.com" }
     s.source                = { 
                                 :git => "https://github.com/UserLeap/userleap-ios-sdk-releases.git", 
                                 :tag => "v#{s.version}" 
