@@ -12,7 +12,10 @@ Pod::Spec.new do |s|
                                    LICENSE
                               }
     s.author                = { "The UserLeap Team" => "hello@userleap.com" }
-    s.source                = { :git => "$HOME/userleap-ios.git", :tag => "#{s.version}" }    
+    s.source                = { 
+                                :git => "https://github.com/UserLeap/userleap-ios-sdk-releases.git", 
+                                :tag => "v#{s.version}" 
+                              }    
     s.source_files          = "UserLeap.framework/Headers/*.h"
     s.public_header_files   = "UserLeap.framework/Headers/*.h"
     s.vendored_frameworks   = "UserLeap.framework"
