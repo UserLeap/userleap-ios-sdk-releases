@@ -50,17 +50,31 @@ When a survey is available, it's up to you to present it. The SDK provides a few
 
 ### Use Ready Callback
 
-You can provide a callback to the initializer that will be called when a survey is ready for presentation.
+You can provide a callback to the initializer that will be called whenever the `readyState` changes.
 
 ```swift
 let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE") { leap in
+  if leap.readyState == .surveyReady {
     leap.presentSurvey(fromViewController: myViewController)
+  }
 }
 ```
 
 ### Use the NotificationCenter
 
 You can register for notifications about changes to the `readyState`.
+
+```swift
+NotificationCenter.default.addObserver(forName: UserLeap.ReadyStateDidChangeNotification, object: nil, queue: OperationQueue.main) { (notification) in
+  if let leap = notification.object as? UserLeap {
+    if leap.readyState == .surveyReady {
+      leap.presentSurvey(fromViewController: self)
+    }
+  }
+}
+```
+
+Alternatively, you can listen for notifications only when the survey becomes ready to present:
 
 ```swift
 NotificationCenter.default.addObserver(forName: UserLeap.SurveyReadyNotification, object: nil, queue: OperationQueue.main) { (notification) in
@@ -70,9 +84,10 @@ NotificationCenter.default.addObserver(forName: UserLeap.SurveyReadyNotification
 }
 ```
 
+
 ### Check `readyState`
 
-You can, at any point, check the `readyState`. This is not the ideal way to determine when a survey has loaded as the network conditions on the device will alter the timing significantly. You are better off using one of the above methods. Still, it is sometimes helpful to be able to read this property.
+You can, at any point, check the `readyState`. You should use this property in conjunction with the above hooks to determine if there's something available to present.
 
 ```swift
 let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE")
@@ -80,3 +95,9 @@ if leap.readyState == .surveyReady {
     leap.presentSurvey(fromViewController: self)
 }
 ```
+
+It has three possible states:
+
+* `notReady`: the data has not been loaded yet
+* `noSurvey`: the data has been loaded, but there's no survey to present at this time
+* `surveyReady`: there is a survey awaiting presentation

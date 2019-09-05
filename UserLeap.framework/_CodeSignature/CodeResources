@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm.swiftmodule</key>
 		<data>
-		BA3/fdqn6jVKq0ryKbDRluIEhy8=
+		gpMCcaYlfzEuYYf/Z6SHzxr5EJA=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Az9vsAceAZn8566ks5OX+pShht4=
+		S7ccLZr7PlLyz0uh8mAMBtGzOQU=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/UserLeap.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		BA3/fdqn6jVKq0ryKbDRluIEhy8=
+		gpMCcaYlfzEuYYf/Z6SHzxr5EJA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -84,11 +84,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BA3/fdqn6jVKq0ryKbDRluIEhy8=
+			gpMCcaYlfzEuYYf/Z6SHzxr5EJA=
 			</data>
 			<key>hash2</key>
 			<data>
-			voxh+u1+TAFHKpEWc2JzCcLPnhfFdxlqd6FAUwLG1V0=
+			7oyLgkHBnfLPdPqHcx/+SMJAzNZoFg3S72hIoCua/Us=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/arm64.swiftdoc</key>
@@ -106,11 +106,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Az9vsAceAZn8566ks5OX+pShht4=
+			S7ccLZr7PlLyz0uh8mAMBtGzOQU=
 			</data>
 			<key>hash2</key>
 			<data>
-			h3F+7X/xpuzqRRxGOXn23HzZgdCR2ThLRWKTvniOEJU=
+			ihOk1vagZ6TXYSBm74Utb8HQTD5NpEx9wq+9mER9DlM=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/armv7.swiftdoc</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BA3/fdqn6jVKq0ryKbDRluIEhy8=
+			gpMCcaYlfzEuYYf/Z6SHzxr5EJA=
 			</data>
 			<key>hash2</key>
 			<data>
-			voxh+u1+TAFHKpEWc2JzCcLPnhfFdxlqd6FAUwLG1V0=
+			7oyLgkHBnfLPdPqHcx/+SMJAzNZoFg3S72hIoCua/Us=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
