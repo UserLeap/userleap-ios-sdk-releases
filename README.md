@@ -2,6 +2,8 @@
 
 Official Releases of the UserLeap iOS SDK
 
+Thank you for choosing UserLeap. This guide should help you get started.
+
 ## Getting the SDK
 
 The recommended way to acquire this Framework is via [CocoaPods](https://cocoapods.org). Simply add the following statment to your Podfile, then run `pod install`:
@@ -101,3 +103,19 @@ It has three possible states:
 * `notReady`: the data has not been loaded yet
 * `noSurvey`: the data has been loaded, but there's no survey to present at this time
 * `surveyReady`: there is a survey awaiting presentation
+
+## Testing
+
+### Activating the Sample Survey
+
+Surveys are delivered sparsely and unpredictably (for the client). This is the desired behavior in the wild, but it can make testing your integration tricky.
+
+To simplify integration testing, the library provides a sample survey that can loaded at any time by calling the `triggerDebugSurvey()` method on your UserLeap instance. This will load the sample survey as if it had come from the server, including firing callbacks. After calling this, the `readyState` will equal `surveyReady` and calling `presentSurvey` will present the sample survey.
+
+
+### Environmental Overrides
+
+You can use certain environmental variables to accomplish some testing tasks:
+
+* `USERLEAP_HARD_RESET` - set this to `1` to clear all local state during initialization
+
