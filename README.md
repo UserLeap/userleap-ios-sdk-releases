@@ -12,6 +12,10 @@ The recommended way to acquire this Framework is via [CocoaPods](https://cocoapo
   pod 'UserLeap', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.git'
 ```
 
+## Versioning
+
+This SDK uses [Semantic Versioning 2.0.0](https://semver.org).
+
 ## Initializing the SDK
 
 Usage is simple and revolves around one type, conveniently named `UserLeap`. Create one instance of this and keep it around while your application runs. The most obvious place for this is in your `ApplicationDelegate`, but do what's appropriate for your application.
