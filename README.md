@@ -1,2 +1,82 @@
-# userleap-ios-sdk-releases
+# UserLeap iOS SDK
+
 Official Releases of the UserLeap iOS SDK
+
+## Getting the SDK
+
+The recommended way to acquire this Framework is via [CocoaPods](https://cocoapods.org). Simply add the following statment to your Podfile, then run `pod install`:
+
+```
+  pod 'UserLeap', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.git'
+```
+
+## Initializing the SDK
+
+Usage is simple and revolves around one type, conveniently named `UserLeap`. Create one instance of this and keep it around while your application runs. The most obvious place for this is in your `ApplicationDelegate`, but do what's appropriate for your application.
+
+```swift
+let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE")
+```
+
+### Setting properties
+
+Setting the user identifier helps to provide a consistent experience across platforms.
+
+```
+leap.setUserIdentifier("myUserId")
+```
+
+Setting the email address allows us to deliver certain surveys over email.
+
+```
+leap.setEmailAddress("example@email.com")
+```
+
+There are various other properties you may want to set. These help us deliver the most appropriate surveys based on the user's engagement. For more details, [see the online documentation](https://docs.userleap.com/installation).
+
+```
+leap.setVisitorStage(.registered)
+leap.setSubscriptionStage(.subscribed)
+leap.setTransactionStage(.cartCreated)
+```
+
+## Presenting a Survey
+
+When a survey is available, it's up to you to present it. The SDK provides a few mechanisms for determining if a survey is available for the current user.
+
+```swift
+  leap.presentSurvey(fromViewController: myViewController)
+```
+
+### Use Ready Callback
+
+You can provide a callback to the initializer that will be called when a survey is ready for presentation.
+
+```swift
+let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE") { leap in
+    leap.presentSurvey(fromViewController: myViewController)
+}
+```
+
+### Use the NotificationCenter
+
+You can register for notifications about changes to the `readyState`.
+
+```swift
+NotificationCenter.default.addObserver(forName: UserLeap.SurveyReadyNotification, object: nil, queue: OperationQueue.main) { (notification) in
+  if let leap = notification.object as? UserLeap {
+    leap.presentSurvey(fromViewController: self)
+  }
+}
+```
+
+### Check `readyState`
+
+You can, at any point, check the `readyState`. This is not the ideal way to determine when a survey has loaded as the network conditions on the device will alter the timing significantly. You are better off using one of the above methods. Still, it is sometimes helpful to be able to read this property.
+
+```swift
+let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE")
+if leap.readyState == .surveyReady {
+    leap.presentSurvey(fromViewController: self)
+}
+```
