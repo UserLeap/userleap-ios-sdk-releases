@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = "UserLeap"
-    s.version               = "0.1.3"
+    s.version               = "0.1.4"
     s.summary               = "UserLeap surveys in iOS"
     s.description           = <<-DESC
       Access the power of UserLeap inside of your iOS applications. Track visitor progress and deliver surveys natively across
