@@ -11,7 +11,7 @@ Thank you for choosing UserLeap. This guide should help you get started.
 The recommended way to acquire this Framework is via [CocoaPods](https://cocoapods.org). Simply add the following statement to your Podfile, then run `pod install`:
 
 ```
-  pod 'UserLeap', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.git'
+pod 'UserLeap', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.git'
 ```
 
 ### Carthage
