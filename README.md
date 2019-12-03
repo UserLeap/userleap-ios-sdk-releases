@@ -48,13 +48,6 @@ Setting the email address allows us to deliver certain surveys over email.
 leap.setEmailAddress("example@email.com")
 ```
 
-There are various other properties you may want to set. These help us deliver the most appropriate surveys based on the user's engagement. For more details, [see the online documentation](https://docs.userleap.com/version-1-documentation/user-stages).
-
-```
-leap.setSubscriptionStage(.subscribed)
-leap.setTransactionStage(.cartCreated)
-```
-
 ## Presenting a Survey
 
 When a survey is available, it's up to you to present it. The SDK provides a few mechanisms for determining if a survey is available for the current user.
