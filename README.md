@@ -6,10 +6,20 @@ Thank you for choosing UserLeap. This guide should help you get started.
 
 ## Getting the SDK
 
-The recommended way to acquire this Framework is via [CocoaPods](https://cocoapods.org). Simply add the following statment to your Podfile, then run `pod install`:
+### CocoaPods
+
+The recommended way to acquire this Framework is via [CocoaPods](https://cocoapods.org). Simply add the following statement to your Podfile, then run `pod install`:
 
 ```
   pod 'UserLeap', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.git'
+```
+
+### Carthage
+
+If you're using [Carthage](https://github.com/Carthage/Carthage), add the following statement to your Cartfile, and follow the [instructions](https://github.com/Carthage/Carthage#quick-start) to finish the installation:
+
+```
+github "UserLeap/userleap-ios-sdk-releases"
 ```
 
 ## Versioning
@@ -38,10 +48,9 @@ Setting the email address allows us to deliver certain surveys over email.
 leap.setEmailAddress("example@email.com")
 ```
 
-There are various other properties you may want to set. These help us deliver the most appropriate surveys based on the user's engagement. For more details, [see the online documentation](https://docs.userleap.com/installation).
+There are various other properties you may want to set. These help us deliver the most appropriate surveys based on the user's engagement. For more details, [see the online documentation](https://docs.userleap.com/version-1-documentation/user-stages).
 
 ```
-leap.setVisitorStage(.registered)
 leap.setSubscriptionStage(.subscribed)
 leap.setTransactionStage(.cartCreated)
 ```
@@ -71,11 +80,10 @@ let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE") { leap in
 You can register for notifications about changes to the `readyState`.
 
 ```swift
-NotificationCenter.default.addObserver(forName: UserLeap.ReadyStateDidChangeNotification, object: nil, queue: OperationQueue.main) { (notification) in
-  if let leap = notification.object as? UserLeap {
-    if leap.readyState == .surveyReady {
-      leap.presentSurvey(fromViewController: self)
-    }
+NotificationCenter.default.addObserver(forName: UserLeap.ReadyStateDidChangeNotification, object: nil, queue: .main) { [weak self] notification in
+  guard let self = self, let leap = notification.object as? UserLeap else { return }
+  if leap.readyState == .surveyReady {
+    leap.presentSurvey(fromViewController: self)
   }
 }
 ```
@@ -83,10 +91,9 @@ NotificationCenter.default.addObserver(forName: UserLeap.ReadyStateDidChangeNoti
 Alternatively, you can listen for notifications only when the survey becomes ready to present:
 
 ```swift
-NotificationCenter.default.addObserver(forName: UserLeap.SurveyReadyNotification, object: nil, queue: OperationQueue.main) { (notification) in
-  if let leap = notification.object as? UserLeap {
-    leap.presentSurvey(fromViewController: self)
-  }
+NotificationCenter.default.addObserver(forName: UserLeap.SurveyReadyNotification, object: nil, queue: .main) { [weak self] notification in
+  guard let self = self, let leap = notification.object as? UserLeap else { return }
+  leap.presentSurvey(fromViewController: self)
 }
 ```
 
