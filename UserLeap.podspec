@@ -23,6 +23,6 @@ from your UserLeap Sales contact.
     s.public_header_files   = "UserLeap.framework/Headers/*.h"
     s.vendored_frameworks   = "UserLeap.framework"
     s.platform              = :ios
-    s.swift_version         = "4.2"
-    s.ios.deployment_target = '10.0'
+    s.swift_version         = "5.1"
+    s.ios.deployment_target = '10.3'
 end
