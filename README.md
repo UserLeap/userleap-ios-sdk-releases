@@ -18,10 +18,10 @@ This SDK uses [Semantic Versioning 2.0.0](https://semver.org).
 
 ## Initializing the SDK
 
-Usage is simple and revolves around one type, conveniently named `UserLeap`. Create one instance of this and keep it around while your application runs. The most obvious place for this is in your `ApplicationDelegate`, but do what's appropriate for your application.
+Usage is simple and revolves around a singleton, conveniently named `UserLeap`. The singleton must be configured before it can be used. The most obvious place for this is in your `ApplicationDelegate`, but do what's appropriate for your application.
 
 ```swift
-let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE")
+UserLeap.shared.configure(environment: "YOUR_ENVIRONMENT_ID_HERE")
 ```
 
 ### Setting properties
@@ -29,84 +29,35 @@ let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE")
 Setting the user identifier helps to provide a consistent experience across platforms.
 
 ```
-leap.setUserIdentifier("myUserId")
+UserLeap.shared.setUserIdentifier("myUserId")
+```
+
+If you set the user identifier, it's important you also clear it when the user logs out. This will prevent new activity being associated with the wrong user.
+
+```
+UserLeap.shared.logout()
 ```
 
 Setting the email address allows us to deliver certain surveys over email.
 
 ```
-leap.setEmailAddress("example@email.com")
+UserLeap.shared.setEmailAddress("example@email.com")
 ```
 
 There are various other properties you may want to set. These help us deliver the most appropriate surveys based on the user's engagement. For more details, [see the online documentation](https://docs.userleap.com/installation).
 
-```
-leap.setVisitorStage(.registered)
-leap.setSubscriptionStage(.subscribed)
-leap.setTransactionStage(.cartCreated)
-```
+## Tracking an Event and Presenting a Survey
 
-## Presenting a Survey
-
-When a survey is available, it's up to you to present it. The SDK provides a few mechanisms for determining if a survey is available for the current user.
+To give developers control over the user experience, the UserLeap SDK will not automatically present any UI. Instead, surveys are delivered in response to tracked events. When a relevant event occurs in your application, you can record that event and check for a relevant survey in one call:
 
 ```swift
-  leap.presentSurvey(fromViewController: myViewController)
-```
-
-### Use Ready Callback
-
-You can provide a callback to the initializer that will be called whenever the `readyState` changes.
-
-```swift
-let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE") { leap in
-  if leap.readyState == .surveyReady {
-    leap.presentSurvey(fromViewController: myViewController)
+  UserLeap.shared.track(eventName: "My Event Name") { [weak self] state in
+      guard let self = self else { return }
+      if state == .ready {
+          UserLeap.shared.presentSurvey(from: self)
+      }
   }
-}
 ```
-
-### Use the NotificationCenter
-
-You can register for notifications about changes to the `readyState`.
-
-```swift
-NotificationCenter.default.addObserver(forName: UserLeap.ReadyStateDidChangeNotification, object: nil, queue: OperationQueue.main) { (notification) in
-  if let leap = notification.object as? UserLeap {
-    if leap.readyState == .surveyReady {
-      leap.presentSurvey(fromViewController: self)
-    }
-  }
-}
-```
-
-Alternatively, you can listen for notifications only when the survey becomes ready to present:
-
-```swift
-NotificationCenter.default.addObserver(forName: UserLeap.SurveyReadyNotification, object: nil, queue: OperationQueue.main) { (notification) in
-  if let leap = notification.object as? UserLeap {
-    leap.presentSurvey(fromViewController: self)
-  }
-}
-```
-
-
-### Check `readyState`
-
-You can, at any point, check the `readyState`. You should use this property in conjunction with the above hooks to determine if there's something available to present.
-
-```swift
-let leap = UserLeap(environment: "YOUR_ENVIRONMENT_ID_HERE")
-if leap.readyState == .surveyReady {
-    leap.presentSurvey(fromViewController: self)
-}
-```
-
-It has three possible states:
-
-* `notReady`: the data has not been loaded yet
-* `noSurvey`: the data has been loaded, but there's no survey to present at this time
-* `surveyReady`: there is a survey awaiting presentation
 
 ## Testing
 
@@ -114,7 +65,7 @@ It has three possible states:
 
 Surveys are delivered sparsely and unpredictably (for the client). This is the desired behavior in the wild, but it can make testing your integration tricky.
 
-To simplify integration testing, the library provides a sample survey that can loaded at any time by calling the `triggerDebugSurvey()` method on your UserLeap instance. This will load the sample survey as if it had come from the server, including firing callbacks. After calling this, the `readyState` will equal `surveyReady` and calling `presentSurvey` will present the sample survey.
+To simplify integration testing, the library provides a sample survey that can loaded at any time by calling the `UserLeap.shared.presentDebugSurvey(from: self)`.
 
 
 ### Environmental Overrides
