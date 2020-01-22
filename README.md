@@ -26,6 +26,12 @@ github "UserLeap/userleap-ios-sdk-releases"
 
 This SDK uses [Semantic Versioning 2.0.0](https://semver.org).
 
+> Given a version number MAJOR.MINOR.PATCH:
+>   
+> MAJOR versions contain API changes that are not backwards compatible.  
+> MINOR versions contain added functionality, but do not break backwards compatibility.  
+> PATCH versions contain backwards compatible bug fixes and optimizations.
+
 ## Initializing the SDK
 
 Usage is simple and revolves around a singleton, conveniently named `UserLeap`. The singleton must be configured before it can be used. The most obvious place for this is in your `ApplicationDelegate`, but do what's appropriate for your application.
