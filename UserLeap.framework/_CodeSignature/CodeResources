@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/UserLeap-Swift.h</key>
 		<data>
-		GcNsgmhEzVyXiGmNlJ9OEaKdqfo=
+		h0zGbNGEU2lzUkfHd7UKsCWxvdk=
 		</data>
 		<key>Headers/UserLeap.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		p9IjQLYpF5neS5cY4zDh/CkEeVc=
+		/Gv1qMxKLfhJxkFYOzJxl9kZu/Y=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm.swiftdoc</key>
 		<data>
-		dabQCP9fG/T8Q3O4BFg90V9FQrc=
+		jpYOOsMz58oRlEVqYsrzwH6rtTk=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm.swiftmodule</key>
 		<data>
-		yB5tDCCtV9Rbh1W2foIYsU32E9c=
+		VE6qMvF7KRromL1FuxWvJAmsGb8=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Je0+JGqQoD4bDZjqaG+x8d+d/Bc=
+		U+7kzxz+4rngTr6TUkhP6p+zY0U=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CCx6vsgxXQfg6qQGjYgtdT57JFc=
+		EIkSEhOdTrHs7qzmVuUe28KNSBo=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Je0+JGqQoD4bDZjqaG+x8d+d/Bc=
+		U+7kzxz+4rngTr6TUkhP6p+zY0U=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		CCx6vsgxXQfg6qQGjYgtdT57JFc=
+		EIkSEhOdTrHs7qzmVuUe28KNSBo=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		dabQCP9fG/T8Q3O4BFg90V9FQrc=
+		jpYOOsMz58oRlEVqYsrzwH6rtTk=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		yB5tDCCtV9Rbh1W2foIYsU32E9c=
+		VE6qMvF7KRromL1FuxWvJAmsGb8=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		dabQCP9fG/T8Q3O4BFg90V9FQrc=
+		jpYOOsMz58oRlEVqYsrzwH6rtTk=
 		</data>
 		<key>Modules/UserLeap.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		yB5tDCCtV9Rbh1W2foIYsU32E9c=
+		VE6qMvF7KRromL1FuxWvJAmsGb8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GcNsgmhEzVyXiGmNlJ9OEaKdqfo=
+			h0zGbNGEU2lzUkfHd7UKsCWxvdk=
 			</data>
 			<key>hash2</key>
 			<data>
-			hym0k7tXKtvyUWx8s9jCbIepkJNXKPMS469G0CWeNqs=
+			mxsiwzw8unZOoWZap5Kgq0DVn2Afa8VYrhAk1a6Vco4=
 			</data>
 		</dict>
 		<key>Headers/UserLeap.h</key>
@@ -89,110 +89,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dabQCP9fG/T8Q3O4BFg90V9FQrc=
+			jpYOOsMz58oRlEVqYsrzwH6rtTk=
 			</data>
 			<key>hash2</key>
 			<data>
-			I15G1GXfYb5Y2VQk66ZweneYNg7ekwQ8L0xjviAyXfw=
+			KZXSSQq/ZOGJXenk/LODQ2RX+njZN5BwZHfH/lxpga0=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yB5tDCCtV9Rbh1W2foIYsU32E9c=
+			VE6qMvF7KRromL1FuxWvJAmsGb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ECBg1mDmocBbHU2yMqM6cC30epy9S2QpvNPTeNUFQF8=
+			SqCW4yw3S1Zjbd9lQqp/3sOi2qUd7g1giTsUSamMR7g=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Je0+JGqQoD4bDZjqaG+x8d+d/Bc=
+			U+7kzxz+4rngTr6TUkhP6p+zY0U=
 			</data>
 			<key>hash2</key>
 			<data>
-			PzXCkxnfGOWagsy30JAbXOfXUdtOR2onU99eBzIPUSE=
+			8B+Bs4SdZo5sL0YHaY6c+/M87R1FDilsDa0Fm4Tx+eg=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CCx6vsgxXQfg6qQGjYgtdT57JFc=
+			EIkSEhOdTrHs7qzmVuUe28KNSBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZRO7RrbshMn/A5XEWb6PLIMljaEvmT041INi5pVMYkY=
+			qAx2EOK+T8jU1m79Yodxyoc9zZSXax+eyLoaDpWSmsQ=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Je0+JGqQoD4bDZjqaG+x8d+d/Bc=
+			U+7kzxz+4rngTr6TUkhP6p+zY0U=
 			</data>
 			<key>hash2</key>
 			<data>
-			PzXCkxnfGOWagsy30JAbXOfXUdtOR2onU99eBzIPUSE=
+			8B+Bs4SdZo5sL0YHaY6c+/M87R1FDilsDa0Fm4Tx+eg=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CCx6vsgxXQfg6qQGjYgtdT57JFc=
+			EIkSEhOdTrHs7qzmVuUe28KNSBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZRO7RrbshMn/A5XEWb6PLIMljaEvmT041INi5pVMYkY=
+			qAx2EOK+T8jU1m79Yodxyoc9zZSXax+eyLoaDpWSmsQ=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dabQCP9fG/T8Q3O4BFg90V9FQrc=
+			jpYOOsMz58oRlEVqYsrzwH6rtTk=
 			</data>
 			<key>hash2</key>
 			<data>
-			I15G1GXfYb5Y2VQk66ZweneYNg7ekwQ8L0xjviAyXfw=
+			KZXSSQq/ZOGJXenk/LODQ2RX+njZN5BwZHfH/lxpga0=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yB5tDCCtV9Rbh1W2foIYsU32E9c=
+			VE6qMvF7KRromL1FuxWvJAmsGb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ECBg1mDmocBbHU2yMqM6cC30epy9S2QpvNPTeNUFQF8=
+			SqCW4yw3S1Zjbd9lQqp/3sOi2qUd7g1giTsUSamMR7g=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dabQCP9fG/T8Q3O4BFg90V9FQrc=
+			jpYOOsMz58oRlEVqYsrzwH6rtTk=
 			</data>
 			<key>hash2</key>
 			<data>
-			I15G1GXfYb5Y2VQk66ZweneYNg7ekwQ8L0xjviAyXfw=
+			KZXSSQq/ZOGJXenk/LODQ2RX+njZN5BwZHfH/lxpga0=
 			</data>
 		</dict>
 		<key>Modules/UserLeap.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yB5tDCCtV9Rbh1W2foIYsU32E9c=
+			VE6qMvF7KRromL1FuxWvJAmsGb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ECBg1mDmocBbHU2yMqM6cC30epy9S2QpvNPTeNUFQF8=
+			SqCW4yw3S1Zjbd9lQqp/3sOi2qUd7g1giTsUSamMR7g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

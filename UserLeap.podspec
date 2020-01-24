@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = "UserLeap"
-    s.version               = "0.1.4"
+    s.version               = "1.0.0"
     s.summary               = "UserLeap surveys in iOS"
     s.description           = <<-DESC
       Access the power of UserLeap inside of your iOS applications. Track visitor progress and deliver surveys natively across
@@ -23,6 +23,6 @@ from your UserLeap Sales contact.
     s.public_header_files   = "UserLeap.framework/Headers/*.h"
     s.vendored_frameworks   = "UserLeap.framework"
     s.platform              = :ios
-    s.swift_version         = "5.1"
+    s.swift_version         = "5.1.3"
     s.ios.deployment_target = '10.3'
 end

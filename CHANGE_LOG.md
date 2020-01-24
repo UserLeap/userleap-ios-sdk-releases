@@ -1,7 +1,7 @@
 # Change Log
 
-### Version 0.1.4
+### Version 1.0.0
 
-* Recompiled with XCode 11 and Swift 5.1
+* The first version
 
 
