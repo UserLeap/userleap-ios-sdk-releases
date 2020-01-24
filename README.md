@@ -79,8 +79,11 @@ To give developers control over the user experience, the UserLeap SDK will not a
 ```swift
   UserLeap.shared.track(eventName: "My Event Name") { [weak self] state in
       guard let self = self else { return }
-      if state == .ready {
+      switch state {
+        case .ready:
           UserLeap.shared.presentSurvey(from: self)
+        case .noSurvey, .disabled:
+          break
       }
   }
 ```
