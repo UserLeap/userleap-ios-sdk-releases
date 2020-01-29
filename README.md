@@ -19,7 +19,7 @@ pod 'UserLeap', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.g
 If you're using [Carthage](https://github.com/Carthage/Carthage), add the following statement to your Cartfile, and follow the [instructions](https://github.com/Carthage/Carthage#quick-start) to finish the installation:
 
 ```
-github "UserLeap/userleap-ios-sdk-releases"
+binary "https://raw.githubusercontent.com/UserLeap/userleap-ios-sdk-releases/master/UserLeap.json" ~> 1.0
 ```
 
 ## Versioning
