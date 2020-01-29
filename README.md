@@ -37,7 +37,7 @@ This SDK uses [Semantic Versioning 2.0.0](https://semver.org).
 Usage is simple and revolves around a singleton, conveniently named `UserLeap`. The singleton must be configured before it can be used. The most obvious place for this is in your `ApplicationDelegate`, but do what's appropriate for your application.
 
 ```swift
-UserLeap.shared.configure(environment: "ENVIRONMENT_ID")
+UserLeap.shared.configure(withEnvironment: "ENVIRONMENT_ID")
 ```
 
 The `ENVIRONMENT_ID` for your deployment can be found in Setting > Installation section of the UserLeap dashboard.
