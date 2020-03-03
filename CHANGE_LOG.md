@@ -1,5 +1,9 @@
 # Change Log
 
+### Version 1.0.2
+
+* Bump, no changes
+
 ### Version 1.0.1
 
 * Fixed: Presenting the debug survey before the SDK finishes initializing can cause non-main-thread UI operations
