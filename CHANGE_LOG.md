@@ -1,5 +1,10 @@
 # Change Log
 
+### Version 1.1.0
+
+* Enabled Module Stability
+* Added disableNetworkAccess parameter
+
 ### Version 1.0.2
 
 * Bump, no changes
