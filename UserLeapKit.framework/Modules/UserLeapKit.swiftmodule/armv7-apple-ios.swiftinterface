@@ -1,0 +1,128 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)
+// swift-module-flags: -target armv7-apple-ios10.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
+import CoreGraphics
+import Foundation
+import Swift
+import SystemConfiguration
+import UIKit
+@_exported import UserLeapKit
+public enum SurveyState {
+  case noSurvey
+  case ready
+  case disabled
+  public static func == (a: UserLeapKit.SurveyState, b: UserLeapKit.SurveyState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers public class UserLeap {
+  public static let shared: UserLeapKit.UserLeap
+  public var visitorIdentifier: Swift.Int? {
+    get
+  }
+  public var disableNetworkAccess: Swift.Bool {
+    get
+    set
+  }
+  public func configure(withEnvironment environment: Swift.String)
+  public func presentSurvey(from viewController: UIKit.UIViewController)
+  public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
+  public func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
+  public func setEmailAddress(_ emailAddress: Swift.String)
+  public func setVisitorAttribute(key: Swift.String, value: Swift.String)
+  public func setUserIdentifier(_ identifier: Swift.String)
+  public func presentDebugSurvey(from viewController: UIKit.UIViewController)
+  public func logout()
+  @objc deinit
+}
+public enum ReachabilityError : Swift.Error {
+  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
+  case failedToCreateWithHostname(Swift.String, Swift.Int32)
+  case unableToSetCallback(Swift.Int32)
+  case unableToSetDispatchQueue(Swift.Int32)
+  case unableToGetFlags(Swift.Int32)
+}
+@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
+public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+extension NSNotification.Name {
+  public static let reachabilityChanged: Foundation.Notification.Name
+}
+public class Reachability {
+  public typealias NetworkReachable = (UserLeapKit.Reachability) -> ()
+  public typealias NetworkUnreachable = (UserLeapKit.Reachability) -> ()
+  @available(*, unavailable, renamed: "Connection")
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: UserLeapKit.Reachability.NetworkStatus, b: UserLeapKit.Reachability.NetworkStatus) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum Connection : Swift.CustomStringConvertible {
+    @available(*, deprecated, renamed: "unavailable")
+    case none
+    case unavailable, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: UserLeapKit.Reachability.Connection, b: UserLeapKit.Reachability.Connection) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public var whenReachable: UserLeapKit.Reachability.NetworkReachable?
+  public var whenUnreachable: UserLeapKit.Reachability.NetworkUnreachable?
+  @available(*, deprecated, renamed: "allowsCellularConnection")
+  final public let reachableOnWWAN: Swift.Bool
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  @available(*, deprecated, renamed: "connection.description")
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  @available(*, unavailable, renamed: "connection")
+  public var currentReachabilityStatus: UserLeapKit.Reachability.Connection {
+    get
+  }
+  public var connection: UserLeapKit.Reachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  @objc deinit
+}
+extension Reachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  @available(*, deprecated, message: "Please use `connection != .none`")
+  public var isReachable: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .cellular`")
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .wifi`")
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+extension UserLeapKit.SurveyState : Swift.Equatable {}
+extension UserLeapKit.SurveyState : Swift.Hashable {}
+@available(*, unavailable, renamed: "Connection")
+extension UserLeapKit.Reachability.NetworkStatus : Swift.Equatable {}
+@available(*, unavailable, renamed: "Connection")
+extension UserLeapKit.Reachability.NetworkStatus : Swift.Hashable {}
+extension UserLeapKit.Reachability.Connection : Swift.Equatable {}
+extension UserLeapKit.Reachability.Connection : Swift.Hashable {}

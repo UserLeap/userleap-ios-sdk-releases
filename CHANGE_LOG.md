@@ -1,5 +1,9 @@
 # Change Log
 
+### Version 2.0.0
+
+* Change framework name to UserLeapKit so it doesn't conflict with class UserLeap
+
 ### Version 1.1.0
 
 * Enabled Module Stability

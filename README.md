@@ -11,7 +11,7 @@ Thank you for choosing UserLeap. This guide should help you get started.
 The recommended way to acquire this Framework is via [CocoaPods](https://cocoapods.org). Simply add the following statement to your Podfile, then run `pod install`:
 
 ```
-pod 'UserLeap', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.git'
+pod 'UserLeapKit', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.git'
 ```
 
 ### Carthage
@@ -19,7 +19,7 @@ pod 'UserLeap', :git => 'https://github.com/UserLeap/userleap-ios-sdk-releases.g
 If you're using [Carthage](https://github.com/Carthage/Carthage), add the following statement to your Cartfile, and follow the [instructions](https://github.com/Carthage/Carthage#quick-start) to finish the installation:
 
 ```
-binary "https://raw.githubusercontent.com/UserLeap/userleap-ios-sdk-releases/master/UserLeap.json" ~> 1.0
+binary "https://raw.githubusercontent.com/UserLeap/userleap-ios-sdk-releases/master/UserLeapKit.json" ~> 1.0
 ```
 
 ## Versioning
