@@ -1,5 +1,13 @@
 # Change Log
 
+### Version 2.2.0
+
+* Allow visitors to see and respond to the same survey if the customers wants (done through the dashboard)
+
+### Version 2.1.0
+
+* Added NPS question type support
+
 ### Version 2.0.0
 
 * Change framework name to UserLeapKit so it doesn't conflict with class UserLeap
