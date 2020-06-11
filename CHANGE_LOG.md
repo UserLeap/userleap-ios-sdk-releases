@@ -1,5 +1,8 @@
 # Change Log
 
+### Version 2.3.0
+* Added localization for ja, ko, fr, ru, zh, de, hi
+
 ### Version 2.2.0
 
 * Allow visitors to see and respond to the same survey if the customers wants (done through the dashboard)
