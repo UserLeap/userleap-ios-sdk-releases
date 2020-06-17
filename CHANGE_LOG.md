@@ -1,6 +1,9 @@
 # Change Log
 
 ### Version 2.3.0
+* Added UserLeap.shared.setLocale() so clients can override static text localization
+
+### Version 2.3.0
 * Added localization for ja, ko, fr, ru, zh, de, hi
 
 ### Version 2.2.0

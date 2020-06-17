@@ -27,6 +27,7 @@ public enum SurveyState {
     set
   }
   public func configure(withEnvironment environment: Swift.String)
+  public func setLocale(_ locale: Swift.String)
   public func presentSurvey(from viewController: UIKit.UIViewController)
   public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
   public func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
