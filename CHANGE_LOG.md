@@ -1,6 +1,9 @@
 # Change Log
 
 ### Version 2.3.0
+* Improved implementation of UserLeap.shared.setLocale() 
+
+### Version 2.3.0
 * Added UserLeap.shared.setLocale() so clients can override static text localization
 
 ### Version 2.3.0
