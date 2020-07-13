@@ -1,18 +1,5 @@
 # Change Log
 
-### Version 2.3.0
-* Improved implementation of UserLeap.shared.setLocale() 
-
-### Version 2.3.0
-* Added UserLeap.shared.setLocale() so clients can override static text localization
-
-### Version 2.3.0
-* Added localization for ja, ko, fr, ru, zh, de, hi
-
-### Version 2.2.0
-
-* Allow visitors to see and respond to the same survey if the customers wants (done through the dashboard)
-
 ### Version 2.1.0
 
 * Added NPS question type support
