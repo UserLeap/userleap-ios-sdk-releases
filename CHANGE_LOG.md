@@ -1,6 +1,9 @@
 # Change Log
 
 ### Version 2.3.3
+* Build with Xcode 12A6163b
+
+### Version 2.3.3
 * Fixed bug with multiple choice routing logic
 * Built with Xcode 12 beta 2, Swift 5.3
 
