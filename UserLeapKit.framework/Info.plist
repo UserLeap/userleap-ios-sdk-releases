@@ -41,9 +41,9 @@
 	<key>DTXcode</key>
 	<string>1200</string>
 	<key>DTXcodeBuild</key>
-	<string>12A8161k</string>
+	<string>12A6163b</string>
 	<key>GitSha</key>
-	<string>v2.3.2-2-g0976ddd</string>
+	<string>v2.3.3</string>
 	<key>MinimumOSVersion</key>
 	<string>10.3</string>
 	<key>UIDeviceFamily</key>
