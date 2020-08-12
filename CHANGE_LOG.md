@@ -1,5 +1,11 @@
 # Change Log
 
+### Version 3.0.0
+* Updated UserLeap class to be visible to Objective-C projects
+* UserLeap.visitorIdentifier type has been changed from Int? to NSNumber?
+* Reachability class which was erroneously public is now private
+* Calling UserLeap init() is no longer allowed, please access through the singleton shared method
+
 ### Version 2.3.3
 * Build with Xcode 12A6163b
 
