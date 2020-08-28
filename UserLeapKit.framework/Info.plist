@@ -19,13 +19,13 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.0.0</string>
+	<string>2.3.3</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>25</string>
+	<string>24</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -43,7 +43,7 @@
 	<key>DTXcodeBuild</key>
 	<string>12A6163b</string>
 	<key>GitSha</key>
-	<string>v2.3.3-2-g99cf7d9</string>
+	<string>v2.3.3-1-gc129c83</string>
 	<key>MinimumOSVersion</key>
 	<string>10.3</string>
 	<key>UIDeviceFamily</key>
