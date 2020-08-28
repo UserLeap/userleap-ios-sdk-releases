@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -205,6 +206,70 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+/// An enum that indicates whether a survey is ready to be displayed.
+typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
+/// There is no survey to be displayed.
+  SurveyStateNoSurvey = 0,
+/// A survey is ready to be displayed.
+  SurveyStateReady = 1,
+/// The survey request has been disabled.
+  SurveyStateDisabled = 2,
+};
+
+
+
+
+@class NSNumber;
+@class UIViewController;
+
+/// The primary class used to interact with UserLeap surveys. Use <code>UserLeap.shared</code>.
+SWIFT_CLASS("_TtC11UserLeapKit8UserLeap")
+@interface UserLeap : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// A reference to the UserLeap singleton.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserLeap * _Nonnull shared;)
++ (UserLeap * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// The user identifier used internally by UserLeap
+@property (nonatomic, readonly, strong) NSNumber * _Nullable visitorIdentifier;
+@property (nonatomic) BOOL disableNetworkAccess;
+/// The UserLeap singleton must be configured before use. Call this during app initialization.
+/// \param withEnvironment The environment ID for your application. You can find this in your UserLeap account.
+///
+- (void)configureWithEnvironment:(NSString * _Nonnull)environment;
+- (void)setLocale:(NSString * _Nonnull)locale;
+/// Presents an existing survey if there is one ready.
+/// \param viewController The view controller from which to present the survey.
+///
+- (void)presentSurveyFrom:(UIViewController * _Nonnull)viewController;
+/// Presents a survey specified by surveyId (should only be used for development testing purposes)
+/// \param surveyId The ID of the survey you want to see
+///
+/// \param viewController The view controller from which to present the survey.
+///
+/// \param completion Invoked when survey questions have been fetched and it is about to present it
+///
+- (void)presentSurveyWithId:(NSInteger)surveyId from:(UIViewController * _Nonnull)viewController fetchCompletion:(void (^ _Nullable)(void))fetchCompletion;
+/// Sends a tracking event and asks <code>UserLeap</code> if there is a survey that should result from this event.
+/// \param eventName The name of the event to track.
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sets the email address for this <code>UserLeap</code> visitor.
+- (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+/// Sets the user identifier for this <code>UserLeap</code> visitor.
+- (void)setUserIdentifier:(NSString * _Nonnull)identifier;
+/// Presents an example survey containing all the question types. Used for testing in debug.
+/// \param viewController The view controller from which to present the survey.
+///
+- (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
+/// Clear the current user state
+- (void)logout;
+@end
 
 
 
