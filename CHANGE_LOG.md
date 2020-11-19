@@ -1,5 +1,12 @@
 # Change Log
 
+### Version 3.1.1
+* Included i386 architecture to framework
+
+### Version 3.1.0
+* Added setVisitorAttributes(_ attributes: [String: String]) which allows setting multiple attributes at a time, saving network round trips
+* Added removeVisitorAttributes(_ attributes: [String])
+
 ### Version 3.0.0
 * Updated UserLeap class to be visible to Objective-C projects
 * UserLeap.visitorIdentifier type has been changed from Int? to NSNumber?
