@@ -17,7 +17,7 @@ from your UserLeap Sales contact.
     s.author                = { "The UserLeap Team" => "ios@userleap.com" }
     s.source                = { 
                                 :git => "https://github.com/UserLeap/userleap-ios-sdk-releases.git", 
-                                :tag => "v#{s.version}" 
+                                :tag => s.version.to_s
                               }    
     s.source_files          = "UserLeapKit.framework/Headers/*.h"
     s.public_header_files   = "UserLeapKit.framework/Headers/*.h"
