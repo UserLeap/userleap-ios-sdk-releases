@@ -25,4 +25,8 @@ from your UserLeap Sales contact.
     s.platform              = :ios
     s.swift_version         = "5.3"
     s.ios.deployment_target = '10.3'
+    s.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
