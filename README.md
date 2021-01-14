@@ -94,10 +94,4 @@ To give developers control over the user experience, the UserLeap SDK will not a
 
 Eligible visitors are sampled for survey delivery and will not always receive a survey even if they are eligible. This is the desired behavior in the wild, but it can make testing your integration tricky.
 
-To simplify integration testing, the library provides a test survey that can loaded at any time by calling `UserLeap.shared.presentDebugSurvey(from: self)`.
-
-### Environmental Overrides
-
-You can use certain environmental variables to accomplish some testing tasks:
-
-- `USERLEAP_HARD_RESET` - set this to `1` to clear all local state during initialization
+Once you have created a survey in the UserLeap dashboard, get the survey ID (https://app.userleap.com/surveys/SURVEY_ID) and do `UserLeap.shared.presentSurvey(withId:SURVEY_ID, viewController:viewController)`
