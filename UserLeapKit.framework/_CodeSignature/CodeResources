@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		b1597q4pu3vi67FZi70J7hDeAPI=
+		6bfIEdoZ6BUqb9vH9UJzuZqxy8M=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		NDYLVrH+1SLBUMJaVDzVrMDMSh4=
+		DSLfnamnlTEkpXJY0hKGvHm5bPs=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		NDYLVrH+1SLBUMJaVDzVrMDMSh4=
+		DSLfnamnlTEkpXJY0hKGvHm5bPs=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		61KzDtATH2T+OvvRLgdZk1yuTVc=
+		zYRRAYpXHoAv/LIOXys2WFv2Jck=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,84 +46,12 @@
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		61KzDtATH2T+OvvRLgdZk1yuTVc=
+		zYRRAYpXHoAv/LIOXys2WFv2Jck=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		8wuQSMCxmVKIMSK2rtCtP0KQqGo=
 		</data>
-		<key>de.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6Rgyx5FLYJ+hVwYQBks2fZabSBE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d1WYjGaikNMBToAOLm/rdMzFfC0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6ErR8HFFnuyg0/GNO1uKmCD4CD4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hi.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v8VNWckZfh7g6xwNPui3ZwOo8x8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ja.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QVIrx/J7XUA1eLisZyjtump2OOY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ko.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1sDELQ2XGDU3nKnP/TfoRrlPb7I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ru.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0PjvL3PEI4GukjnvthkNm33jM6I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sSKcRzUzaIKW4b2ck0p1jNlZP1I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -153,22 +81,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NDYLVrH+1SLBUMJaVDzVrMDMSh4=
+			DSLfnamnlTEkpXJY0hKGvHm5bPs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fsCdxd+YhUZTa8l9eu2mNpgh3iMLfEmflbwoCSme3Hw=
+			Rwf+a6D+YEFj5EpKT0/wMM2PsC3xZzpV2dw4K/XjRSM=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NDYLVrH+1SLBUMJaVDzVrMDMSh4=
+			DSLfnamnlTEkpXJY0hKGvHm5bPs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fsCdxd+YhUZTa8l9eu2mNpgh3iMLfEmflbwoCSme3Hw=
+			Rwf+a6D+YEFj5EpKT0/wMM2PsC3xZzpV2dw4K/XjRSM=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -197,11 +125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			61KzDtATH2T+OvvRLgdZk1yuTVc=
+			zYRRAYpXHoAv/LIOXys2WFv2Jck=
 			</data>
 			<key>hash2</key>
 			<data>
-			/vbSGio0Ncm8Wge22VXAjAo9JwHqHOKZijWT5ahE8v0=
+			UpPOh3ei/BwVV/mWQATBDmLB7nQFbxQARkIjR4fbVSE=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftdoc</key>
@@ -230,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			61KzDtATH2T+OvvRLgdZk1yuTVc=
+			zYRRAYpXHoAv/LIOXys2WFv2Jck=
 			</data>
 			<key>hash2</key>
 			<data>
-			/vbSGio0Ncm8Wge22VXAjAo9JwHqHOKZijWT5ahE8v0=
+			UpPOh3ei/BwVV/mWQATBDmLB7nQFbxQARkIjR4fbVSE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -247,110 +175,6 @@
 			<data>
 			7w0lr0wQWHGjZJPSWgeSJoWDm4VjZQCb9xLnyt/Tnws=
 			</data>
-		</dict>
-		<key>de.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6Rgyx5FLYJ+hVwYQBks2fZabSBE=
-			</data>
-			<key>hash2</key>
-			<data>
-			dvdAaCuCn7FRMtMgGBwAiNXiLgFvlGdOCe8hhpvMQKc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d1WYjGaikNMBToAOLm/rdMzFfC0=
-			</data>
-			<key>hash2</key>
-			<data>
-			vS7UCfQM7lyb+GNamhZwlvDee9419EBQ2c5HhzMzZNc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6ErR8HFFnuyg0/GNO1uKmCD4CD4=
-			</data>
-			<key>hash2</key>
-			<data>
-			yd2Dtm9hfnjH7N3txDrIW8tIHvvsIVAqQCaZKj9rfLo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hi.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v8VNWckZfh7g6xwNPui3ZwOo8x8=
-			</data>
-			<key>hash2</key>
-			<data>
-			r4XPd5j1uS9GT64xafxy0tis4eQjHd0dxDFn1nD9kSo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ja.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QVIrx/J7XUA1eLisZyjtump2OOY=
-			</data>
-			<key>hash2</key>
-			<data>
-			hI1gy0I1krCX/zF+Pr+mo7DMJurtQIAoTks2Fhe+lHE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ko.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1sDELQ2XGDU3nKnP/TfoRrlPb7I=
-			</data>
-			<key>hash2</key>
-			<data>
-			tMBsr+UxVcbymSVbGaZSrgro3EHXa5276G9bK65ZOFs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ru.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0PjvL3PEI4GukjnvthkNm33jM6I=
-			</data>
-			<key>hash2</key>
-			<data>
-			GxELjvKFRy37Dbt6zssRtRBF2mdzUS+g1MQXX+8W6G4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sSKcRzUzaIKW4b2ck0p1jNlZP1I=
-			</data>
-			<key>hash2</key>
-			<data>
-			gI1mRReuPQUe4JIb/v8t4NSxO+SWVASCxmkYF0rpxJk=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

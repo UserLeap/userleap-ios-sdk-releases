@@ -1,5 +1,8 @@
 # Change Log
 
+### Version 4.1.0
+* Added the ability to dynamically control the question text and thanks card text from dashboard settings
+
 ### Version 3.2.0
 * Support visitorId as string type
 * Improved network performance when app is backgrounded
