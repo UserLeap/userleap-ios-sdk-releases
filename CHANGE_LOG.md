@@ -1,5 +1,7 @@
 # Change Log
 
+### Version 4.1.1
+* Bug fixes and improvements
 ### Version 4.1.0
 * Added the ability to dynamically control the question text and thanks card text from dashboard settings
 
