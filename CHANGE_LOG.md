@@ -1,5 +1,7 @@
 # Change Log
 
+### Version 4.2.0
+* Added support for multiple choice multi-select skip logic
 ### Version 4.1.1
 * Bug fixes and improvements
 ### Version 4.1.0

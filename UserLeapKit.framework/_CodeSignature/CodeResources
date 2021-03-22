@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6bfIEdoZ6BUqb9vH9UJzuZqxy8M=
+		bgeg25wOfmJdBFzciosU0FJKBUk=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		DSLfnamnlTEkpXJY0hKGvHm5bPs=
+		uASdshqdR8j+tHRBmfNYFoQiO8E=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		DSLfnamnlTEkpXJY0hKGvHm5bPs=
+		uASdshqdR8j+tHRBmfNYFoQiO8E=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zYRRAYpXHoAv/LIOXys2WFv2Jck=
+		aXk2ga1c6h7liNxx9KOM+6GCpSU=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		zYRRAYpXHoAv/LIOXys2WFv2Jck=
+		aXk2ga1c6h7liNxx9KOM+6GCpSU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,22 +81,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DSLfnamnlTEkpXJY0hKGvHm5bPs=
+			uASdshqdR8j+tHRBmfNYFoQiO8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rwf+a6D+YEFj5EpKT0/wMM2PsC3xZzpV2dw4K/XjRSM=
+			0aCaTBMvs+31YjU2F217A9fRtsScQZPJoluoK0Ryuzw=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DSLfnamnlTEkpXJY0hKGvHm5bPs=
+			uASdshqdR8j+tHRBmfNYFoQiO8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rwf+a6D+YEFj5EpKT0/wMM2PsC3xZzpV2dw4K/XjRSM=
+			0aCaTBMvs+31YjU2F217A9fRtsScQZPJoluoK0Ryuzw=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -125,11 +125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zYRRAYpXHoAv/LIOXys2WFv2Jck=
+			aXk2ga1c6h7liNxx9KOM+6GCpSU=
 			</data>
 			<key>hash2</key>
 			<data>
-			UpPOh3ei/BwVV/mWQATBDmLB7nQFbxQARkIjR4fbVSE=
+			lK9Es4AtVhwClpluUqKo8dzlx4m07y12aL9fZyCPOug=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftdoc</key>
@@ -158,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zYRRAYpXHoAv/LIOXys2WFv2Jck=
+			aXk2ga1c6h7liNxx9KOM+6GCpSU=
 			</data>
 			<key>hash2</key>
 			<data>
-			UpPOh3ei/BwVV/mWQATBDmLB7nQFbxQARkIjR4fbVSE=
+			lK9Es4AtVhwClpluUqKo8dzlx4m07y12aL9fZyCPOug=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
