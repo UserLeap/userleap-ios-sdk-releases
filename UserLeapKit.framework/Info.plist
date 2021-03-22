@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20C69</string>
+	<string>20D80</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -19,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.1.0</string>
+	<string>4.2.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
@@ -43,7 +43,7 @@
 	<key>DTXcodeBuild</key>
 	<string>12D4e</string>
 	<key>GitSha</key>
-	<string>v4.0.0-4-g8c49e22</string>
+	<string>v4.0.0-12-ge0a029a</string>
 	<key>MinimumOSVersion</key>
 	<string>10.3</string>
 	<key>UIDeviceFamily</key>
