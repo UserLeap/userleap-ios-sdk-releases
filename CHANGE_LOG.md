@@ -1,5 +1,6 @@
 # Change Log
-
+### 4.2.1
+* Fixes bug: When visitor id changes when a survey is in progress, the responses for that survey should be associated with the visitor id at the time the survey was delivered.
 ### Version 4.2.0
 * Added support for multiple choice multi-select skip logic
 ### Version 4.1.1
