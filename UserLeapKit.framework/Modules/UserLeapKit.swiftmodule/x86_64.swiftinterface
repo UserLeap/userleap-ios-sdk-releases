@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.20.104 clang-1300.0.21.1)
 // swift-module-flags: -target x86_64-apple-ios10.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
 import CoreGraphics
 import Foundation
@@ -7,6 +7,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 @_exported import UserLeapKit
+import _Concurrency
 @objc public enum SurveyState : ObjectiveC.NSInteger {
   case noSurvey
   case ready
@@ -43,6 +44,6 @@ import UIKit
   @objc public func logout()
   @objc deinit
 }
-extension UserLeapKit.SurveyState : Swift.Equatable {}
-extension UserLeapKit.SurveyState : Swift.Hashable {}
-extension UserLeapKit.SurveyState : Swift.RawRepresentable {}
+extension SurveyState : Swift.Equatable {}
+extension SurveyState : Swift.Hashable {}
+extension SurveyState : Swift.RawRepresentable {}

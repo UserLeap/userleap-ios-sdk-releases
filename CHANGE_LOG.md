@@ -1,4 +1,6 @@
 # Change Log
+### 4.3.0-beta
+* Built with Xcode 13.0 beta (13A5155e) which fixes the "Unable to use malformed module source info" build error
 ### 4.3.0
 * Added support for text url prompt, a new question type that allows external link with informational title and body text.
 ### 4.2.1
