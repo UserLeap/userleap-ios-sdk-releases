@@ -19,7 +19,7 @@ pod 'UserLeapKit', '~>4.3.0'
 If you're using [Carthage](https://github.com/Carthage/Carthage), add the following statement to your Cartfile, and follow the [instructions](https://github.com/Carthage/Carthage#quick-start) to finish the installation:
 
 ```
-binary "https://raw.githubusercontent.com/UserLeap/userleap-ios-sdk-releases/master/UserLeapKit.json" ~> 4.3.0
+binary "https://raw.githubusercontent.com/UserLeap/userleap-ios-sdk-releases/main/UserLeapKit.json" ~> 4.3.0
 ```
 
 ## Versioning
