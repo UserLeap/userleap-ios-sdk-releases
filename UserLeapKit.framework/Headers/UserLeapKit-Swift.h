@@ -208,22 +208,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-/// An enum that indicates whether a survey is ready to be displayed.
-typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
-/// There is no survey to be displayed.
-  SurveyStateNoSurvey = 0,
-/// A survey is ready to be displayed.
-  SurveyStateReady = 1,
-/// The survey request has been disabled.
-  SurveyStateDisabled = 2,
-};
-
-
-
-
 @class NSNumber;
 @class NSString;
 @class UIViewController;
+enum SurveyState : NSInteger;
 
 /// The primary class used to interact with UserLeap surveys. Use <code>UserLeap.shared</code>.
 SWIFT_CLASS("_TtC11UserLeapKit8UserLeap")
@@ -275,6 +263,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserLeap * _
 /// Clear the current user state
 - (void)logout;
 @end
+
+
+SWIFT_CLASS("_TtC11UserLeapKit5Sprig")
+@interface Sprig : UserLeap
+@end
+
+/// An enum that indicates whether a survey is ready to be displayed.
+typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
+/// There is no survey to be displayed.
+  SurveyStateNoSurvey = 0,
+/// A survey is ready to be displayed.
+  SurveyStateReady = 1,
+/// The survey request has been disabled.
+  SurveyStateDisabled = 2,
+};
+
+
+
+
 
 
 
