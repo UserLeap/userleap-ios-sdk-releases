@@ -18,6 +18,9 @@ import _Concurrency
     get
   }
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Sprig : UserLeapKit.UserLeap {
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class UserLeap : ObjectiveC.NSObject {
   @objc public static let shared: UserLeapKit.UserLeap
   @objc public var visitorIdentifier: Foundation.NSNumber? {
