@@ -1,4 +1,8 @@
 # Change Log
+
+### 4.4.0-beta
+* New Sprig namespace, you can now import and use the Sprig singleton
+* Built with Xcode 13.0 beta (13A5155e)
 ### 4.3.0-beta
 * Built with Xcode 13.0 beta (13A5155e) which fixes the "Unable to use malformed module source info" build error
 ### 4.3.0
