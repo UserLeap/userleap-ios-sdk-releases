@@ -1,6 +1,6 @@
 # Change Log
-### 4.4.0
-* UserLeap is now Sprig
+### 4.4.0-beta
+* UserLeap is now Sprig (built with Xcode 13.0 beta 13A5212g)
 ### 4.3.0-beta
 * Built with Xcode 13.0 beta (13A5155e) which fixes the "Unable to use malformed module source info" build error
 ### 4.3.0
