@@ -1,8 +1,8 @@
-# UserLeap iOS SDK
+# Sprig iOS SDK
 
-Official Releases of the UserLeap iOS SDK
+Official Releases of the Sprig iOS SDK
 
-Thank you for choosing UserLeap. This guide should help you get started.
+Thank you for choosing Sprig. This guide should help you get started.
 
 ## Getting the SDK
 
@@ -34,4 +34,4 @@ This SDK uses [Semantic Versioning 2.0.0](https://semver.org).
 
 ## Initializing the SDK
 
-Refer to [SDK Documentation](https://docs.userleap.com/installation/ios-sdk) to get started.
+Refer to [SDK Documentation](https://docs.sprig.com/installation/ios-sdk) to get started.
