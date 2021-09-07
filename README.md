@@ -1,8 +1,8 @@
-# UserLeap iOS SDK
+# Sprig iOS SDK
 
-Official Releases of the UserLeap iOS SDK
+Official Releases of the Sprig iOS SDK
 
-Thank you for choosing UserLeap. This guide should help you get started.
+Thank you for choosing Sprig. This guide should help you get started.
 
 ## Getting the SDK
 
