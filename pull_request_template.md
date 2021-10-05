@@ -41,12 +41,7 @@ If yes, have you taken every precaution to limit potential data exposure using b
 
 ## Checklist:
 
-<!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
-<!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
-<!--- https://www.notion.so/userleap/Day-To-Day-Development-7682fdcdd7b147368ef430657fa187bd -->
-
 - [ ] My code follows the code style of this project.
-- [ ] My change requires a change to the documentation. <!--- https://app.gitbook.com/@userleap/s/docs-v1/ -->
 - [ ] I have updated the documentation accordingly.
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.
