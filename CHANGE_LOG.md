@@ -1,4 +1,7 @@
 # Change Log
+
+### 4.4.1
+* Built with Xcode 13.0 (13A233)
 ### 4.4.0
 * New Sprig namespace, you can now import and use the Sprig singleton
 * Built with Xcode 12.5.1 (12E507)
