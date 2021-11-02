@@ -1,5 +1,8 @@
 # Change Log
 
+### 4.4.2
+* Fixed reported SDK version
+* Security improvements
 ### 4.4.1
 * Built with Xcode 13.0 (13A233)
 ### 4.4.0
