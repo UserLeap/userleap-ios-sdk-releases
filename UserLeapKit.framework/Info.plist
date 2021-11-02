@@ -19,13 +19,13 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.3.0</string>
+	<string>4.4.2</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>25</string>
+	<string>1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -39,11 +39,11 @@
 	<key>DTSDKName</key>
 	<string>iphoneos15.0</string>
 	<key>DTXcode</key>
-	<string>1300</string>
+	<string>1310</string>
 	<key>DTXcodeBuild</key>
-	<string>13A233</string>
+	<string>13A1030d</string>
 	<key>GitSha</key>
-	<string>v4.0.0-17-gc82fa85</string>
+	<string>v4.0.0-24-gfc89e82</string>
 	<key>MinimumOSVersion</key>
 	<string>10.3</string>
 	<key>UIDeviceFamily</key>
