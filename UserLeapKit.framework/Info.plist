@@ -19,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.4.2</string>
+	<string>4.4.3</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
@@ -43,7 +43,7 @@
 	<key>DTXcodeBuild</key>
 	<string>13A1030d</string>
 	<key>GitSha</key>
-	<string>v4.0.0-24-gfc89e82</string>
+	<string>v4.0.0-23-g08e59bb</string>
 	<key>MinimumOSVersion</key>
 	<string>10.3</string>
 	<key>UIDeviceFamily</key>
