@@ -1,5 +1,9 @@
 # Change Log
 
+### 4.4.4
+* fixed an sdk versioning issue that omitted the change in 4.4.3
+### 4.4.3
+* removed arm64 from excluded architecture to support simulator builds
 ### 4.4.2
 * Fixed reported SDK version
 * Security improvements
