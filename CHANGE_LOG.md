@@ -1,5 +1,7 @@
 # Change Log
 
+### 4.5.0
+* built sdk using xcframework
 ### 4.4.4
 * fixed an sdk versioning issue that omitted the change in 4.4.3
 ### 4.4.3

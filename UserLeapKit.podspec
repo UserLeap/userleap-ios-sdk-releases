@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = "UserLeapKit"
-    s.version               = "4.4.4"
+    s.version               = "4.5.0"
     s.summary               = "UserLeap surveys in iOS"
     s.description           = <<-DESC
       Access the power of Sprig inside of your iOS applications. Track visitor progress and deliver surveys natively across
@@ -19,14 +19,8 @@ from your UserLeap Sales contact.
                                 :git => "https://github.com/UserLeap/userleap-ios-sdk-releases.git", 
                                 :tag => s.version.to_s
                               }    
-    s.source_files          = "UserLeapKit.framework/Headers/*.h"
-    s.public_header_files   = "UserLeapKit.framework/Headers/*.h"
-    s.vendored_frameworks   = "UserLeapKit.framework"
+    s.vendored_frameworks   = "UserLeapKit.xcframework"
     s.platform              = :ios
     s.swift_version         = "5.3"
     s.ios.deployment_target = '10.3'
-    s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
