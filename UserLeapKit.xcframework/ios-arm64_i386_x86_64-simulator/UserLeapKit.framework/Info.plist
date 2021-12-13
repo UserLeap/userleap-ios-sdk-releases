@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>21A559</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>UserLeap</string>
+	<key>CFBundleExecutable</key>
+	<string>UserLeapKit</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.userleap.UserLeapKit</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>UserLeapKit</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>4.4.3</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>iPhoneSimulator</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>19A339</string>
+	<key>DTPlatformName</key>
+	<string>iphonesimulator</string>
+	<key>DTPlatformVersion</key>
+	<string>15.0</string>
+	<key>DTSDKBuild</key>
+	<string>19A339</string>
+	<key>DTSDKName</key>
+	<string>iphonesimulator15.0</string>
+	<key>DTXcode</key>
+	<string>1310</string>
+	<key>DTXcodeBuild</key>
+	<string>13A1030d</string>
+	<key>GitSha</key>
+	<string>v4.0.0-25-g83fb309</string>
+	<key>MinimumOSVersion</key>
+	<string>10.3</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+</dict>
+</plist>
