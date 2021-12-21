@@ -3,7 +3,7 @@ import PackageDescription
 let package = Package(
     name: "UserLeapKit",
     platforms: [
-        .iOS(.v10_3)
+        .iOS("10.3")
     ],
     products: [
         .library(
