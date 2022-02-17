@@ -1,5 +1,10 @@
 # Change Log
 
+### 4.7.0
+* license update
+* bug fixes and improvements
+### 4.6.0
+* support SPM
 ### 4.5.0
 * built sdk using xcframework
 ### 4.4.4
