@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/UserLeapKit-Swift.h</key>
 		<data>
-		fsb99ytpZrxk6kG65xFoiaNxrNo=
+		H5wrvPnk46aNvbuY+vZjQ2hEP6M=
 		</data>
 		<key>Headers/UserLeapKit.h</key>
 		<data>
@@ -14,43 +14,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SDkOgf8GR9UGFUUM/e325x88LCY=
+		sIeKCMqPuCVj8F2mbs6T7TlQ/1w=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		pX1j0ZkXl1SXJdZ5zWxnD2cTTqs=
-		</data>
-		<key>Modules/UserLeapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		pX1j0ZkXl1SXJdZ5zWxnD2cTTqs=
+		I2yctR4phnmZ3efToBp25QYP/KQ=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		9q5gBNJ5MTIJlyoA2BRnw9rz3Ug=
+		xaz+Y8r/6JiGQtLiO83AWbj+n6I=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		IAm6QlMv5cztbm1vu2KtZiVQTMY=
+		4/yDlEVeM4UNwMAkCmUBz4lUfCY=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rWajUMPopWO+eBMVzYtZaksASXo=
-		</data>
-		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		9q5gBNJ5MTIJlyoA2BRnw9rz3Ug=
-		</data>
-		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		IAm6QlMv5cztbm1vu2KtZiVQTMY=
-		</data>
-		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		rWajUMPopWO+eBMVzYtZaksASXo=
+		MgCOeyFVZRziNx+gd0z2aZuZuW4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		8wuQSMCxmVKIMSK2rtCtP0KQqGo=
+		</data>
+		<key>sprig_web_assets.bundle/shim.js</key>
+		<data>
+		2LQAVYFFWdJba6908VP5h4xYum0=
+		</data>
+		<key>sprig_web_assets.bundle/snippet.html</key>
+		<data>
+		ZUuBZuetBgr6KEHaNO+WfZKpDDg=
+		</data>
+		<key>sprig_web_assets.bundle/snippet.js</key>
+		<data>
+		N4Lz8eD/e/xlzVNlTCcyIMhCYJc=
+		</data>
+		<key>sprig_web_assets.bundle/view.js</key>
+		<data>
+		dscfdd5hImTl/khhc/sy1tCRLgA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,11 +59,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fsb99ytpZrxk6kG65xFoiaNxrNo=
+			H5wrvPnk46aNvbuY+vZjQ2hEP6M=
 			</data>
 			<key>hash2</key>
 			<data>
-			PiWFZ3r+hmN3UBn66zyrL5pfoFqkPwWZO7ou/OnVsRI=
+			sH4HXflexeNcsERxB402mK99ba4gJqwh0LB5adnodSU=
 			</data>
 		</dict>
 		<key>Headers/UserLeapKit.h</key>
@@ -81,88 +81,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pX1j0ZkXl1SXJdZ5zWxnD2cTTqs=
+			I2yctR4phnmZ3efToBp25QYP/KQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			lwak02jCthdHBXZkZJwiEZsQfcLg7QveXlnx2QcqGYg=
-			</data>
-		</dict>
-		<key>Modules/UserLeapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pX1j0ZkXl1SXJdZ5zWxnD2cTTqs=
-			</data>
-			<key>hash2</key>
-			<data>
-			lwak02jCthdHBXZkZJwiEZsQfcLg7QveXlnx2QcqGYg=
+			xxjdVLm/BNdKs2dun6RiGWHZR3u8BZvhDr13Nff/cN8=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9q5gBNJ5MTIJlyoA2BRnw9rz3Ug=
+			xaz+Y8r/6JiGQtLiO83AWbj+n6I=
 			</data>
 			<key>hash2</key>
 			<data>
-			TXJYCX9VuzLkyYZsc0/1JZI5uJ0bwfI1vunbEoY7wwQ=
+			/8ndWjvDN1OriGK8P06mzODpJu6dHPMrbWUAtjq+tvE=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IAm6QlMv5cztbm1vu2KtZiVQTMY=
+			4/yDlEVeM4UNwMAkCmUBz4lUfCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			CZ3UEGLfozssLga2N2hq/PrOOB7ASRcAwaAP6jXVrUU=
+			PyjJJULZ4E0AJT/mmJ6Cs/pKivw/1M+XNZzjN9yaQRs=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rWajUMPopWO+eBMVzYtZaksASXo=
+			MgCOeyFVZRziNx+gd0z2aZuZuW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			x5awCXxPQ+WVjgSQ60VMDsdHhw+qUtTBYJGU7npfk6E=
-			</data>
-		</dict>
-		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9q5gBNJ5MTIJlyoA2BRnw9rz3Ug=
-			</data>
-			<key>hash2</key>
-			<data>
-			TXJYCX9VuzLkyYZsc0/1JZI5uJ0bwfI1vunbEoY7wwQ=
-			</data>
-		</dict>
-		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IAm6QlMv5cztbm1vu2KtZiVQTMY=
-			</data>
-			<key>hash2</key>
-			<data>
-			CZ3UEGLfozssLga2N2hq/PrOOB7ASRcAwaAP6jXVrUU=
-			</data>
-		</dict>
-		<key>Modules/UserLeapKit.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rWajUMPopWO+eBMVzYtZaksASXo=
-			</data>
-			<key>hash2</key>
-			<data>
-			x5awCXxPQ+WVjgSQ60VMDsdHhw+qUtTBYJGU7npfk6E=
+			WJjAGtCsCfGobNUEJ2PA6l780iM72VcPzH7ZNnhuJUs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -174,6 +130,50 @@
 			<key>hash2</key>
 			<data>
 			7w0lr0wQWHGjZJPSWgeSJoWDm4VjZQCb9xLnyt/Tnws=
+			</data>
+		</dict>
+		<key>sprig_web_assets.bundle/shim.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2LQAVYFFWdJba6908VP5h4xYum0=
+			</data>
+			<key>hash2</key>
+			<data>
+			DVWC2nz6CgPoQJpDh4uSihK8VJlC9P0VxuWngToshos=
+			</data>
+		</dict>
+		<key>sprig_web_assets.bundle/snippet.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZUuBZuetBgr6KEHaNO+WfZKpDDg=
+			</data>
+			<key>hash2</key>
+			<data>
+			TSs4Lcm7pPg2y1aRes+mlxQN4b9PLS4CvQhXGoZxy0E=
+			</data>
+		</dict>
+		<key>sprig_web_assets.bundle/snippet.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N4Lz8eD/e/xlzVNlTCcyIMhCYJc=
+			</data>
+			<key>hash2</key>
+			<data>
+			3wT4IAjMvitLZbZcy7jnutVEmk8L+t2KLMaKnk04yM4=
+			</data>
+		</dict>
+		<key>sprig_web_assets.bundle/view.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dscfdd5hImTl/khhc/sy1tCRLgA=
+			</data>
+			<key>hash2</key>
+			<data>
+			T/OyQoLW4kEPV0NRP+PQMOC01iYvFtnvt/Gm7hXq0R0=
 			</data>
 		</dict>
 	</dict>
