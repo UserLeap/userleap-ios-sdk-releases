@@ -1,5 +1,8 @@
 # Change Log
-
+### 4.8.0
+* Added support for new question types, functionalities and bug fixes
+* removed presentDebugSurvey
+* deprecated the NSNumber visitorIdentifier in preference to the String visitorIdentifierString
 ### 4.7.0
 * license update
 * bug fixes and improvements
