@@ -1,4 +1,6 @@
 # Change Log
+### 4.8.1
+* Added an additional public api for setting the anonymous id from partner's integration
 ### 4.8.0
 * Added support for new question types, functionalities and bug fixes
 * removed presentDebugSurvey
