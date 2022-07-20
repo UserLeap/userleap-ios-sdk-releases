@@ -41,6 +41,7 @@ extension UserLeapKit.UserLeap {
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String])
   @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
+  @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
   @objc dynamic public func logout()
 }
 extension UserLeapKit.UserLeap {

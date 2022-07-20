@@ -19,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.8.0</string>
+	<string>4.8.1</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneSimulator</string>
@@ -43,7 +43,7 @@
 	<key>DTXcodeBuild</key>
 	<string>13F100</string>
 	<key>GitSha</key>
-	<string>v4.8.0</string>
+	<string>v4.8.0-1-ge926f87</string>
 	<key>MinimumOSVersion</key>
 	<string>10.3</string>
 	<key>UIDeviceFamily</key>
