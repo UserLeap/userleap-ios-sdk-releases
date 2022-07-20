@@ -294,6 +294,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
+- (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
 /// Clear the current user state
 - (void)logout;
 @end
@@ -599,6 +600,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
+- (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
 /// Clear the current user state
 - (void)logout;
 @end
@@ -904,6 +906,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
+- (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
 /// Clear the current user state
 - (void)logout;
 @end
