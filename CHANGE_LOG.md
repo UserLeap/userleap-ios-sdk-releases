@@ -1,4 +1,7 @@
 # Change Log
+### 4.8.2
+* Added a public api method to track event with optional parameters userId and partner anonymous id
+* Gracefully handle configure from being called multiple times
 ### 4.8.1
 * Added an additional public api for setting the anonymous id from partner's integration
 ### 4.8.0
