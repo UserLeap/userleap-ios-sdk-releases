@@ -42,8 +42,11 @@ Sprig('addListener', 'sdk.ready', () => {
 Sprig('addListener', 'survey.height', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'setHeight', height: payload.contentFrameHeight.toString() });
 });
-Sprig.mobileTrackEvent = async (event, callbackId) => {
-    const result = await Sprig.track(event);
+Sprig.mobileTrackEvent = async (event, userId, partnerAnonymousId, callbackId) => {
+    const payload = { eventName: event };
+    if (userId) payload.userId = userId;
+    if (partnerAnonymousId) payload.anonymousId = partnerAnonymousId;
+    const result = await Sprig.identifyAndTrack(payload);
     handleSurveyCallback(result.surveyState, callbackId);
 }
 Sprig.mobileDisplaySurvey = async (surveyId, callbackId) => {
