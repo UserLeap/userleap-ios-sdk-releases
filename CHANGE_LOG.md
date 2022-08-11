@@ -1,4 +1,6 @@
 # Change Log
+### 4.8.3
+* Updated SDK version to 2.17.0 to support Other and Likert changes
 ### 4.8.2
 * Added a public api method to track event with optional parameters userId and partner anonymous id
 * Gracefully handle configure from being called multiple times
