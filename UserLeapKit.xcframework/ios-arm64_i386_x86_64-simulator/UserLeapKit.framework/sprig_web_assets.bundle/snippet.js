@@ -54,4 +54,9 @@ Sprig.mobileDisplaySurvey = async (surveyId, callbackId) => {
     const result = await Sprig.displaySurvey(surveyId);
     handleSurveyCallback(result.surveyState, callbackId);
 }
-
+Sprig.mobileIdentifyAndSetAttributes = (userId, partnerAnonymousId, attributes) => {
+    const payload = { attributes };
+    if (userId) payload.userId = userId;
+    if (partnerAnonymousId) payload.anonymousId = partnerAnonymousId;
+    Sprig('identifyAndSetAttributes', payload);
+}
