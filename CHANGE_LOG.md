@@ -1,4 +1,6 @@
 # Change Log
+### 4.8.3
+* Added a public api method setVisitorAttributes that allows setting user id and partner anonymous id
 ### 4.8.2
 * Added a public api method to track event with optional parameters userId and partner anonymous id
 * Gracefully handle configure from being called multiple times

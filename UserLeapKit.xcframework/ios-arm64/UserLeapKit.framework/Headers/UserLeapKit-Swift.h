@@ -290,6 +290,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// Sets an attribute on the visitor
 - (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
 - (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes;
+- (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId;
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;

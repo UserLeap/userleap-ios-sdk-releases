@@ -40,6 +40,7 @@ extension UserLeapKit.UserLeap {
   @objc dynamic public func setEmailAddress(_ emailAddress: Swift.String)
   @objc dynamic public func setVisitorAttribute(key: Swift.String, value: Swift.String)
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String])
+  @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
   @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
   @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
