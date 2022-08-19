@@ -47,6 +47,8 @@ extension UserLeapKit.UserLeap {
   @objc dynamic public func logout()
 }
 extension UserLeapKit.UserLeap {
+  @objc dynamic public func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
+  @objc dynamic public func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
   @objc dynamic public func presentDebugSurvey(from viewController: UIKit.UIViewController)

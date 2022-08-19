@@ -1,4 +1,7 @@
 # Change Log
+### 4.8.4
+* Added a public api method trackAndPresentWithEventName that allows presenting survey immediately after tracking an event
+* Bug fixes and improvements
 ### 4.8.3
 * Added a public api method setVisitorAttributes that allows setting user id and partner anonymous id
 ### 4.8.2
