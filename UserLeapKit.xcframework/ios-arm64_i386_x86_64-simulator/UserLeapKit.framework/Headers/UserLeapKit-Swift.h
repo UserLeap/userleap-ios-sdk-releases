@@ -251,9 +251,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+
 @class UIViewController;
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
 /// Presents an existing survey if there is one ready.
 /// \param viewController The view controller from which to present the survey.
 ///
@@ -271,7 +274,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 @end
-
 
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
@@ -559,9 +561,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+
 @class UIViewController;
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
 /// Presents an existing survey if there is one ready.
 /// \param viewController The view controller from which to present the survey.
 ///
@@ -579,7 +584,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 @end
-
 
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
@@ -867,9 +871,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+
 @class UIViewController;
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
 /// Presents an existing survey if there is one ready.
 /// \param viewController The view controller from which to present the survey.
 ///
@@ -887,7 +894,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 @end
-
 
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
