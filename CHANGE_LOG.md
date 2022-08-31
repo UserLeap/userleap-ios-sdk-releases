@@ -1,4 +1,6 @@
 # Change Log
+### 4.8.5
+* Bug fixes and improvements
 ### 4.8.4
 * Added a public api method trackAndPresentWithEventName that allows presenting survey immediately after tracking an event
 * Bug fixes and improvements
