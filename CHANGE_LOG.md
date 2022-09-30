@@ -1,4 +1,6 @@
 # Change Log
+### 4.8.6
+* Bug fixes and improvements
 ### 4.8.5
 * Bug fixes and improvements
 ### 4.8.4
