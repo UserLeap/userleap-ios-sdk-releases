@@ -1,4 +1,7 @@
 # Change Log
+### 4.9.0
+* Added event properties in the sdk
+* Bug fixes and improvements
 ### 4.8.6
 * Bug fixes and improvements
 ### 4.8.5

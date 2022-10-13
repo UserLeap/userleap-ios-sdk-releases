@@ -324,6 +324,15 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 - (void)trackWithEventName:(NSString * _Nonnull)eventName handler:(void (^ _Nullable)(enum SurveyState))handler;
 - (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event with properties and asks <code>UserLeap</code> if there is a survey that should result from this event.
+/// \param eventName The name of the event to track.
+///
+/// \param properties Event properties.
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
 /// Sets the email address for this <code>UserLeap</code> visitor.
 - (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
 /// Sets an attribute on the visitor
