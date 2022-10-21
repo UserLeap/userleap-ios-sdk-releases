@@ -1,0 +1,62 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios10.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreGraphics
+import Foundation
+import Swift
+import UIKit
+@_exported import UserLeapKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc public enum SurveyState : ObjectiveC.NSInteger {
+  case noSurvey
+  case ready
+  case disabled
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Sprig : UserLeapKit.UserLeap {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class UserLeap : ObjectiveC.NSObject {
+  @objc public static let shared: UserLeapKit.UserLeap
+  @objc public var disableNetworkAccess: Swift.Bool
+  @objc public var visitorIdentifier: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var visitorIdentifierString: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+extension UserLeapKit.UserLeap {
+  @objc dynamic public func configure(withEnvironment environment: Swift.String)
+  @objc dynamic public func setLocale(_ locale: Swift.String)
+  @objc dynamic public func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
+  @objc dynamic public func track(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @objc dynamic public func track(eventName: Swift.String, properties: [Swift.String : Any], handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
+  @objc dynamic public func track(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @objc dynamic public func setEmailAddress(_ emailAddress: Swift.String)
+  @objc dynamic public func setVisitorAttribute(key: Swift.String, value: Swift.String)
+  @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String])
+  @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
+  @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
+  @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
+  @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
+  @objc dynamic public func logout()
+}
+extension UserLeapKit.UserLeap {
+  @objc dynamic public func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
+  @objc dynamic public func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
+  @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)
+  @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
+  @objc dynamic public func presentDebugSurvey(from viewController: UIKit.UIViewController)
+}
+extension UserLeapKit.SurveyState : Swift.Equatable {}
+extension UserLeapKit.SurveyState : Swift.Hashable {}
+extension UserLeapKit.SurveyState : Swift.RawRepresentable {}

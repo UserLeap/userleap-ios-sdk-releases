@@ -1,0 +1,11 @@
+framework module UserLeapKit {
+  umbrella header "UserLeapKit.h"
+
+  export *
+  module * { export * }
+}
+
+module UserLeapKit.Swift {
+  header "UserLeapKit-Swift.h"
+  requires objc
+}
