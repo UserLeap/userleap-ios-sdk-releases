@@ -1,4 +1,7 @@
 # Change Log
+### 4.10.0
+* Added required questions in the sdk
+* Bug fixes and improvements
 ### 4.9.0
 * Added event properties in the sdk
 * Bug fixes and improvements
