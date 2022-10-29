@@ -1,4 +1,7 @@
 # Change Log
+### 4.11.0
+* Added mobile trigger delay and optimizely integration
+* Bug fixes and improvements
 ### 4.10.0
 * Added required questions in the sdk
 * Bug fixes and improvements
