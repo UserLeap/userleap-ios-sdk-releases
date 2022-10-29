@@ -64,6 +64,1022 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "SprigAPI",
+        "printedName": "SprigAPI",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(withEnvironment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)configureWithEnvironment:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP9configure15withEnvironmentySS_tF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "configureWithEnvironment:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocale",
+            "printedName": "setLocale(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setLocale:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP9setLocaleyySSF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(eventName:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserLeapKit.SurveyState) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserLeapKit.SurveyState) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SurveyState",
+                        "printedName": "UserLeapKit.SurveyState",
+                        "usr": "c:@M@UserLeapKit@E@SurveyState"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)trackWithEventName:handler:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP5track9eventName7handlerySS_yAA11SurveyStateOcSgtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "trackWithEventName:handler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(eventName:userId:partnerAnonymousId:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserLeapKit.SurveyState) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserLeapKit.SurveyState) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SurveyState",
+                        "printedName": "UserLeapKit.SurveyState",
+                        "usr": "c:@M@UserLeapKit@E@SurveyState"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)trackWithEventName:userId:partnerAnonymousId:handler:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP5track9eventName6userId016partnerAnonymousJ07handlerySS_SSSgAIyAA11SurveyStateOcSgtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "trackWithEventName:userId:partnerAnonymousId:handler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(eventName:properties:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserLeapKit.SurveyState) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserLeapKit.SurveyState) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SurveyState",
+                        "printedName": "UserLeapKit.SurveyState",
+                        "usr": "c:@M@UserLeapKit@E@SurveyState"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)trackWithEventName:properties:handler:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP5track9eventName10properties7handlerySS_SDySSypGyAA11SurveyStateOcSgtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "trackWithEventName:properties:handler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(eventName:userId:partnerAnonymousId:properties:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserLeapKit.SurveyState) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserLeapKit.SurveyState) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SurveyState",
+                        "printedName": "UserLeapKit.SurveyState",
+                        "usr": "c:@M@UserLeapKit@E@SurveyState"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)trackWithEventName:userId:partnerAnonymousId:properties:handler:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP5track9eventName6userId016partnerAnonymousJ010properties7handlerySS_SSSgAJSDySSypGSgyAA11SurveyStateOcSgtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "trackWithEventName:userId:partnerAnonymousId:properties:handler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEmailAddress",
+            "printedName": "setEmailAddress(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setEmailAddress:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP15setEmailAddressyySSF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVisitorAttribute",
+            "printedName": "setVisitorAttribute(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setVisitorAttributeWithKey:value:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP19setVisitorAttribute3key5valueySS_SStF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "setVisitorAttributeWithKey:value:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVisitorAttributes",
+            "printedName": "setVisitorAttributes(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setVisitorAttributes:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP20setVisitorAttributesyySDyS2SGF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVisitorAttributes",
+            "printedName": "setVisitorAttributes(_:userId:partnerAnonymousId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setVisitorAttributes:userId:partnerAnonymousId:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP20setVisitorAttributes_6userId016partnerAnonymousJ0ySDyS2SG_SSSgAHtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeVisitorAttributes",
+            "printedName": "removeVisitorAttributes(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)removeVisitorAttributes:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP23removeVisitorAttributesyySaySSGF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserIdentifier",
+            "printedName": "setUserIdentifier(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setUserIdentifier:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP03setA10IdentifieryySSF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPartnerAnonymousId",
+            "printedName": "setPartnerAnonymousId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setPartnerAnonymousId:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP21setPartnerAnonymousIdyySSF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)logout",
+            "mangledName": "$s11UserLeapKit8SprigAPIP6logoutyyF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI",
+        "mangledName": "$s11UserLeapKit8SprigAPIP",
+        "moduleName": "UserLeapKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SprigPresentationAPI",
+        "printedName": "SprigPresentationAPI",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "trackAndPresent",
+            "printedName": "trackAndPresent(eventName:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)trackAndPresentWithEventName:from:",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP15trackAndPresent9eventName4fromySS_So16UIViewControllerCtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
+            "protocolReq": true,
+            "objc_name": "trackAndPresentWithEventName:from:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackAndPresent",
+            "printedName": "trackAndPresent(eventName:userId:partnerAnonymousId:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)trackAndPresentWithEventName:userId:partnerAnonymousId:from:",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP15trackAndPresent9eventName6userId016partnerAnonymousM04fromySS_SSSgAISo16UIViewControllerCtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
+            "protocolReq": true,
+            "objc_name": "trackAndPresentWithEventName:userId:partnerAnonymousId:from:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentSurvey",
+            "printedName": "presentSurvey(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)presentSurveyFrom:",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP13presentSurvey4fromySo16UIViewControllerC_tF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
+            "protocolReq": true,
+            "objc_name": "presentSurveyFrom:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentSurvey",
+            "printedName": "presentSurvey(withId:from:fetchCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)presentSurveyWithId:from:fetchCompletion:",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP13presentSurvey6withId4from15fetchCompletionySi_So16UIViewControllerCyycSgtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
+            "protocolReq": true,
+            "objc_name": "presentSurveyWithId:from:fetchCompletion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI",
+        "mangledName": "$s11UserLeapKit20SprigPresentationAPIP",
+        "moduleName": "UserLeapKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SprigOptimizelyIntegrationAPI",
+        "printedName": "SprigOptimizelyIntegrationAPI",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "integrateOptimizely",
+            "printedName": "integrateOptimizely(_:userId:attributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI(im)integrateOptimizely:userId:attributes:",
+            "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP09integrateE0_6userId10attributesySo8NSObjectC_SSSDySSypGtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigOptimizelyIntegrationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigOptimizelyIntegrationAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI",
+        "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP",
+        "moduleName": "UserLeapKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "SurveyState",
         "printedName": "SurveyState",
         "children": [
@@ -420,6 +1436,27 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SprigAPI",
+            "printedName": "SprigAPI",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI",
+            "mangledName": "$s11UserLeapKit8SprigAPIP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SprigOptimizelyIntegrationAPI",
+            "printedName": "SprigOptimizelyIntegrationAPI",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI",
+            "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SprigPresentationAPI",
+            "printedName": "SprigPresentationAPI",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP"
           }
         ]
       },
@@ -1401,6 +2438,61 @@
           },
           {
             "kind": "Function",
+            "name": "integrateOptimizely",
+            "printedName": "integrateOptimizely(_:userId:attributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateOptimizely:userId:attributes:",
+            "mangledName": "$s11UserLeapKit0aB0C19integrateOptimizely_6userId10attributesySo8NSObjectC_SSSDySSypGtF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "integrateOptimizely:userId:attributes:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "trackAndPresent",
             "printedName": "trackAndPresent(eventName:from:)",
             "children": [
@@ -1643,6 +2735,27 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "SprigAPI",
+            "printedName": "SprigAPI",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI",
+            "mangledName": "$s11UserLeapKit8SprigAPIP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SprigOptimizelyIntegrationAPI",
+            "printedName": "SprigOptimizelyIntegrationAPI",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI",
+            "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SprigPresentationAPI",
+            "printedName": "SprigPresentationAPI",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1799,28 +2912,28 @@
     {
       "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 5730,
+      "offset": 5951,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 5791,
+      "offset": 6012,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 5730,
+      "offset": 5951,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 5791,
+      "offset": 6012,
       "length": 8,
       "value": "2"
     },
@@ -1886,6 +2999,34 @@
       "offset": 951,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "kind": "StringLiteral",
+      "offset": 5904,
+      "length": 31,
+      "value": "\"getOptimizelyConfigWithError:\""
+    },
+    {
+      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "kind": "StringLiteral",
+      "offset": 5990,
+      "length": 16,
+      "value": "\"experimentsMap\""
+    },
+    {
+      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "kind": "StringLiteral",
+      "offset": 6049,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "kind": "StringLiteral",
+      "offset": 6126,
+      "length": 59,
+      "value": "\"getVariationKeyWithExperimentKey:userId:attributes:error:\""
     },
     {
       "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
