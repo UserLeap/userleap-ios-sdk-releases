@@ -9,6 +9,7 @@
 * Added event properties in the sdk
 * Bug fixes and improvements
 ### 4.8.6
+* Built using xcode 14. Bitcode is removed in xcode 14, please update your build environment for compatibility. Xcode 13 compatible builds will be available in a later release.
 * Bug fixes and improvements
 ### 4.8.5
 * Bug fixes and improvements
