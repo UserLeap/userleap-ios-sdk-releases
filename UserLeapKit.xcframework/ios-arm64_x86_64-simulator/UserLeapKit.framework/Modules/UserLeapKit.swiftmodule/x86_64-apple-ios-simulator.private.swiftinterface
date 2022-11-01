@@ -10,6 +10,31 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+@objc public protocol SprigAPI {
+  @objc func configure(withEnvironment environment: Swift.String)
+  @objc func setLocale(_ locale: Swift.String)
+  @objc func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @objc func track(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @objc func track(eventName: Swift.String, properties: [Swift.String : Any], handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @objc func track(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, properties: [Swift.String : Any]?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @objc func setEmailAddress(_ emailAddress: Swift.String)
+  @objc func setVisitorAttribute(key: Swift.String, value: Swift.String)
+  @objc func setVisitorAttributes(_ attributes: [Swift.String : Swift.String])
+  @objc func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
+  @objc func removeVisitorAttributes(_ attributes: [Swift.String])
+  @objc func setUserIdentifier(_ identifier: Swift.String)
+  @objc func setPartnerAnonymousId(_ identifier: Swift.String)
+  @objc func logout()
+}
+@objc public protocol SprigPresentationAPI {
+  @objc func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
+  @objc func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
+  @objc func presentSurvey(from viewController: UIKit.UIViewController)
+  @objc func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)?)
+}
+@objc public protocol SprigOptimizelyIntegrationAPI {
+  @objc func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
+}
 @objc public enum SurveyState : ObjectiveC.NSInteger {
   case noSurvey
   case ready
@@ -34,7 +59,7 @@ import _StringProcessing
   }
   @objc deinit
 }
-extension UserLeapKit.UserLeap {
+extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func configure(withEnvironment environment: Swift.String)
   @objc dynamic public func setLocale(_ locale: Swift.String)
   @objc dynamic public func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
@@ -50,7 +75,10 @@ extension UserLeapKit.UserLeap {
   @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
   @objc dynamic public func logout()
 }
-extension UserLeapKit.UserLeap {
+extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
+  @objc dynamic public func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
+}
+extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @objc dynamic public func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
   @objc dynamic public func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)

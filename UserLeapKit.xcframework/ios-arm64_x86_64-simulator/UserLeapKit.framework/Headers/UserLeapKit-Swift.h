@@ -274,6 +274,95 @@ SWIFT_CLASS("_TtC11UserLeapKit5Sprig")
 @interface Sprig : UserLeap
 @end
 
+enum SurveyState : NSInteger;
+
+SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
+@protocol SprigAPI
+/// Initial step to configure  the Sprig sdk with environment
+- (void)configureWithEnvironment:(NSString * _Nonnull)environment;
+/// sets locale of the visitor
+- (void)setLocale:(NSString * _Nonnull)locale;
+/// Sends a tracking event and asks <code>Sprig</code> if there is a survey that should result from this event.
+/// \param eventName The name of the event to track.
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event and asks <code>Sprig</code> if there is a survey that should result from this event, and track user id and partner anonymous id at the same time
+/// \param eventName The name of the event to track.
+///
+/// \param userId The optional userId to identify visitor as an authenticated user at the same time
+///
+/// \param partnerAnonymousId The optional id coming from partner integration
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event with properties and asks <code>Sprig</code> if there is a survey that should result from this event.
+/// \param eventName The name of the event to track.
+///
+/// \param properties Event properties.
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event with properties and asks <code>Sprig</code> if there is a survey that should result from this event, and track user id and partner anonymous id at the same time
+/// \param eventName The name of the event to track.
+///
+/// \param userId The optional userId to identify visitor as an authenticated user at the same time
+///
+/// \param partnerAnonymousId The optional id coming from partner integration
+///
+/// \param properties Event properties.
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sets the email address for this <code>Sprig</code> visitor.
+- (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+/// Sets multiple attributes
+- (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes;
+/// Set attributes and identify with user id and/or partnerAnonymousId
+- (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId;
+/// Remove multiple attributes
+- (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
+/// Sets an external user id for the visitor
+- (void)setUserIdentifier:(NSString * _Nonnull)identifier;
+/// Sets a partner integration’s anonymous id
+- (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
+/// Clear the current user state and resets the visitor id
+- (void)logout;
+@end
+
+
+SWIFT_PROTOCOL("_TtP11UserLeapKit29SprigOptimizelyIntegrationAPI_")
+@protocol SprigOptimizelyIntegrationAPI
+/// Integration Optimizely
+- (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
+@end
+
+@class UIViewController;
+
+SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
+@protocol SprigPresentationAPI
+/// tracks an event , and show the survey immediately when it is available
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
+/// tracks an event , set ids, and show the survey immediately when it is available
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
+/// shows a survey if it exist from the given view controller
+- (void)presentSurveyFrom:(UIViewController * _Nonnull)viewController;
+/// Presents a survey specified by surveyId (should only be used for development testing purposes when the Allow Manual Study Display setting is turned on)
+/// \param surveyId The ID of the survey you want to see
+///
+/// \param viewController The view controller from which to present the survey.
+///
+/// \param completion Invoked when survey questions have been fetched and it is about to present it
+///
+- (void)presentSurveyWithId:(NSInteger)surveyId from:(UIViewController * _Nonnull)viewController fetchCompletion:(void (^ _Nullable)(void))fetchCompletion;
+@end
+
 /// An enum that indicates whether a survey is ready to be displayed.
 typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// There is no survey to be displayed.
@@ -287,9 +376,13 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
-@class UIViewController;
 
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
+- (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
+@end
+
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
 /// Presents an existing survey if there is one ready.
@@ -311,7 +404,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 @end
 
 
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigAPI>
 /// The UserLeap singleton must be configured before use. Call this during app initialization.
 /// \param withEnvironment The environment ID for your application. You can find this in your UserLeap account.
 ///
@@ -631,6 +724,95 @@ SWIFT_CLASS("_TtC11UserLeapKit5Sprig")
 @interface Sprig : UserLeap
 @end
 
+enum SurveyState : NSInteger;
+
+SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
+@protocol SprigAPI
+/// Initial step to configure  the Sprig sdk with environment
+- (void)configureWithEnvironment:(NSString * _Nonnull)environment;
+/// sets locale of the visitor
+- (void)setLocale:(NSString * _Nonnull)locale;
+/// Sends a tracking event and asks <code>Sprig</code> if there is a survey that should result from this event.
+/// \param eventName The name of the event to track.
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event and asks <code>Sprig</code> if there is a survey that should result from this event, and track user id and partner anonymous id at the same time
+/// \param eventName The name of the event to track.
+///
+/// \param userId The optional userId to identify visitor as an authenticated user at the same time
+///
+/// \param partnerAnonymousId The optional id coming from partner integration
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event with properties and asks <code>Sprig</code> if there is a survey that should result from this event.
+/// \param eventName The name of the event to track.
+///
+/// \param properties Event properties.
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event with properties and asks <code>Sprig</code> if there is a survey that should result from this event, and track user id and partner anonymous id at the same time
+/// \param eventName The name of the event to track.
+///
+/// \param userId The optional userId to identify visitor as an authenticated user at the same time
+///
+/// \param partnerAnonymousId The optional id coming from partner integration
+///
+/// \param properties Event properties.
+///
+/// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The
+///
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sets the email address for this <code>Sprig</code> visitor.
+- (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+/// Sets multiple attributes
+- (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes;
+/// Set attributes and identify with user id and/or partnerAnonymousId
+- (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId;
+/// Remove multiple attributes
+- (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
+/// Sets an external user id for the visitor
+- (void)setUserIdentifier:(NSString * _Nonnull)identifier;
+/// Sets a partner integration’s anonymous id
+- (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
+/// Clear the current user state and resets the visitor id
+- (void)logout;
+@end
+
+
+SWIFT_PROTOCOL("_TtP11UserLeapKit29SprigOptimizelyIntegrationAPI_")
+@protocol SprigOptimizelyIntegrationAPI
+/// Integration Optimizely
+- (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
+@end
+
+@class UIViewController;
+
+SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
+@protocol SprigPresentationAPI
+/// tracks an event , and show the survey immediately when it is available
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
+/// tracks an event , set ids, and show the survey immediately when it is available
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
+/// shows a survey if it exist from the given view controller
+- (void)presentSurveyFrom:(UIViewController * _Nonnull)viewController;
+/// Presents a survey specified by surveyId (should only be used for development testing purposes when the Allow Manual Study Display setting is turned on)
+/// \param surveyId The ID of the survey you want to see
+///
+/// \param viewController The view controller from which to present the survey.
+///
+/// \param completion Invoked when survey questions have been fetched and it is about to present it
+///
+- (void)presentSurveyWithId:(NSInteger)surveyId from:(UIViewController * _Nonnull)viewController fetchCompletion:(void (^ _Nullable)(void))fetchCompletion;
+@end
+
 /// An enum that indicates whether a survey is ready to be displayed.
 typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// There is no survey to be displayed.
@@ -644,9 +826,13 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
-@class UIViewController;
 
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
+- (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
+@end
+
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
 /// Presents an existing survey if there is one ready.
@@ -668,7 +854,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 @end
 
 
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigAPI>
 /// The UserLeap singleton must be configured before use. Call this during app initialization.
 /// \param withEnvironment The environment ID for your application. You can find this in your UserLeap account.
 ///
