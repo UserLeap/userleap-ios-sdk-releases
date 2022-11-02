@@ -1,4 +1,6 @@
 # Change Log
+### 4.11.0-alpha.1
+* Added alpha build using xcode 13.4.1
 ### 4.11.0
 * Added mobile trigger delay and optimizely integration
 * Bug fixes and improvements
