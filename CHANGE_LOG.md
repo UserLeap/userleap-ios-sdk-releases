@@ -1,4 +1,6 @@
 # Change Log
+### 4.11.1
+* Fixed an issue in text url prompt that prevents opening in external browser
 ### 4.11.0
 * Added mobile trigger delay and optimizely integration
 * Bug fixes and improvements
