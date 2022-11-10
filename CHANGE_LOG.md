@@ -1,6 +1,10 @@
 # Change Log
+### 4.11.1-alpha
+Alpha build of 4.11.1 using xcode 13.4.1
 ### 4.11.1
 * Fixed an issue in text url prompt that prevents opening in external browser
+### 4.11.0-alpha.1
+* Added alpha build using xcode 13.4.1
 ### 4.11.0
 * Added mobile trigger delay and optimizely integration
 * Bug fixes and improvements
