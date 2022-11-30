@@ -41,5 +41,6 @@
   "4.11.0": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.11.0.zip",
   "4.11.0-alpha.1": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.11.0-alpha.1.zip",
   "4.11.1": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.11.1.zip",
-  "4.11.1-alpha": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.11.1-alpha.zip"
+  "4.11.1-alpha": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.11.1-alpha.zip",
+  "4.11.1-legacy": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.11.1-legacy.zip"
 }
