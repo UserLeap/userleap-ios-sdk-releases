@@ -1,4 +1,8 @@
 # Change Log
+
+### 4.12.0
+* New EventPayload object to simplify calling track methods
+* Uses web 2.19.7
 ### 4.11.1
 * Fixed an issue in text url prompt that prevents opening in external browser
 ### 4.11.0
