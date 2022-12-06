@@ -466,6 +466,38 @@
           },
           {
             "kind": "Function",
+            "name": "track",
+            "printedName": "track(payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventPayload",
+                "printedName": "UserLeapKit.EventPayload",
+                "usr": "c:@M@UserLeapKit@objc(cs)EventPayload"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)trackWithPayload:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP5track7payloadyAA12EventPayloadC_tF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "trackWithPayload:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setEmailAddress",
             "printedName": "setEmailAddress(_:)",
             "children": [
@@ -891,6 +923,44 @@
             "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
             "protocolReq": true,
             "objc_name": "trackAndPresentWithEventName:userId:partnerAnonymousId:from:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackAndPresent",
+            "printedName": "trackAndPresent(payload:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventPayload",
+                "printedName": "UserLeapKit.EventPayload",
+                "usr": "c:@M@UserLeapKit@objc(cs)EventPayload"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)trackAndPresentWithPayload:from:",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP15trackAndPresent7payload4fromyAA12EventPayloadC_So16UIViewControllerCtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
+            "protocolReq": true,
+            "objc_name": "trackAndPresentWithPayload:from:",
             "declAttributes": [
               "ObjC",
               "RawDocComment"
@@ -1328,6 +1398,824 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UserLeapKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventPayload",
+        "printedName": "EventPayload",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "eventName",
+            "printedName": "eventName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit12EventPayloadC9eventNameSSvp",
+            "mangledName": "$s11UserLeapKit12EventPayloadC9eventNameSSvp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC9eventNameSSvg",
+                "mangledName": "$s11UserLeapKit12EventPayloadC9eventNameSSvg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC9eventNameSSvs",
+                "mangledName": "$s11UserLeapKit12EventPayloadC9eventNameSSvs",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC9eventNameSSvM",
+                "mangledName": "$s11UserLeapKit12EventPayloadC9eventNameSSvM",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userId",
+            "printedName": "userId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit12EventPayloadC6userIdSSSgvp",
+            "mangledName": "$s11UserLeapKit12EventPayloadC6userIdSSSgvp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC6userIdSSSgvg",
+                "mangledName": "$s11UserLeapKit12EventPayloadC6userIdSSSgvg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC6userIdSSSgvs",
+                "mangledName": "$s11UserLeapKit12EventPayloadC6userIdSSSgvs",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC6userIdSSSgvM",
+                "mangledName": "$s11UserLeapKit12EventPayloadC6userIdSSSgvM",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "partnerAnonymousId",
+            "printedName": "partnerAnonymousId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit12EventPayloadC18partnerAnonymousIdSSSgvp",
+            "mangledName": "$s11UserLeapKit12EventPayloadC18partnerAnonymousIdSSSgvp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC18partnerAnonymousIdSSSgvg",
+                "mangledName": "$s11UserLeapKit12EventPayloadC18partnerAnonymousIdSSSgvg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC18partnerAnonymousIdSSSgvs",
+                "mangledName": "$s11UserLeapKit12EventPayloadC18partnerAnonymousIdSSSgvs",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC18partnerAnonymousIdSSSgvM",
+                "mangledName": "$s11UserLeapKit12EventPayloadC18partnerAnonymousIdSSSgvM",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "properties",
+            "printedName": "properties",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit12EventPayloadC10propertiesSDySSypGSgvp",
+            "mangledName": "$s11UserLeapKit12EventPayloadC10propertiesSDySSypGSgvp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC10propertiesSDySSypGSgvg",
+                "mangledName": "$s11UserLeapKit12EventPayloadC10propertiesSDySSypGSgvg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC10propertiesSDySSypGSgvs",
+                "mangledName": "$s11UserLeapKit12EventPayloadC10propertiesSDySSypGSgvs",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC10propertiesSDySSypGSgvM",
+                "mangledName": "$s11UserLeapKit12EventPayloadC10propertiesSDySSypGSgvM",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "handler",
+            "printedName": "handler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserLeapKit.SurveyState) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserLeapKit.SurveyState) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SurveyState",
+                        "printedName": "UserLeapKit.SurveyState",
+                        "usr": "c:@M@UserLeapKit@E@SurveyState"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvp",
+            "mangledName": "$s11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UserLeapKit.SurveyState) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UserLeapKit.SurveyState) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SurveyState",
+                            "printedName": "UserLeapKit.SurveyState",
+                            "usr": "c:@M@UserLeapKit@E@SurveyState"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvg",
+                "mangledName": "$s11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UserLeapKit.SurveyState) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UserLeapKit.SurveyState) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SurveyState",
+                            "printedName": "UserLeapKit.SurveyState",
+                            "usr": "c:@M@UserLeapKit@E@SurveyState"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvs",
+                "mangledName": "$s11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvs",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvM",
+                "mangledName": "$s11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvM",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(eventName:userId:partnerAnonymousId:properties:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventPayload",
+                "printedName": "UserLeapKit.EventPayload",
+                "usr": "c:@M@UserLeapKit@objc(cs)EventPayload"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserLeapKit.SurveyState) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserLeapKit.SurveyState) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SurveyState",
+                        "printedName": "UserLeapKit.SurveyState",
+                        "usr": "c:@M@UserLeapKit@E@SurveyState"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11UserLeapKit12EventPayloadC9eventName6userId016partnerAnonymousI010properties7handlerACSS_SSSgAISDySSypGSgyAA11SurveyStateOcSgtcfc",
+            "mangledName": "$s11UserLeapKit12EventPayloadC9eventName6userId016partnerAnonymousI010properties7handlerACSS_SSSgAISDySSypGSgyAA11SurveyStateOcSgtcfc",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventPayload",
+                "printedName": "UserLeapKit.EventPayload",
+                "usr": "c:@M@UserLeapKit@objc(cs)EventPayload"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@UserLeapKit@objc(cs)EventPayload(im)init",
+            "mangledName": "$s11UserLeapKit12EventPayloadCACycfc",
+            "moduleName": "UserLeapKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@UserLeapKit@objc(cs)EventPayload",
+        "mangledName": "$s11UserLeapKit12EventPayloadC",
+        "moduleName": "UserLeapKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -1842,11 +2730,13 @@
             "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)trackWithEventName:handler:",
             "mangledName": "$s11UserLeapKit0aB0C5track9eventName7handlerySS_yAA11SurveyStateOcSgtF",
             "moduleName": "UserLeapKit",
+            "deprecated": true,
             "objc_name": "trackWithEventName:handler:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -1929,11 +2819,13 @@
             "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)trackWithEventName:userId:partnerAnonymousId:handler:",
             "mangledName": "$s11UserLeapKit0aB0C5track9eventName6userId016partnerAnonymousH07handlerySS_SSSgAIyAA11SurveyStateOcSgtF",
             "moduleName": "UserLeapKit",
+            "deprecated": true,
             "objc_name": "trackWithEventName:userId:partnerAnonymousId:handler:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2005,11 +2897,13 @@
             "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)trackWithEventName:properties:handler:",
             "mangledName": "$s11UserLeapKit0aB0C5track9eventName10properties7handlerySS_SDySSypGyAA11SurveyStateOcSgtF",
             "moduleName": "UserLeapKit",
+            "deprecated": true,
             "objc_name": "trackWithEventName:properties:handler:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -2119,7 +3013,39 @@
             "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)trackWithEventName:userId:partnerAnonymousId:properties:handler:",
             "mangledName": "$s11UserLeapKit0aB0C5track9eventName6userId016partnerAnonymousH010properties7handlerySS_SSSgAJSDySSypGSgyAA11SurveyStateOcSgtF",
             "moduleName": "UserLeapKit",
+            "deprecated": true,
             "objc_name": "trackWithEventName:userId:partnerAnonymousId:properties:handler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventPayload",
+                "printedName": "UserLeapKit.EventPayload",
+                "usr": "c:@M@UserLeapKit@objc(cs)EventPayload"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)trackWithPayload:",
+            "mangledName": "$s11UserLeapKit0aB0C5track7payloadyAA12EventPayloadC_tF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "trackWithPayload:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -2518,11 +3444,13 @@
             "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)trackAndPresentWithEventName:from:",
             "mangledName": "$s11UserLeapKit0aB0C15trackAndPresent9eventName4fromySS_So16UIViewControllerCtF",
             "moduleName": "UserLeapKit",
+            "deprecated": true,
             "objc_name": "trackAndPresentWithEventName:from:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2582,7 +3510,45 @@
             "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)trackAndPresentWithEventName:userId:partnerAnonymousId:from:",
             "mangledName": "$s11UserLeapKit0aB0C15trackAndPresent9eventName6userId016partnerAnonymousJ04fromySS_SSSgAISo16UIViewControllerCtF",
             "moduleName": "UserLeapKit",
+            "deprecated": true,
             "objc_name": "trackAndPresentWithEventName:userId:partnerAnonymousId:from:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackAndPresent",
+            "printedName": "trackAndPresent(payload:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventPayload",
+                "printedName": "UserLeapKit.EventPayload",
+                "usr": "c:@M@UserLeapKit@objc(cs)EventPayload"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)trackAndPresentWithPayload:from:",
+            "mangledName": "$s11UserLeapKit0aB0C15trackAndPresent7payload4fromyAA12EventPayloadC_So16UIViewControllerCtF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "trackAndPresentWithPayload:from:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -2847,287 +3813,294 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 458,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 521,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
       "kind": "FloatLiteral",
       "offset": 531,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 580,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1100,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1140,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
       "kind": "StringLiteral",
       "offset": 345,
       "length": 25,
       "value": "\"UserLeapKit.SprigSurveyViewController\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Constant.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Constant.swift",
       "kind": "IntegerLiteral",
       "offset": 281,
       "length": 3,
       "value": "150"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Constant.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Constant.swift",
       "kind": "IntegerLiteral",
       "offset": 399,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/SprigAPI.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 5951,
+      "offset": 6422,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/SprigAPI.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6012,
+      "offset": 6483,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/SprigAPI.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 5951,
+      "offset": 6422,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/SprigAPI.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6012,
+      "offset": 6483,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/EventPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 173,
+      "length": 12,
+      "value": "\"UserLeapKit.EventPayload\""
+    },
+    {
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
       "offset": 697,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
       "offset": 808,
       "length": 63,
       "value": "\"Sprig.mobileHeaderJSON = '\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
       "offset": 868,
       "length": 4,
       "value": "\"';\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
       "offset": 1098,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Array",
       "offset": 1151,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
       "offset": 1195,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "Dictionary",
       "offset": 535,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
       "offset": 585,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
       "offset": 951,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 5904,
+      "offset": 6524,
       "length": 31,
       "value": "\"getOptimizelyConfigWithError:\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 5990,
+      "offset": 6610,
       "length": 16,
       "value": "\"experimentsMap\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 6049,
+      "offset": 6669,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/UserLeap.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 6126,
+      "offset": 6746,
       "length": 59,
       "value": "\"getVariationKeyWithExperimentKey:userId:attributes:error:\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 483,
       "length": 6,
       "value": "\"FINE\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 506,
       "length": 6,
       "value": "\"INFO\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 530,
       "length": 7,
       "value": "\"DEBUG\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 555,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 579,
       "length": 6,
       "value": "\"NONE\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 712,
       "length": 20,
       "value": "\"USERLEAP_LOG_LEVEL\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 483,
       "length": 6,
       "value": "\"FINE\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 506,
       "length": 6,
       "value": "\"INFO\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 530,
       "length": 7,
       "value": "\"DEBUG\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 555,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 579,
       "length": 6,
       "value": "\"NONE\""
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/Logging.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
       "kind": "BooleanLiteral",
       "offset": 1295,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyView.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "BooleanLiteral",
       "offset": 863,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyView.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "IntegerLiteral",
       "offset": 921,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ghostr\/UserLeap\/userleap-ios-sdk\/UserLeapKit\/WebController\/SprigSurveyView.swift",
+      "filePath": "\/Users\/andrewpark\/Desktop\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "StringLiteral",
       "offset": 298,
       "length": 15,

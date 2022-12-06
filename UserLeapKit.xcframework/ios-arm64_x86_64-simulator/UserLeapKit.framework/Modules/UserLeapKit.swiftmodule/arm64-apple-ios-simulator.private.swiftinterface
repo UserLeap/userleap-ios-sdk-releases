@@ -17,6 +17,7 @@ import _StringProcessing
   @objc func track(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
   @objc func track(eventName: Swift.String, properties: [Swift.String : Any], handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
   @objc func track(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, properties: [Swift.String : Any]?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @objc func track(payload: UserLeapKit.EventPayload)
   @objc func setEmailAddress(_ emailAddress: Swift.String)
   @objc func setVisitorAttribute(key: Swift.String, value: Swift.String)
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Swift.String])
@@ -29,6 +30,7 @@ import _StringProcessing
 @objc public protocol SprigPresentationAPI {
   @objc func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
   @objc func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
+  @objc func trackAndPresent(payload: UserLeapKit.EventPayload, from viewController: UIKit.UIViewController)
   @objc func presentSurvey(from viewController: UIKit.UIViewController)
   @objc func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)?)
 }
@@ -44,6 +46,15 @@ import _StringProcessing
   public var rawValue: ObjectiveC.NSInteger {
     get
   }
+}
+@objc public class EventPayload : ObjectiveC.NSObject {
+  public var eventName: Swift.String
+  public var userId: Swift.String?
+  public var partnerAnonymousId: Swift.String?
+  public var properties: [Swift.String : Any]?
+  public var handler: ((UserLeapKit.SurveyState) -> Swift.Void)?
+  public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Sprig : UserLeapKit.UserLeap {
   @objc deinit
@@ -62,10 +73,15 @@ import _StringProcessing
 extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func configure(withEnvironment environment: Swift.String)
   @objc dynamic public func setLocale(_ locale: Swift.String)
+  @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
+  @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, properties: [Swift.String : Any], handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
+  @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
+  @objc dynamic public func track(payload: UserLeapKit.EventPayload)
   @objc dynamic public func setEmailAddress(_ emailAddress: Swift.String)
   @objc dynamic public func setVisitorAttribute(key: Swift.String, value: Swift.String)
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String])
@@ -79,8 +95,11 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc dynamic public func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
+  @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
   @objc dynamic public func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
+  @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
   @objc dynamic public func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
+  @objc dynamic public func trackAndPresent(payload: UserLeapKit.EventPayload, from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
   @objc dynamic public func presentDebugSurvey(from viewController: UIKit.UIViewController)

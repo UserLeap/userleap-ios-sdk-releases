@@ -252,6 +252,13 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
+@interface EventPayload : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSNumber;
 @class NSString;
 
@@ -318,6 +325,10 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 /// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The
 ///
 - (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event with properties and asks <code>Sprig</code> if there is a survey that should result from this event, and track user id and partner anonymous id at the same time
+/// \param payload an instance of the Track class
+///
+- (void)trackWithPayload:(EventPayload * _Nonnull)payload;
 /// Sets the email address for this <code>Sprig</code> visitor.
 - (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
 /// Sets an attribute on the visitor
@@ -351,6 +362,8 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
 /// tracks an event , set ids, and show the survey immediately when it is available
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
+/// tracks an event , set ids, and show the survey immediately when it is available
+- (void)trackAndPresentWithPayload:(EventPayload * _Nonnull)payload from:(UIViewController * _Nonnull)viewController;
 /// shows a survey if it exist from the given view controller
 - (void)presentSurveyFrom:(UIViewController * _Nonnull)viewController;
 /// Presents a survey specified by surveyId (should only be used for development testing purposes when the Allow Manual Study Display setting is turned on)
@@ -383,8 +396,9 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
-- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
-- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
+- (void)trackAndPresentWithPayload:(EventPayload * _Nonnull)payload from:(UIViewController * _Nonnull)viewController;
 /// Presents an existing survey if there is one ready.
 /// \param viewController The view controller from which to present the survey.
 ///
@@ -415,8 +429,8 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 /// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
 ///
-- (void)trackWithEventName:(NSString * _Nonnull)eventName handler:(void (^ _Nullable)(enum SurveyState))handler;
-- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId handler:(void (^ _Nullable)(enum SurveyState))handler;
+- (void)trackWithEventName:(NSString * _Nonnull)eventName handler:(void (^ _Nullable)(enum SurveyState))handler SWIFT_DEPRECATED_MSG("Use track with EventPayload instead");
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId handler:(void (^ _Nullable)(enum SurveyState))handler SWIFT_DEPRECATED_MSG("Use track with EventPayload instead");
 /// Sends a tracking event with properties and asks <code>UserLeap</code> if there is a survey that should result from this event.
 /// \param eventName The name of the event to track.
 ///
@@ -424,8 +438,9 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 /// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
 ///
-- (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
-- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+- (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties handler:(void (^ _Nullable)(enum SurveyState))handler SWIFT_DEPRECATED_MSG("Use track with EventPayload instead");
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler SWIFT_DEPRECATED_MSG("Use track with EventPayload instead");
+- (void)trackWithPayload:(EventPayload * _Nonnull)payload;
 /// Sets the email address for this <code>UserLeap</code> visitor.
 - (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
 /// Sets an attribute on the visitor
@@ -702,6 +717,13 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
+@interface EventPayload : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSNumber;
 @class NSString;
 
@@ -768,6 +790,10 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 /// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The
 ///
 - (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+/// Sends a tracking event with properties and asks <code>Sprig</code> if there is a survey that should result from this event, and track user id and partner anonymous id at the same time
+/// \param payload an instance of the Track class
+///
+- (void)trackWithPayload:(EventPayload * _Nonnull)payload;
 /// Sets the email address for this <code>Sprig</code> visitor.
 - (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
 /// Sets an attribute on the visitor
@@ -801,6 +827,8 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
 /// tracks an event , set ids, and show the survey immediately when it is available
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
+/// tracks an event , set ids, and show the survey immediately when it is available
+- (void)trackAndPresentWithPayload:(EventPayload * _Nonnull)payload from:(UIViewController * _Nonnull)viewController;
 /// shows a survey if it exist from the given view controller
 - (void)presentSurveyFrom:(UIViewController * _Nonnull)viewController;
 /// Presents a survey specified by surveyId (should only be used for development testing purposes when the Allow Manual Study Display setting is turned on)
@@ -833,8 +861,9 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
-- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController;
-- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController;
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
+- (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
+- (void)trackAndPresentWithPayload:(EventPayload * _Nonnull)payload from:(UIViewController * _Nonnull)viewController;
 /// Presents an existing survey if there is one ready.
 /// \param viewController The view controller from which to present the survey.
 ///
@@ -865,8 +894,8 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 /// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
 ///
-- (void)trackWithEventName:(NSString * _Nonnull)eventName handler:(void (^ _Nullable)(enum SurveyState))handler;
-- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId handler:(void (^ _Nullable)(enum SurveyState))handler;
+- (void)trackWithEventName:(NSString * _Nonnull)eventName handler:(void (^ _Nullable)(enum SurveyState))handler SWIFT_DEPRECATED_MSG("Use track with EventPayload instead");
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId handler:(void (^ _Nullable)(enum SurveyState))handler SWIFT_DEPRECATED_MSG("Use track with EventPayload instead");
 /// Sends a tracking event with properties and asks <code>UserLeap</code> if there is a survey that should result from this event.
 /// \param eventName The name of the event to track.
 ///
@@ -874,8 +903,9 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 /// \param handler The handler that is called once the resulting survey (if any) is fetched. Use this handler to call <code>presentSurvey(from:)</code> if the <code>SurveyState</code> is equal to <code>.ready</code>. The handler is called on the main thread.
 ///
-- (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
-- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler;
+- (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties handler:(void (^ _Nullable)(enum SurveyState))handler SWIFT_DEPRECATED_MSG("Use track with EventPayload instead");
+- (void)trackWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler SWIFT_DEPRECATED_MSG("Use track with EventPayload instead");
+- (void)trackWithPayload:(EventPayload * _Nonnull)payload;
 /// Sets the email address for this <code>UserLeap</code> visitor.
 - (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
 /// Sets an attribute on the visitor
