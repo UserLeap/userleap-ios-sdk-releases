@@ -2120,11 +2120,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11UserLeapKit12EventPayloadC9eventName6userId016partnerAnonymousI010properties7handlerACSS_SSSgAISDySSypGSgyAA11SurveyStateOcSgtcfc",
+            "usr": "c:@M@UserLeapKit@objc(cs)EventPayload(im)initWithEventName:userId:partnerAnonymousId:properties:handler:",
             "mangledName": "$s11UserLeapKit12EventPayloadC9eventName6userId016partnerAnonymousI010properties7handlerACSS_SSSgAISDySSypGSgyAA11SurveyStateOcSgtcfc",
             "moduleName": "UserLeapKit",
+            "objc_name": "initWithEventName:userId:partnerAnonymousId:properties:handler:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },

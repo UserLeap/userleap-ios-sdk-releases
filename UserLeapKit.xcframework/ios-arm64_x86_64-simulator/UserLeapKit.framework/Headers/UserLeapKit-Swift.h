@@ -252,15 +252,17 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+enum SurveyState : NSInteger;
 
 SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
 @interface EventPayload : NSObject
+- (nonnull instancetype)initWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class NSNumber;
-@class NSString;
 
 /// The primary class used to interact with UserLeap surveys. Use <code>UserLeap.shared</code>.
 SWIFT_CLASS("_TtC11UserLeapKit8UserLeap")
@@ -281,7 +283,6 @@ SWIFT_CLASS("_TtC11UserLeapKit5Sprig")
 @interface Sprig : UserLeap
 @end
 
-enum SurveyState : NSInteger;
 
 SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 @protocol SprigAPI
@@ -717,15 +718,17 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+enum SurveyState : NSInteger;
 
 SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
 @interface EventPayload : NSObject
+- (nonnull instancetype)initWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class NSNumber;
-@class NSString;
 
 /// The primary class used to interact with UserLeap surveys. Use <code>UserLeap.shared</code>.
 SWIFT_CLASS("_TtC11UserLeapKit8UserLeap")
@@ -746,7 +749,6 @@ SWIFT_CLASS("_TtC11UserLeapKit5Sprig")
 @interface Sprig : UserLeap
 @end
 
-enum SurveyState : NSInteger;
 
 SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 @protocol SprigAPI

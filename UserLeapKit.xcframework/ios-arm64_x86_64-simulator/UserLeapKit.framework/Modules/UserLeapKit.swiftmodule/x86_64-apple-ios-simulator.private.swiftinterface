@@ -53,7 +53,7 @@ import _StringProcessing
   public var partnerAnonymousId: Swift.String?
   public var properties: [Swift.String : Any]?
   public var handler: ((UserLeapKit.SurveyState) -> Swift.Void)?
-  public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
+  @objc public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Sprig : UserLeapKit.UserLeap {
