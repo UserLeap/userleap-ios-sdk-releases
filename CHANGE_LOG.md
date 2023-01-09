@@ -1,6 +1,10 @@
 # Change Log
 
 ### 4.12.0
+* New EventPayload object to simplify calling track methods available for ObjC projects
+* Allows public methods (excluding displaySurvey and other UI methods) to be called from a background thread
+* Uses web 2.19.7
+### 4.12.0
 * New EventPayload object to simplify calling track methods
 * Uses web 2.19.7
 ### 4.11.1
