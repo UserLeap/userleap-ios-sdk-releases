@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = "UserLeapKit"
-    s.version               = "4.12.1"
+    s.version               = "1.1.30"
     s.summary               = "UserLeap surveys in iOS"
     s.description           = <<-DESC
       Access the power of Sprig inside of your iOS applications. Track visitor progress and deliver surveys natively across
