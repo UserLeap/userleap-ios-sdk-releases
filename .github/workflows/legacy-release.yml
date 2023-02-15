@@ -1,0 +1,43 @@
+name: Legacy Label Release
+on:
+  pull_request:
+    types: [labeled]
+jobs:
+  create-legacy-release:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - name: Check label name
+        id: check_label_name
+        run: |
+          if [[ "${{ github.event.label.name }}" =~ ^legacy$ ]]; then
+            echo "Execute legacy labeled release"
+          else
+            echo "Abort legacy labeled release"
+            exit 1
+          fi
+
+      - name: Get Version
+        id: get-version
+        run: echo "version=$(grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+" UserLeapKit.podspec)-legacy" >> $GITHUB_OUTPUT
+
+      - name: Create Tag
+        run: bash ./scripts/tag-and-release.sh tag ${{ secrets.GH_TOKEN }} ${{ steps.get-version.outputs.version }}
+
+      - name: Create release
+        run: bash ./scripts/tag-and-release.sh release ${{ secrets.GH_TOKEN }} ${{ steps.get-version.outputs.version }}
+      
+      - name: Push to Cocoapod
+        env: 
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.POD_TRUNK_TOKEN }}
+        run: pod trunk push UserLeapKit.podspec
+
+      - name: Close pull request
+        uses: peter-evans/close-pull@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          comment: Auto-closing pull request
+          delete-branch: true
