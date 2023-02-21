@@ -1,5 +1,17 @@
 # Change Log
+<!-- add: A new feature -->
+<!-- fix: A bug fix -->
+<!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### pre-release
+
+### 4.13.0
+add: Add new optional parameter to configure function
+chore: remove storage.swift
+chore: add ios legacy build automation
+chore: update to web sdk 2.21.3
+### 4.12.2
+chore: update to web sdk 2.21.2
 ### 4.12.1
 * New EventPayload object to simplify calling track methods available for ObjC projects
 * Allows public methods (excluding displaySurvey and other UI methods) to be called from a background thread
