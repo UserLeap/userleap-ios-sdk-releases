@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios10.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreGraphics
@@ -12,6 +12,7 @@ import _Concurrency
 import _StringProcessing
 @objc public protocol SprigAPI {
   @objc func configure(withEnvironment environment: Swift.String)
+  @objc func configure(withEnvironment environment: Swift.String, configuration: [Swift.String : Any]?)
   @objc func setLocale(_ locale: Swift.String)
   @objc func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
   @objc func track(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
@@ -72,6 +73,7 @@ import _StringProcessing
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func configure(withEnvironment environment: Swift.String)
+  @objc dynamic public func configure(withEnvironment environment: Swift.String, configuration: [Swift.String : Any]? = nil)
   @objc dynamic public func setLocale(_ locale: Swift.String)
   @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
