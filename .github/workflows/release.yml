@@ -10,10 +10,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_TOKEN }}
-      - name: Push to Cocoapod
-        env: 
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.POD_TRUNK_TOKEN }}
-        run: pod trunk push UserLeapKit.podspec
+      
       - name: Get Version
         id: get-version
         run: echo "version=$(grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+" UserLeapKit.podspec)" >> $GITHUB_OUTPUT
@@ -23,3 +20,8 @@ jobs:
 
       - name: Create release
         run: bash ./scripts/tag-and-release.sh release ${{ secrets.GH_TOKEN }} ${{ steps.get-version.outputs.version }}
+
+      - name: Push to Cocoapod
+        env: 
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.POD_TRUNK_TOKEN }}
+        run: pod trunk push UserLeapKit.podspec
