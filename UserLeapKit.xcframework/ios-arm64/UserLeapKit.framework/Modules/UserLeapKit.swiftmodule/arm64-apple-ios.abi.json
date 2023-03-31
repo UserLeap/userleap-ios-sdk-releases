@@ -626,6 +626,120 @@
           },
           {
             "kind": "Function",
+            "name": "setVisitorAttribute",
+            "printedName": "setVisitorAttribute(key:doubleValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setVisitorAttributeWithKey:doubleValue:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP19setVisitorAttribute3key11doubleValueySS_SdtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "setVisitorAttributeWithKey:doubleValue:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVisitorAttribute",
+            "printedName": "setVisitorAttribute(key:boolValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setVisitorAttributeWithKey:boolValue:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP19setVisitorAttribute3key9boolValueySS_SbtF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "setVisitorAttributeWithKey:boolValue:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVisitorAttribute",
+            "printedName": "setVisitorAttribute(key:intValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setVisitorAttributeWithKey:intValue:",
+            "mangledName": "$s11UserLeapKit8SprigAPIP19setVisitorAttribute3key8intValueySS_SitF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
+            "protocolReq": true,
+            "objc_name": "setVisitorAttributeWithKey:intValue:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setVisitorAttributes",
             "printedName": "setVisitorAttributes(_:)",
             "children": [
@@ -637,7 +751,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : Any]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -647,9 +761,8 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
                   }
                 ],
                 "usr": "s:SD"
@@ -657,7 +770,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI(im)setVisitorAttributes:",
-            "mangledName": "$s11UserLeapKit8SprigAPIP20setVisitorAttributesyySDyS2SGF",
+            "mangledName": "$s11UserLeapKit8SprigAPIP20setVisitorAttributesyySDySSypGF",
             "moduleName": "UserLeapKit",
             "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigAPI>",
             "sugared_genericSig": "<Self where Self : UserLeapKit.SprigAPI>",
@@ -3244,6 +3357,117 @@
           },
           {
             "kind": "Function",
+            "name": "setVisitorAttribute",
+            "printedName": "setVisitorAttribute(key:intValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)setVisitorAttributeWithKey:intValue:",
+            "mangledName": "$s11UserLeapKit0aB0C19setVisitorAttribute3key8intValueySS_SitF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "setVisitorAttributeWithKey:intValue:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVisitorAttribute",
+            "printedName": "setVisitorAttribute(key:doubleValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)setVisitorAttributeWithKey:doubleValue:",
+            "mangledName": "$s11UserLeapKit0aB0C19setVisitorAttribute3key11doubleValueySS_SdtF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "setVisitorAttributeWithKey:doubleValue:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVisitorAttribute",
+            "printedName": "setVisitorAttribute(key:boolValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)setVisitorAttributeWithKey:boolValue:",
+            "mangledName": "$s11UserLeapKit0aB0C19setVisitorAttribute3key9boolValueySS_SbtF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "setVisitorAttributeWithKey:boolValue:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setVisitorAttributes",
             "printedName": "setVisitorAttributes(_:)",
             "children": [
@@ -3255,7 +3479,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : Any]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3265,9 +3489,8 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
                   }
                 ],
                 "usr": "s:SD"
@@ -3275,7 +3498,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)setVisitorAttributes:",
-            "mangledName": "$s11UserLeapKit0aB0C20setVisitorAttributesyySDyS2SGF",
+            "mangledName": "$s11UserLeapKit0aB0C20setVisitorAttributesyySDySSypGF",
             "moduleName": "UserLeapKit",
             "objc_name": "setVisitorAttributes:",
             "declAttributes": [
@@ -3969,8 +4192,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1166,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1140,
+      "offset": 1275,
       "length": 5,
       "value": "false"
     },
@@ -3998,28 +4228,28 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6587,
+      "offset": 6994,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6648,
+      "offset": 7055,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6587,
+      "offset": 6994,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6648,
+      "offset": 7055,
       "length": 8,
       "value": "2"
     },
@@ -4096,28 +4326,28 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 6843,
+      "offset": 7581,
       "length": 31,
       "value": "\"getOptimizelyConfigWithError:\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 6929,
+      "offset": 7667,
       "length": 16,
       "value": "\"experimentsMap\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 6988,
+      "offset": 7726,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 7065,
+      "offset": 7803,
       "length": 59,
       "value": "\"getVariationKeyWithExperimentKey:userId:attributes:error:\""
     },
@@ -4208,16 +4438,23 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "BooleanLiteral",
-      "offset": 863,
+      "offset": 800,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 921,
+      "offset": 858,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 952,
+      "length": 3,
+      "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",

@@ -336,8 +336,14 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 - (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
 /// Sets an attribute on the visitor
 - (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// Sets multiple attributes
-- (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key doubleValue:(double)doubleValue;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key boolValue:(BOOL)boolValue;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key intValue:(NSInteger)intValue;
+/// Sets multiple attributes (only String, Bool, Double and Int are accepted as valid attributes)
+- (void)setVisitorAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
 /// Set attributes and identify with user id and/or partnerAnonymousId
 - (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId;
 /// Remove multiple attributes
@@ -450,7 +456,13 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)setEmailAddress:(NSString * _Nonnull)emailAddress;
 /// Sets an attribute on the visitor
 - (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-- (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key intValue:(NSInteger)intValue;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key doubleValue:(double)doubleValue;
+/// Sets an attribute on the visitor
+- (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key boolValue:(BOOL)boolValue;
+- (void)setVisitorAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
 - (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId;
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
