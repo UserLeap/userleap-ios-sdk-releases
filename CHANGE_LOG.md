@@ -4,7 +4,10 @@
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
 ### pre-release
-
+### 4.14.0
+add: add additional interface for boolean and number types for setVisitorAttrigbute
+fix: fix an issue preventing scrolling after answering an open text question
+chore: update to web sdk 2.21.7
 ### 4.13.0
 add: Add new optional parameter to configure function
 chore: remove storage.swift
