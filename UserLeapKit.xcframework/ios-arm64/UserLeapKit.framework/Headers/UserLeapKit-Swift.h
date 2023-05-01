@@ -399,6 +399,13 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)integrateLaunchDarklyWithObjcLDClient:(NSObject * _Nonnull)objcLDClient;
+- (void)importLaunchDarklyWithFlagVariationIndexMap:(NSDictionary<NSString *, NSNumber *> * _Nonnull)flagVariationIndexMap;
+@end
+
+
+
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
 - (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
 @end

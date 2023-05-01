@@ -1584,6 +1584,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UserLeapKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "EventPayload",
         "printedName": "EventPayload",
@@ -2501,17 +2511,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "SprigAPI",
-            "printedName": "SprigAPI",
-            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI",
-            "mangledName": "$s11UserLeapKit8SprigAPIP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SprigOptimizelyIntegrationAPI",
             "printedName": "SprigOptimizelyIntegrationAPI",
             "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI",
             "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SprigAPI",
+            "printedName": "SprigAPI",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI",
+            "mangledName": "$s11UserLeapKit8SprigAPIP"
           },
           {
             "kind": "Conformance",
@@ -2794,6 +2804,135 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "integrateOptimizely",
+            "printedName": "integrateOptimizely(_:userId:attributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateOptimizely:userId:attributes:",
+            "mangledName": "$s11UserLeapKit0aB0C19integrateOptimizely_6userId10attributesySo8NSObjectC_SSSDySSypGtF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "integrateOptimizely:userId:attributes:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "integrateLaunchDarkly",
+            "printedName": "integrateLaunchDarkly(objcLDClient:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateLaunchDarklyWithObjcLDClient:",
+            "mangledName": "$s11UserLeapKit0aB0C21integrateLaunchDarkly12objcLDClientySo8NSObjectC_tF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "integrateLaunchDarklyWithObjcLDClient:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "importLaunchDarkly",
+            "printedName": "importLaunchDarkly(flagVariationIndexMap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)importLaunchDarklyWithFlagVariationIndexMap:",
+            "mangledName": "$s11UserLeapKit0aB0C18importLaunchDarkly21flagVariationIndexMapySDySSSiG_tF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "importLaunchDarklyWithFlagVariationIndexMap:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -3707,61 +3846,6 @@
           },
           {
             "kind": "Function",
-            "name": "integrateOptimizely",
-            "printedName": "integrateOptimizely(_:userId:attributes:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSObject",
-                "printedName": "ObjectiveC.NSObject",
-                "usr": "c:objc(cs)NSObject"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateOptimizely:userId:attributes:",
-            "mangledName": "$s11UserLeapKit0aB0C19integrateOptimizely_6userId10attributesySo8NSObjectC_SSSDySSypGtF",
-            "moduleName": "UserLeapKit",
-            "objc_name": "integrateOptimizely:userId:attributes:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "trackAndPresent",
             "printedName": "trackAndPresent(eventName:from:)",
             "children": [
@@ -4044,17 +4128,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "SprigAPI",
-            "printedName": "SprigAPI",
-            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI",
-            "mangledName": "$s11UserLeapKit8SprigAPIP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SprigOptimizelyIntegrationAPI",
             "printedName": "SprigOptimizelyIntegrationAPI",
             "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI",
             "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SprigAPI",
+            "printedName": "SprigAPI",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigAPI",
+            "mangledName": "$s11UserLeapKit8SprigAPIP"
           },
           {
             "kind": "Conformance",
@@ -4228,30 +4312,79 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6994,
+      "offset": 7439,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7055,
+      "offset": 7500,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6994,
+      "offset": 7439,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7055,
+      "offset": 7500,
       "length": 8,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 31,
+      "value": "\"getOptimizelyConfigWithError:\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 362,
+      "length": 16,
+      "value": "\"experimentsMap\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 421,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 498,
+      "length": 59,
+      "value": "\"getVariationKeyWithExperimentKey:userId:attributes:error:\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 626,
+      "length": 10,
+      "value": "\"allFlags\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 702,
+      "length": 41,
+      "value": "\"jsonVariationDetailForKey:defaultValue:\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 798,
+      "length": 16,
+      "value": "\"variationIndex\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/EventPayload.swift",
@@ -4263,93 +4396,79 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 697,
+      "offset": 601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 649,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "Dictionary",
+      "offset": 729,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 838,
       "length": 63,
       "value": "\"Sprig.mobileHeaderJSON = '\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 868,
+      "offset": 898,
       "length": 4,
       "value": "\"';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1098,
+      "offset": 1128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Array",
-      "offset": 1151,
+      "offset": 1181,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1195,
+      "offset": 1225,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "Dictionary",
-      "offset": 535,
+      "offset": 536,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 585,
+      "offset": 586,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 951,
+      "offset": 952,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
-      "kind": "StringLiteral",
-      "offset": 7581,
-      "length": 31,
-      "value": "\"getOptimizelyConfigWithError:\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
-      "kind": "StringLiteral",
-      "offset": 7667,
-      "length": 16,
-      "value": "\"experimentsMap\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
-      "kind": "StringLiteral",
-      "offset": 7726,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
-      "kind": "StringLiteral",
-      "offset": 7803,
-      "length": 59,
-      "value": "\"getVariationKeyWithExperimentKey:userId:attributes:error:\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Logging.swift",
