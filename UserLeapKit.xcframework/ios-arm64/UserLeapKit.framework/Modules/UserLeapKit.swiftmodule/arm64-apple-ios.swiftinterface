@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreGraphics
@@ -51,6 +51,9 @@ import _StringProcessing
     get
   }
 }
+extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
+  @objc dynamic public func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
+}
 @objc public class EventPayload : ObjectiveC.NSObject {
   public var eventName: Swift.String
   public var userId: Swift.String?
@@ -98,9 +101,6 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
   @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
   @objc dynamic public func logout()
-}
-extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
-  @objc dynamic public func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
