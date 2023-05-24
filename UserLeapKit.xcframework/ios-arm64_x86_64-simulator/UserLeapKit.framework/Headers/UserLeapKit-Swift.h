@@ -292,6 +292,14 @@ SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC11UserLeapKit22SGOptimizelyExperiment")
+@interface SGOptimizelyExperiment : NSObject
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id variation:(NSString * _Nonnull)variation OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSNumber;
 
 /// The primary class used to interact with UserLeap surveys. Use <code>UserLeap.shared</code>.
@@ -391,6 +399,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit29SprigOptimizelyIntegrationAPI_")
 @protocol SprigOptimizelyIntegrationAPI
 /// Integration Optimizely
 - (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
+- (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)_;
 @end
 
 @class UIViewController;
@@ -433,6 +442,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
 - (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
+- (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments;
 @end
 
 
@@ -806,6 +816,14 @@ SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC11UserLeapKit22SGOptimizelyExperiment")
+@interface SGOptimizelyExperiment : NSObject
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id variation:(NSString * _Nonnull)variation OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSNumber;
 
 /// The primary class used to interact with UserLeap surveys. Use <code>UserLeap.shared</code>.
@@ -905,6 +923,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit29SprigOptimizelyIntegrationAPI_")
 @protocol SprigOptimizelyIntegrationAPI
 /// Integration Optimizely
 - (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
+- (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)_;
 @end
 
 @class UIViewController;
@@ -947,6 +966,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
 - (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
+- (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments;
 @end
 
 

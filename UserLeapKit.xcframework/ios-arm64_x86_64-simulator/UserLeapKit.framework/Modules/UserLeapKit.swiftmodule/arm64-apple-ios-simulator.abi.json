@@ -1249,6 +1249,205 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "SGOptimizelyExperiment",
+        "printedName": "SGOptimizelyExperiment",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:variation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SGOptimizelyExperiment",
+                "printedName": "UserLeapKit.SGOptimizelyExperiment",
+                "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment(im)initWithId:variation:",
+            "mangledName": "$s11UserLeapKit22SGOptimizelyExperimentC2id9variationACSS_SStcfc",
+            "moduleName": "UserLeapKit",
+            "objc_name": "initWithId:variation:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SGOptimizelyExperiment",
+                "printedName": "UserLeapKit.SGOptimizelyExperiment",
+                "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment(im)init",
+            "mangledName": "$s11UserLeapKit22SGOptimizelyExperimentCACycfc",
+            "moduleName": "UserLeapKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SGOptimizelyExperiment",
+                "printedName": "UserLeapKit.SGOptimizelyExperiment",
+                "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11UserLeapKit22SGOptimizelyExperimentC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11UserLeapKit22SGOptimizelyExperimentC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "UserLeapKit",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11UserLeapKit22SGOptimizelyExperimentC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11UserLeapKit22SGOptimizelyExperimentC6encode2toys7Encoder_p_tKF",
+            "moduleName": "UserLeapKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment",
+        "mangledName": "$s11UserLeapKit22SGOptimizelyExperimentC",
+        "moduleName": "UserLeapKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "SprigOptimizelyIntegrationAPI",
         "printedName": "SprigOptimizelyIntegrationAPI",
         "children": [
@@ -1302,7 +1501,45 @@
             "sugared_genericSig": "<Self where Self : UserLeapKit.SprigOptimizelyIntegrationAPI>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "integrateOptimizelyExperiments",
+            "printedName": "integrateOptimizelyExperiments(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UserLeapKit.SGOptimizelyExperiment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SGOptimizelyExperiment",
+                    "printedName": "UserLeapKit.SGOptimizelyExperiment",
+                    "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI(im)integrateOptimizelyExperiments:",
+            "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP09integrateE11ExperimentsyySayAA22SGOptimizelyExperimentCGF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigOptimizelyIntegrationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigOptimizelyIntegrationAPI>",
+            "protocolReq": true,
+            "declAttributes": [
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2852,6 +3089,44 @@
             "mangledName": "$s11UserLeapKit0aB0C19integrateOptimizely_6userId10attributesySo8NSObjectC_SSSDySSypGtF",
             "moduleName": "UserLeapKit",
             "objc_name": "integrateOptimizely:userId:attributes:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "integrateOptimizelyExperiments",
+            "printedName": "integrateOptimizelyExperiments(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UserLeapKit.SGOptimizelyExperiment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SGOptimizelyExperiment",
+                    "printedName": "UserLeapKit.SGOptimizelyExperiment",
+                    "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateOptimizelyExperiments:",
+            "mangledName": "$s11UserLeapKit0aB0C30integrateOptimizelyExperimentsyySayAA22SGOptimizelyExperimentCGF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "integrateOptimizelyExperiments:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -4440,29 +4715,36 @@
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 6238,
+      "length": 22,
+      "value": "\"UserLeapKit.SGOptimizelyExperiment\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7439,
+      "offset": 7861,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7500,
+      "offset": 7922,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7439,
+      "offset": 7861,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7500,
+      "offset": 7922,
       "length": 8,
       "value": "2"
     },
@@ -4517,29 +4799,36 @@
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 3541,
+      "length": 13,
+      "value": "\"experiments\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
       "kind": "Dictionary",
-      "offset": 4267,
+      "offset": 3903,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 4896,
+      "offset": 4532,
       "length": 74,
       "value": "\"[Warning] Sprig: LaunchDarkly integration failed to get variation detail\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 5047,
+      "offset": 4683,
       "length": 67,
       "value": "\"[Warning] Sprig: LaunchDarkly integration failed to get all flags\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/Integrations\/SGIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 5163,
+      "offset": 4799,
       "length": 78,
       "value": "\"[Warning] Sprig: LaunchDarkly integration failed to respond to allFlags call\""
     },
@@ -4644,352 +4933,366 @@
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 1543,
+      "offset": 1373,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 1721,
+      "offset": 1549,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 1863,
+      "offset": 1717,
       "length": 24,
       "value": "\"x-ul-mobile-user-agent\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 1926,
+      "offset": 1780,
       "length": 25,
       "value": "\"x-ul-mobile-sdk-version\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 1987,
+      "offset": 1841,
       "length": 18,
       "value": "\"x-ul-app-version\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 2041,
+      "offset": 1895,
       "length": 17,
       "value": "\"x-ul-os-version\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 2093,
+      "offset": 1947,
       "length": 18,
       "value": "\"x-ul-environment\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 1982,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 2151,
+      "offset": 2005,
       "length": 17,
       "value": "\"accept-language\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "FloatLiteral",
-      "offset": 2734,
+      "offset": 2588,
       "length": 3,
       "value": "1.1"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2986,
+      "offset": 2840,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "FloatLiteral",
-      "offset": 3016,
+      "offset": 2870,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3049,
+      "offset": 2903,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3053,
+      "offset": 2907,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3058,
+      "offset": 2912,
       "length": 9,
       "value": "\";q=\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3066,
+      "offset": 2920,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3097,
+      "offset": 2951,
       "length": 4,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 5426,
+      "offset": 5280,
       "length": 29,
       "value": "\"https:\/\/api.sprig.com\/error\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 5599,
+      "offset": 5453,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 5707,
+      "offset": 5561,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 5727,
+      "offset": 5581,
       "length": 8,
       "value": "\"detail\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 5747,
+      "offset": 5601,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 6297,
+      "offset": 6151,
       "length": 26,
       "value": "\"x-ul-installation-method\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 6347,
+      "offset": 6201,
       "length": 26,
       "value": "\"x-ul-installation-method\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6481,
+      "offset": 6335,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6789,
+      "offset": 6643,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 6850,
+      "offset": 6704,
       "length": 20,
       "value": "\"sprigWebController\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 6961,
+      "offset": 6815,
       "length": 70,
       "value": "\"configure('\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 6987,
+      "offset": 6841,
       "length": 4,
       "value": "\"', '\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 7027,
+      "offset": 6881,
       "length": 60,
       "value": "\"');\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7082,
+      "offset": 6936,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 7403,
+      "offset": 7257,
       "length": 28,
       "value": "\"Sprig.locale = '\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 7429,
+      "offset": 7283,
       "length": 3,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 8135,
+      "offset": 7989,
       "length": 39,
       "value": "\"Sprig('setEmail',  '\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 8171,
+      "offset": 8025,
       "length": 4,
       "value": "\"')\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 8751,
+      "offset": 8605,
       "length": 60,
       "value": "\"Sprig('setAttributes', \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 8809,
+      "offset": 8663,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 8965,
+      "offset": 8819,
       "length": 11,
       "value": "\"undefined\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9040,
+      "offset": 8894,
       "length": 13,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9051,
+      "offset": 8905,
       "length": 2,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9105,
+      "offset": 8959,
       "length": 11,
       "value": "\"undefined\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9215,
+      "offset": 9069,
       "length": 25,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9238,
+      "offset": 9092,
       "length": 2,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9280,
+      "offset": 9134,
       "length": 125,
       "value": "\"Sprig.mobileIdentifyAndSetAttributes(\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9336,
+      "offset": 9190,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9367,
+      "offset": 9221,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9403,
+      "offset": 9257,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9506,
+      "offset": 9360,
       "length": 63,
       "value": "\"Sprig('removeAttributes', \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9567,
+      "offset": 9421,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9662,
+      "offset": 9516,
       "length": 37,
       "value": "\"Sprig('setUserId', '\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 9550,
+      "length": 4,
+      "value": "\"')\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 9650,
+      "length": 49,
+      "value": "\"Sprig('setPartnerAnonymousId', '\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
@@ -5001,336 +5304,336 @@
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 9796,
-      "length": 49,
-      "value": "\"Sprig('setPartnerAnonymousId', '\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 9842,
-      "length": 4,
-      "value": "\"')\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 9907,
+      "offset": 9761,
       "length": 21,
       "value": "\"Sprig('logoutUser')\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10125,
+      "offset": 9979,
       "length": 11,
       "value": "\"undefined\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10201,
+      "offset": 10055,
       "length": 13,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10212,
+      "offset": 10066,
       "length": 2,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10266,
+      "offset": 10120,
       "length": 11,
       "value": "\"undefined\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10376,
+      "offset": 10230,
       "length": 25,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10399,
+      "offset": 10253,
       "length": 2,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10445,
+      "offset": 10299,
       "length": 11,
       "value": "\"undefined\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10816,
+      "offset": 10670,
       "length": 131,
       "value": "\"Sprig.mobileTrackEvent('\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10853,
+      "offset": 10707,
       "length": 78,
       "value": "\"', \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10874,
+      "offset": 10728,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10905,
+      "offset": 10759,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10928,
+      "offset": 10782,
       "length": 1,
       "value": "\", '\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 10944,
+      "offset": 10798,
       "length": 4,
       "value": "\"')\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11055,
+      "offset": 10909,
       "length": 57,
       "value": "\"Sprig.mobileDisplaySurvey(\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11093,
+      "offset": 10947,
       "length": 1,
       "value": "\", '\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11109,
+      "offset": 10963,
       "length": 4,
       "value": "\"')\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11212,
+      "offset": 11066,
       "length": 74,
       "value": "\"Sprig('postError', { message: '\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11259,
+      "offset": 11113,
       "length": 11,
       "value": "\"', stack: '\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11281,
+      "offset": 11135,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11284,
+      "offset": 11138,
       "length": 3,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11361,
+      "offset": 11215,
       "length": 42,
       "value": "\"Sprig.dismissActiveSurvey('close.click')\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11486,
-      "length": 41,
-      "value": "\"Sprig('integrateOptimizely', '\""
+      "offset": 11325,
+      "length": 35,
+      "value": "\"Received Optimizely data: \""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 11524,
-      "length": 4,
-      "value": "\"')\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 11657,
-      "length": 89,
-      "value": "\"Sprig('importLaunchDarklyJSONMapping', '\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 11743,
-      "length": 4,
-      "value": "\"')\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 11911,
-      "length": 7,
-      "value": "\"ready\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12051,
-      "length": 164,
-      "value": "\"window.webkit.messageHandlers.sprigWebController.postMessage({type: 'loadShouldDismissOnPageChange', dismissOnPageChange:`${Sprig._config.dismissOnPageChange}`});\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12490,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12513,
-      "length": 31,
-      "value": "\"loadShouldDismissOnPageChange\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12592,
-      "length": 21,
-      "value": "\"dismissOnPageChange\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12639,
-      "length": 6,
-      "value": "\"true\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12692,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12724,
-      "length": 16,
-      "value": "\"surveyCallback\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12782,
-      "length": 12,
-      "value": "\"callbackId\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12814,
-      "length": 13,
-      "value": "\"surveyState\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 12962,
-      "length": 19,
-      "value": "\"surveyWillDismiss\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 13038,
-      "length": 18,
-      "value": "\"visitorIdUpdated\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 13091,
-      "length": 11,
-      "value": "\"visitorId\""
-    },
-    {
-      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 13107,
+      "offset": 11359,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 13184,
-      "length": 10,
-      "value": "\"sdkReady\""
+      "offset": 11391,
+      "length": 41,
+      "value": "\"Sprig('integrateOptimizely', '\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 11429,
+      "length": 4,
+      "value": "\"')\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 11562,
+      "length": 89,
+      "value": "\"Sprig('importLaunchDarklyJSONMapping', '\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 11648,
+      "length": 4,
+      "value": "\"')\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 11816,
+      "length": 7,
+      "value": "\"ready\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 11956,
+      "length": 164,
+      "value": "\"window.webkit.messageHandlers.sprigWebController.postMessage({type: 'loadShouldDismissOnPageChange', dismissOnPageChange:`${Sprig._config.dismissOnPageChange}`});\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12395,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12418,
+      "length": 31,
+      "value": "\"loadShouldDismissOnPageChange\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12497,
+      "length": 21,
+      "value": "\"dismissOnPageChange\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12544,
+      "length": 6,
+      "value": "\"true\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13221,
+      "offset": 12597,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 13494,
+      "offset": 12629,
+      "length": 16,
+      "value": "\"surveyCallback\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12687,
+      "length": 12,
+      "value": "\"callbackId\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12719,
+      "length": 13,
+      "value": "\"surveyState\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12867,
+      "length": 19,
+      "value": "\"surveyWillDismiss\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12943,
+      "length": 18,
+      "value": "\"visitorIdUpdated\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 12996,
+      "length": 11,
+      "value": "\"visitorId\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 13012,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 13089,
+      "length": 10,
+      "value": "\"sdkReady\""
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13126,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 13399,
       "length": 11,
       "value": "\"setHeight\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 13577,
+      "offset": 13482,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 13590,
+      "offset": 13495,
       "length": 5,
       "value": "\"400\""
     },
     {
       "filePath": "\/Users\/gong\/Desktop\/Sprig\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13813,
+      "offset": 13718,
       "length": 1,
       "value": "0"
     },

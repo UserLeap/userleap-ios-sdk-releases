@@ -38,8 +38,15 @@ import _StringProcessing
   @objc func presentSurvey(from viewController: UIKit.UIViewController)
   @objc func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)?)
 }
+@objc public class SGOptimizelyExperiment : ObjectiveC.NSObject, Swift.Codable {
+  @objc public init(id: Swift.String, variation: Swift.String)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @objc public protocol SprigOptimizelyIntegrationAPI {
   @objc func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
+  @objc func integrateOptimizelyExperiments(_: [UserLeapKit.SGOptimizelyExperiment])
 }
 @objc public enum SurveyState : ObjectiveC.NSInteger {
   case noSurvey
@@ -53,6 +60,7 @@ import _StringProcessing
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc dynamic public func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
+  @objc dynamic public func integrateOptimizelyExperiments(_ experiments: [UserLeapKit.SGOptimizelyExperiment])
 }
 @objc public class EventPayload : ObjectiveC.NSObject {
   public var eventName: Swift.String

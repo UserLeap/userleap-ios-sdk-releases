@@ -4,7 +4,7 @@
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
 ### pre-release
-
+* add: add `integrateOptimizelyExperiments` to directly import optimizely setting into sprig via the value object `SGOptimizelyExperiment`.
 ### 4.15.0
 * add: add dismissOnPageChange functionality to iOS
 * add: add private interface methods for importing LaunchDarkly flag to variation index mapping
