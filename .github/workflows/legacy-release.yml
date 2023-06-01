@@ -4,7 +4,7 @@ on:
     types: [labeled]
 jobs:
   create-legacy-release:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
