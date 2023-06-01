@@ -25,11 +25,10 @@ generate_release_payload() {
     cat << EOF
 {
     "tag_name":"$TAG_NAME",
-    "target_commitish":"main",
     "name":"$TAG_NAME",
     "draft":false,
     "prerelease":false,
-    "generate_release_notes":true
+    "generate_release_notes":true,
     "make_latest":"$MAKE_LATEST"
 }
 EOF
