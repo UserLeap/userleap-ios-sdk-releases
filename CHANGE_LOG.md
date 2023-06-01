@@ -5,6 +5,10 @@
 
 ### pre-release
 
+### 4.16.0
+* add: add integrateOptimizelyExperiments in the public SprigAPI
+* chore: update to web sdk 2.23.2
+
 ### 4.15.0
 * add: add dismissOnPageChange functionality to iOS
 * add: add private interface methods for importing LaunchDarkly flag to variation index mapping
