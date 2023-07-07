@@ -6,6 +6,6 @@ framework module UserLeapKit {
 }
 
 module UserLeapKit.Swift {
-  header "UserLeapKit-Swift.h"
-  requires objc
+    header "UserLeapKit-Swift.h"
+    requires objc
 }
