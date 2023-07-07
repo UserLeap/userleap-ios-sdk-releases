@@ -5,12 +5,6 @@
 
 ### pre-release
 
-
-### 4.17.0
-add: added a showSurveyCallback to allow dynamically manage whether to show the survey or not
-fix: fixed a issue that results in a UI blocking routine introduced from 4.15.0
-chore: update web sdk to 2.24.0
-
 ### 4.16.0
 * add: add integrateOptimizelyExperiments in the public SprigAPI
 * chore: update to web sdk 2.23.2
