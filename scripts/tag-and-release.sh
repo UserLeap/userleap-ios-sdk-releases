@@ -44,6 +44,10 @@ release() {
 }
 
 main() {
+    echo "modified"
+    echo "==================================================================="
+    curl -sS -f -I -H "Authorization: token $GH_TOKEN" https://api.github.com
+    echo "==================================================================="
     if [[ "$1" = "tag" ]]; then
         tag
     elif [[ "$1" = "release" ]]; then
