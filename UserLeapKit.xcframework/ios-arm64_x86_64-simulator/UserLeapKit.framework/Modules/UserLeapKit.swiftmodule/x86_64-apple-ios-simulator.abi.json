@@ -1454,12 +1454,21 @@
           {
             "kind": "Function",
             "name": "integrateOptimizely",
-            "printedName": "integrateOptimizely(_:userId:attributes:)",
+            "printedName": "integrateOptimizely(_:userId:attributes:isOverride:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Array",
+                "printedName": "[UserLeapKit.SGOptimizelyExperiment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SGOptimizelyExperiment",
+                    "printedName": "UserLeapKit.SGOptimizelyExperiment",
+                    "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment"
+                  }
+                ],
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
@@ -1491,11 +1500,17 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI(im)integrateOptimizely:userId:attributes:",
-            "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP09integrateE0_6userId10attributesySo8NSObjectC_SSSDySSypGtF",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI(im)integrateOptimizely:userId:attributes:isOverride:",
+            "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP09integrateE0_6userId10attributes10isOverrideSayAA22SGOptimizelyExperimentCGSo8NSObjectC_SSSDySSypGSbtF",
             "moduleName": "UserLeapKit",
             "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigOptimizelyIntegrationAPI>",
             "sugared_genericSig": "<Self where Self : UserLeapKit.SprigOptimizelyIntegrationAPI>",
@@ -1510,7 +1525,7 @@
           {
             "kind": "Function",
             "name": "integrateOptimizelyExperiments",
-            "printedName": "integrateOptimizelyExperiments(_:)",
+            "printedName": "integrateOptimizelyExperiments(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1530,11 +1545,17 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI(im)integrateOptimizelyExperiments:",
-            "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP09integrateE11ExperimentsyySayAA22SGOptimizelyExperimentCGF",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigOptimizelyIntegrationAPI(im)integrateOptimizelyExperiments::",
+            "mangledName": "$s11UserLeapKit29SprigOptimizelyIntegrationAPIP09integrateE11ExperimentsyySayAA22SGOptimizelyExperimentCG_SbtF",
             "moduleName": "UserLeapKit",
             "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigOptimizelyIntegrationAPI>",
             "sugared_genericSig": "<Self where Self : UserLeapKit.SprigOptimizelyIntegrationAPI>",
@@ -2787,6 +2808,578 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "LifecycleEvent",
+        "printedName": "LifecycleEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkReady",
+            "printedName": "sdkReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSdkReady",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO8sdkReadyyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "visitorIdUpdated",
+            "printedName": "visitorIdUpdated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventVisitorIdUpdated",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO16visitorIdUpdatedyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "surveyHeight",
+            "printedName": "surveyHeight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyHeight",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO12surveyHeightyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "surveyDimensions",
+            "printedName": "surveyDimensions",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyDimensions",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO16surveyDimensionsyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "surveyWillPresent",
+            "printedName": "surveyWillPresent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyWillPresent",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO17surveyWillPresentyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "surveyPresented",
+            "printedName": "surveyPresented",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyPresented",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO15surveyPresentedyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "surveyAppeared",
+            "printedName": "surveyAppeared",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyAppeared",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO14surveyAppearedyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "surveyWillClose",
+            "printedName": "surveyWillClose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyWillClose",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO15surveyWillCloseyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "surveyClosed",
+            "printedName": "surveyClosed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyClosed",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO12surveyClosedyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit14LifecycleEventO11stringValueSSvp",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO11stringValueSSvp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit14LifecycleEventO11stringValueSSvg",
+                "mangledName": "$s11UserLeapKit14LifecycleEventO11stringValueSSvg",
+                "moduleName": "UserLeapKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fromString",
+            "printedName": "fromString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UserLeapKit.LifecycleEvent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11UserLeapKit14LifecycleEventO10fromStringyACSgSSFZ",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO10fromStringyACSgSSFZ",
+            "moduleName": "UserLeapKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UserLeapKit.LifecycleEvent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11UserLeapKit14LifecycleEventO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO8rawValueACSgSi_tcfc",
+            "moduleName": "UserLeapKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit14LifecycleEventO8rawValueSivp",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO8rawValueSivp",
+            "moduleName": "UserLeapKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit14LifecycleEventO8rawValueSivg",
+                "mangledName": "$s11UserLeapKit14LifecycleEventO8rawValueSivg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@UserLeapKit@E@LifecycleEvent",
+        "mangledName": "$s11UserLeapKit14LifecycleEventO",
+        "moduleName": "UserLeapKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -3191,12 +3784,21 @@
           {
             "kind": "Function",
             "name": "integrateOptimizely",
-            "printedName": "integrateOptimizely(_:userId:attributes:)",
+            "printedName": "integrateOptimizely(_:userId:attributes:isOverride:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Array",
+                "printedName": "[UserLeapKit.SGOptimizelyExperiment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SGOptimizelyExperiment",
+                    "printedName": "UserLeapKit.SGOptimizelyExperiment",
+                    "usr": "c:@M@UserLeapKit@objc(cs)SGOptimizelyExperiment"
+                  }
+                ],
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
@@ -3228,17 +3830,24 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateOptimizely:userId:attributes:",
-            "mangledName": "$s11UserLeapKit0aB0C19integrateOptimizely_6userId10attributesySo8NSObjectC_SSSDySSypGtF",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateOptimizely:userId:attributes:isOverride:",
+            "mangledName": "$s11UserLeapKit0aB0C19integrateOptimizely_6userId10attributes10isOverrideSayAA22SGOptimizelyExperimentCGSo8NSObjectC_SSSDySSypGSbtF",
             "moduleName": "UserLeapKit",
-            "objc_name": "integrateOptimizely:userId:attributes:",
+            "objc_name": "integrateOptimizely:userId:attributes:isOverride:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "AccessControl"
+              "AccessControl",
+              "DiscardableResult"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -3246,7 +3855,7 @@
           {
             "kind": "Function",
             "name": "integrateOptimizelyExperiments",
-            "printedName": "integrateOptimizelyExperiments(_:)",
+            "printedName": "integrateOptimizelyExperiments(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3266,13 +3875,19 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateOptimizelyExperiments:",
-            "mangledName": "$s11UserLeapKit0aB0C30integrateOptimizelyExperimentsyySayAA22SGOptimizelyExperimentCGF",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)integrateOptimizelyExperiments::",
+            "mangledName": "$s11UserLeapKit0aB0C30integrateOptimizelyExperimentsyySayAA22SGOptimizelyExperimentCG_SbtF",
             "moduleName": "UserLeapKit",
-            "objc_name": "integrateOptimizelyExperiments:",
+            "objc_name": "integrateOptimizelyExperiments::",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -4455,6 +5070,100 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerEventListener",
+            "printedName": "registerEventListener(for:listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LifecycleEvent",
+                "printedName": "UserLeapKit.LifecycleEvent",
+                "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)registerEventListenerFor:listener:",
+            "mangledName": "$s11UserLeapKit0aB0C21registerEventListener3for8listeneryAA09LifecycleE0O_ySDyS2SGctF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "registerEventListenerFor:listener:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unregisterAllEventListeners",
+            "printedName": "unregisterAllEventListeners(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LifecycleEvent",
+                "printedName": "UserLeapKit.LifecycleEvent",
+                "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)unregisterAllEventListenersFor:",
+            "mangledName": "$s11UserLeapKit0aB0C27unregisterAllEventListeners3foryAA09LifecycleF0O_tF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "unregisterAllEventListenersFor:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -4666,28 +5375,28 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7861,
+      "offset": 7947,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7922,
+      "offset": 8008,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7861,
+      "offset": 7947,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 7922,
+      "offset": 8008,
       "length": 8,
       "value": "2"
     },
@@ -4748,65 +5457,177 @@
       "value": "\"UserLeapKit.EventPayload\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 242,
+      "length": 12,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 16,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 290,
+      "length": 17,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 14,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 366,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 391,
+      "length": 12,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 242,
+      "length": 12,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 16,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 290,
+      "length": 17,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 14,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 366,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 391,
+      "length": 12,
+      "value": "8"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 646,
+      "offset": 737,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 694,
+      "offset": 785,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Dictionary",
-      "offset": 823,
+      "offset": 914,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Dictionary",
-      "offset": 946,
+      "offset": 1037,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 1055,
+      "offset": 1146,
       "length": 63,
       "value": "\"Sprig.mobileHeaderJSON = '\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 1115,
+      "offset": 1206,
       "length": 4,
       "value": "\"';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1345,
+      "offset": 1436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Array",
-      "offset": 1398,
+      "offset": 1489,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1442,
+      "offset": 1533,
       "length": 4,
       "value": "true"
     },
@@ -4826,8 +5647,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
+      "kind": "Dictionary",
+      "offset": 683,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 952,
+      "offset": 1047,
       "length": 5,
       "value": "false"
     },

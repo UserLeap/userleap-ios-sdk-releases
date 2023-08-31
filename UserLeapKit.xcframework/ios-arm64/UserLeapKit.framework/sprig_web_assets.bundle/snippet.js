@@ -35,9 +35,6 @@ function handleSurveyCallback(surveyState, callbackId) {
         Sprig('addListener', 'survey.appeared', surveyReadyCallback);
     }
 }
-Sprig('addListener', 'survey.willClose', (status) => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillDismiss'});
-});
 Sprig('addListener', 'visitor.id.updated', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'visitorIdUpdated', visitorId: payload.visitorId});
 });
@@ -46,6 +43,24 @@ Sprig('addListener', 'sdk.ready', () => {
 });
 Sprig('addListener', 'survey.height', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'setHeight', height: payload.contentFrameHeight.toString() });
+});
+Sprig('addListener', 'survey.dimensions', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyDimensions', height: payload.contentFrameHeight.toString(), width: payload.contentFrameWidth.toString() });
+});
+Sprig('addListener', 'survey.will.present', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillPresent', surveyId: payload['survey.id'].toString() });
+});
+Sprig('addListener', 'survey.presented', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyPresented' });
+});
+Sprig('addListener', 'survey.appeared', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyAppeared' });
+});
+Sprig('addListener', 'survey.willClose', (status) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillDismiss'});
+});
+Sprig('addListener', 'survey.closed', (status) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyClosed'});
 });
 Sprig.mobileTrackEvent = async (event, userId, partnerAnonymousId, properties, callbackId) => {
     const payload = { eventName: event };
