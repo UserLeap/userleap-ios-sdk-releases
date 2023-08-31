@@ -45,8 +45,8 @@ import _StringProcessing
   required public init(from decoder: Swift.Decoder) throws
 }
 @objc public protocol SprigOptimizelyIntegrationAPI {
-  @objc func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
-  @objc func integrateOptimizelyExperiments(_: [UserLeapKit.SGOptimizelyExperiment])
+  @objc func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>, isOverride: Swift.Bool) -> [UserLeapKit.SGOptimizelyExperiment]
+  @objc func integrateOptimizelyExperiments(_: [UserLeapKit.SGOptimizelyExperiment], _ isOverride: Swift.Bool)
 }
 @objc public enum SurveyState : ObjectiveC.NSInteger {
   case noSurvey
@@ -59,8 +59,9 @@ import _StringProcessing
   }
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
-  @objc dynamic public func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>)
-  @objc dynamic public func integrateOptimizelyExperiments(_ experiments: [UserLeapKit.SGOptimizelyExperiment])
+  @discardableResult
+  @objc dynamic public func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>, isOverride: Swift.Bool) -> [UserLeapKit.SGOptimizelyExperiment]
+  @objc dynamic public func integrateOptimizelyExperiments(_ experiments: [UserLeapKit.SGOptimizelyExperiment], _ isOverride: Swift.Bool)
 }
 @objc public class EventPayload : ObjectiveC.NSObject {
   public var eventName: Swift.String
@@ -71,6 +72,26 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   public var shouldShowSurveyCallback: (() -> Swift.Bool)?
   @objc public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
   @objc deinit
+}
+@objc public enum LifecycleEvent : Swift.Int {
+  case sdkReady
+  case visitorIdUpdated
+  case surveyHeight
+  case surveyDimensions
+  case surveyWillPresent
+  case surveyPresented
+  case surveyAppeared
+  case surveyWillClose
+  case surveyClosed
+  public var stringValue: Swift.String {
+    get
+  }
+  public static func fromString(_ type: Swift.String) -> UserLeapKit.LifecycleEvent?
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Sprig : UserLeapKit.UserLeap {
   @objc deinit
@@ -121,6 +142,13 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
   @objc dynamic public func presentDebugSurvey(from viewController: UIKit.UIViewController)
 }
+extension UserLeapKit.UserLeap {
+  @objc dynamic public func registerEventListener(for eventType: UserLeapKit.LifecycleEvent, listener: @escaping (Swift.Dictionary<Swift.String, Swift.String>) -> Swift.Void)
+  @objc dynamic public func unregisterAllEventListeners(for eventType: UserLeapKit.LifecycleEvent)
+}
 extension UserLeapKit.SurveyState : Swift.Equatable {}
 extension UserLeapKit.SurveyState : Swift.Hashable {}
 extension UserLeapKit.SurveyState : Swift.RawRepresentable {}
+extension UserLeapKit.LifecycleEvent : Swift.Equatable {}
+extension UserLeapKit.LifecycleEvent : Swift.Hashable {}
+extension UserLeapKit.LifecycleEvent : Swift.RawRepresentable {}

@@ -262,6 +262,18 @@ SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
+  LifecycleEventSdkReady = 0,
+  LifecycleEventVisitorIdUpdated = 1,
+  LifecycleEventSurveyHeight = 2,
+  LifecycleEventSurveyDimensions = 3,
+  LifecycleEventSurveyWillPresent = 4,
+  LifecycleEventSurveyPresented = 5,
+  LifecycleEventSurveyAppeared = 6,
+  LifecycleEventSurveyWillClose = 7,
+  LifecycleEventSurveyClosed = 8,
+};
+
 
 SWIFT_CLASS("_TtC11UserLeapKit22SGOptimizelyExperiment")
 @interface SGOptimizelyExperiment : NSObject
@@ -368,8 +380,8 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 SWIFT_PROTOCOL("_TtP11UserLeapKit29SprigOptimizelyIntegrationAPI_")
 @protocol SprigOptimizelyIntegrationAPI
 /// Integration Optimizely
-- (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
-- (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)_;
+- (NSArray<SGOptimizelyExperiment *> * _Nonnull)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes isOverride:(BOOL)isOverride SWIFT_WARN_UNUSED_RESULT;
+- (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)_ :(BOOL)isOverride;
 @end
 
 @class UIViewController;
@@ -409,10 +421,9 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
-
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
-- (void)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
-- (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments;
+- (NSArray<SGOptimizelyExperiment *> * _Nonnull)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes isOverride:(BOOL)isOverride;
+- (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
 @end
 
 
@@ -436,6 +447,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// \param viewController The view controller from which to present the survey.
 ///
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
+@end
+
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 
