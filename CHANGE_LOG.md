@@ -5,6 +5,13 @@
 
 ### pre-release
 
+### 4.19.0
+* add: add `setPreviewKey` interface method for customer to set previewKey via deep link 
+* fix: execution order of custom lifecycle event handlers
+* fix: dismissOnPageChange event race condition for events fired before `sdkReady`
+* fix: Webview bottom background color based on custom styles configured for survey
+* chore: update web sdk to 2.24.3
+
 ### 4.18.0
 * add: support for isOverride flag to allow overriding experiments while integrating with Optimizely
 * add: support for survey lifecycle events

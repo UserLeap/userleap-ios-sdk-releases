@@ -29,6 +29,7 @@ import _StringProcessing
   @objc func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc func setUserIdentifier(_ identifier: Swift.String)
   @objc func setPartnerAnonymousId(_ identifier: Swift.String)
+  @objc func setPreviewKey(_ previewKey: Swift.String)
   @objc func logout()
 }
 @objc public protocol SprigPresentationAPI {
@@ -99,6 +100,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class UserLeap : ObjectiveC.NSObject {
   @objc public static let shared: UserLeapKit.UserLeap
   @objc public var disableNetworkAccess: Swift.Bool
+  @objc public static let previewKeyName: Swift.String
   @objc public var visitorIdentifier: Foundation.NSNumber? {
     @objc get
   }
@@ -130,6 +132,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
   @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
+  @objc dynamic public func setPreviewKey(_ previewKey: Swift.String)
   @objc dynamic public func logout()
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {

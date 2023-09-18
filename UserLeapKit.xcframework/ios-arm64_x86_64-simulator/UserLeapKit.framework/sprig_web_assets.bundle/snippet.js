@@ -35,11 +35,30 @@ function handleSurveyCallback(surveyState, callbackId) {
         Sprig('addListener', 'survey.appeared', surveyReadyCallback);
     }
 }
+
+// Function to get the background property
+function getBackgroundColor(cssString, selector) {
+    const hexColorRegex = /^#([0-9A-F]{3}){1,2}$/i;
+    const cssRegex = new RegExp(`${selector}\\s*{[^}]*background\\s*:\\s*([^;}]+)`, 'i');
+
+    const match = cssString.match(cssRegex);
+
+    if (match?.[1]) {
+        const backgroundColor = match[1].trim();
+        if (hexColorRegex.test(backgroundColor)) {
+            return backgroundColor;
+        }
+    }
+
+    // Return a default value if not found or not a valid hex color
+    return '#ffffff';
+}
+
 Sprig('addListener', 'visitor.id.updated', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'visitorIdUpdated', visitorId: payload.visitorId});
 });
 Sprig('addListener', 'sdk.ready', () => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'sdkReady'});
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'sdkReady', cardBgColor: getBackgroundColor(S._config.customStyles, '.ul-card__container') });
 });
 Sprig('addListener', 'survey.height', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'setHeight', height: payload.contentFrameHeight.toString() });
