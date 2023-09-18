@@ -293,6 +293,8 @@ SWIFT_CLASS("_TtC11UserLeapKit8UserLeap")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserLeap * _Nonnull shared;)
 + (UserLeap * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) BOOL disableNetworkAccess;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull previewKeyName;)
++ (NSString * _Nonnull)previewKeyName SWIFT_WARN_UNUSED_RESULT;
 /// The user identifier used internally by UserLeap
 @property (nonatomic, readonly, strong) NSNumber * _Nullable visitorIdentifier;
 @property (nonatomic, readonly, copy) NSString * _Nullable visitorIdentifierString;
@@ -372,6 +374,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
 /// Sets a partner integration’s anonymous id
 - (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
+- (void)setPreviewKey:(NSString * _Nonnull)previewKey;
 /// Clear the current user state and resets the visitor id
 - (void)logout;
 @end
@@ -415,6 +418,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// The survey request has been disabled.
   SurveyStateDisabled = 2,
 };
+
 
 
 
@@ -497,6 +501,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
 - (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
+- (void)setPreviewKey:(NSString * _Nonnull)previewKey;
 /// Clear the current user state
 - (void)logout;
 @end
@@ -804,6 +809,8 @@ SWIFT_CLASS("_TtC11UserLeapKit8UserLeap")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserLeap * _Nonnull shared;)
 + (UserLeap * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) BOOL disableNetworkAccess;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull previewKeyName;)
++ (NSString * _Nonnull)previewKeyName SWIFT_WARN_UNUSED_RESULT;
 /// The user identifier used internally by UserLeap
 @property (nonatomic, readonly, strong) NSNumber * _Nullable visitorIdentifier;
 @property (nonatomic, readonly, copy) NSString * _Nullable visitorIdentifierString;
@@ -883,6 +890,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
 /// Sets a partner integration’s anonymous id
 - (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
+- (void)setPreviewKey:(NSString * _Nonnull)previewKey;
 /// Clear the current user state and resets the visitor id
 - (void)logout;
 @end
@@ -926,6 +934,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// The survey request has been disabled.
   SurveyStateDisabled = 2,
 };
+
 
 
 
@@ -1008,6 +1017,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
 - (void)setPartnerAnonymousId:(NSString * _Nonnull)identifier;
+- (void)setPreviewKey:(NSString * _Nonnull)previewKey;
 /// Clear the current user state
 - (void)logout;
 @end
