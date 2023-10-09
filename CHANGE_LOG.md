@@ -4,6 +4,11 @@
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
 ### pre-release
+
+### 4.19.2
+* fix: calling track() from background thread would sporadically cause a SIGSEGV
+* chore: still on web sdk 2.24.4
+
 ### 4.19.1
 * fix: `setPreviewKey` was not working because of old web sdk version
 * chore: update web sdk to 2.24.4
