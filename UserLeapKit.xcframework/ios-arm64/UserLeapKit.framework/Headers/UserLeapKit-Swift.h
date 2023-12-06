@@ -272,6 +272,7 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventSurveyAppeared = 6,
   LifecycleEventSurveyWillClose = 7,
   LifecycleEventSurveyClosed = 8,
+  LifecycleEventReplayCapture = 9,
 };
 
 
@@ -305,6 +306,7 @@ SWIFT_CLASS("_TtC11UserLeapKit5Sprig")
 @interface Sprig : UserLeap
 @end
 
+@class SprigAPIResult;
 
 SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 @protocol SprigAPI
@@ -368,6 +370,28 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 - (void)setVisitorAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
 /// Set attributes and identify with user id and/or partnerAnonymousId
 - (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId;
+/// Async set for attributes with user id and/or partnerAnonymousId, returning a SprigAPIResult object.
+/// \param attributes Dictionaty of the visitor attributes to be set. Only String, Bool, Double and Int
+/// are accepted as valid attributes.
+///
+/// \param userId The optional userId to identify visitor as an authenticated user at the same time.
+///
+/// \param partnerAnonymousId The optional id coming from partner integration.
+///
+///
+/// returns:
+/// SprigAPIResult containing success/failure value and any error messsage.
+- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Async set for an attribute with user id and/or partnerAnonymousId, returning a SprigAPIResult object.
+/// \param key Key for the visitor attribute being passed.
+///
+/// \param value Value for the visitor attribute being passed. Only String, Bool, Double and Int
+/// are accepted as valid attributes.
+///
+///
+/// returns:
+/// SprigAPIResult containing success/failure value and any error messsage.
+- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
 /// Remove multiple attributes
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets an external user id for the visitor
@@ -378,6 +402,30 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 /// Clear the current user state and resets the visitor id
 - (void)logout;
 @end
+
+enum SprigAPIResultStatus : NSInteger;
+
+/// SprigAPIResult encapsulates the result of a Sprig API call.
+/// <ul>
+///   <li>
+///     resultStatus can be quickly checked to determine if the call was successfull or not.
+///   </li>
+///   <li>
+///     errorMessage will contain an error message if one has been returned from the service.
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC11UserLeapKit14SprigAPIResult")
+@interface SprigAPIResult : NSObject
+@property (nonatomic) enum SprigAPIResultStatus resultStatus;
+@property (nonatomic, copy) NSString * _Nullable errorMessage;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, SprigAPIResultStatus, open) {
+  SprigAPIResultStatusSuccess = 0,
+  SprigAPIResultStatusFailure = 1,
+};
 
 
 SWIFT_PROTOCOL("_TtP11UserLeapKit29SprigOptimizelyIntegrationAPI_")
@@ -407,6 +455,8 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
 /// \param completion Invoked when survey questions have been fetched and it is about to present it
 ///
 - (void)presentSurveyWithId:(NSInteger)surveyId from:(UIViewController * _Nonnull)viewController fetchCompletion:(void (^ _Nullable)(void))fetchCompletion;
+/// Dismisses the active survey.
+- (void)dismissActiveSurvey;
 @end
 
 /// An enum that indicates whether a survey is ready to be displayed.
@@ -431,6 +481,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 @end
 
 
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
+@end
+
+
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
@@ -451,12 +507,8 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// \param viewController The view controller from which to present the survey.
 ///
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
-@end
-
-
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
-- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
-- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
+/// Dismisses the active survey.
+- (void)dismissActiveSurvey;
 @end
 
 
@@ -497,6 +549,40 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)setVisitorAttributeWithKey:(NSString * _Nonnull)key boolValue:(BOOL)boolValue;
 - (void)setVisitorAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
 - (void)setVisitorAttributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId;
+/// Sets the passed attributes on the visitor.
+/// Allowed attribute value types are:
+/// <ul>
+///   <li>
+///     String
+///   </li>
+///   <li>
+///     Bool
+///   </li>
+///   <li>
+///     Int
+///   </li>
+///   <li>
+///     Double
+///   </li>
+/// </ul>
+- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Sets the passed attribute on the visitor.
+/// Allowed attribute value types are:
+/// <ul>
+///   <li>
+///     String
+///   </li>
+///   <li>
+///     Bool
+///   </li>
+///   <li>
+///     Int
+///   </li>
+///   <li>
+///     Double
+///   </li>
+/// </ul>
+- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
