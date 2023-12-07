@@ -57,8 +57,11 @@ function getBackgroundColor(cssString, selector) {
 Sprig('addListener', 'visitor.id.updated', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'visitorIdUpdated', visitorId: payload.visitorId});
 });
-Sprig('addListener', 'sdk.ready', () => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'sdkReady', cardBgColor: getBackgroundColor(S._config.customStyles, '.ul-card__container') });
+Sprig('addListener', 'sdk.ready', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'sdkReady', maxMobileReplayDurationSeconds: JSON.stringify(payload.maxMobileReplayDurationSeconds), mobileReplaySettings: JSON.stringify(payload.mobileReplaySettings), cardBgColor: getBackgroundColor(S._config.customStyles, '.ul-card__container') });
+});
+Sprig('addListener', 'replay.capture', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'replayCapture', responseGroupUid: payload.responseGroupUid, hasQuestions: JSON.stringify(payload.hasQuestions), surveyId: JSON.stringify(payload.surveyId), uploadId: payload.uploadId, replayType: payload.type, seconds: JSON.stringify(payload.seconds), uploadUrl: payload.uploadUrl, generateVideoUploadUrlPayload: JSON.stringify(payload.generateVideoUploadUrlPayload) });
 });
 Sprig('addListener', 'survey.height', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'setHeight', height: payload.contentFrameHeight.toString() });
