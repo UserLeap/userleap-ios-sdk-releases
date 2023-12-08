@@ -10,6 +10,20 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+@_hasMissingDesignatedInitializers @objc public class SprigAPIResult : ObjectiveC.NSObject {
+  @objc public enum SprigAPIResultStatus : Swift.Int {
+    case success
+    case failure
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public var resultStatus: UserLeapKit.SprigAPIResult.SprigAPIResultStatus
+  @objc public var errorMessage: Swift.String?
+  @objc deinit
+}
 @objc public protocol SprigAPI {
   @objc func configure(withEnvironment environment: Swift.String)
   @objc func configure(withEnvironment environment: Swift.String, configuration: [Swift.String : Any]?)
@@ -26,6 +40,14 @@ import _StringProcessing
   @objc func setVisitorAttribute(key: Swift.String, intValue: Swift.Int)
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Any])
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0, *)
+  @objc func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0, *)
+  @objc func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
+  #endif
   @objc func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc func setUserIdentifier(_ identifier: Swift.String)
   @objc func setPartnerAnonymousId(_ identifier: Swift.String)
@@ -38,6 +60,7 @@ import _StringProcessing
   @objc func trackAndPresent(payload: UserLeapKit.EventPayload, from viewController: UIKit.UIViewController)
   @objc func presentSurvey(from viewController: UIKit.UIViewController)
   @objc func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)?)
+  @objc func dismissActiveSurvey()
 }
 @objc public class SGOptimizelyExperiment : ObjectiveC.NSObject, Swift.Codable {
   @objc public init(id: Swift.String, variation: Swift.String)
@@ -84,6 +107,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case surveyAppeared
   case surveyWillClose
   case surveyClosed
+  case replayCapture
   public var stringValue: Swift.String {
     get
   }
@@ -129,6 +153,14 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func setVisitorAttribute(key: Swift.String, boolValue: Swift.Bool)
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Any])
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0, *)
+  @objc dynamic public func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13.0, *)
+  @objc dynamic public func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
+  #endif
   @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
   @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
@@ -144,11 +176,15 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
   @objc dynamic public func presentDebugSurvey(from viewController: UIKit.UIViewController)
+  @objc dynamic public func dismissActiveSurvey()
 }
 extension UserLeapKit.UserLeap {
   @objc dynamic public func registerEventListener(for eventType: UserLeapKit.LifecycleEvent, listener: @escaping (Swift.Dictionary<Swift.String, Swift.String>) -> Swift.Void)
   @objc dynamic public func unregisterAllEventListeners(for eventType: UserLeapKit.LifecycleEvent)
 }
+extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.Equatable {}
+extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.Hashable {}
+extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.RawRepresentable {}
 extension UserLeapKit.SurveyState : Swift.Equatable {}
 extension UserLeapKit.SurveyState : Swift.Hashable {}
 extension UserLeapKit.SurveyState : Swift.RawRepresentable {}
