@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreGraphics
 import Foundation
 import Swift
@@ -9,7 +8,6 @@ import UIKit
 @_exported import UserLeapKit
 import WebKit
 import _Concurrency
-import _StringProcessing
 @_hasMissingDesignatedInitializers @objc public class SprigAPIResult : ObjectiveC.NSObject {
   @objc public enum SprigAPIResultStatus : Swift.Int {
     case success
@@ -40,14 +38,18 @@ import _StringProcessing
   @objc func setVisitorAttribute(key: Swift.String, intValue: Swift.Int)
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Any])
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
+  
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0, *)
   @objc func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
   #endif
+
+  
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0, *)
   @objc func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
   #endif
+
   @objc func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc func setUserIdentifier(_ identifier: Swift.String)
   @objc func setPartnerAnonymousId(_ identifier: Swift.String)
@@ -153,14 +155,18 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func setVisitorAttribute(key: Swift.String, boolValue: Swift.Bool)
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Any])
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
+  
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0, *)
   @objc dynamic public func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
   #endif
+
+  
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13.0, *)
   @objc dynamic public func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
   #endif
+
   @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
   @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
