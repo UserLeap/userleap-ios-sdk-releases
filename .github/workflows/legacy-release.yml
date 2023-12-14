@@ -28,11 +28,6 @@ jobs:
 
       - name: Create release
         run: bash ./scripts/tag-and-release.sh release ${{ secrets.GH_TOKEN }} ${{ steps.get-version.outputs.version }}
-      
-      - name: Push to Cocoapod
-        env: 
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.POD_TRUNK_TOKEN }}
-        run: pod trunk push UserLeapKit.podspec
 
       - name: Close pull request
         uses: peter-evans/close-pull@v2
