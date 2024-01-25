@@ -37,19 +37,24 @@ function handleSurveyCallback(surveyState, callbackId) {
 }
 
 // Function to get the background property
-function getBackgroundColor(cssString, selector) {
-    const hexColorRegex = /^#([0-9A-F]{3}){1,2}$/i;
-    const cssRegex = new RegExp(`${selector}\\s*{[^}]*background\\s*:\\s*([^;}]+)`, 'i');
+function getBackgroundColor(selector, cssString = '') {
+    try {
+        if (cssString && typeof cssString === 'string') {
+            const hexColorRegex = /^#([0-9A-F]{3}){1,2}$/i;
+            const cssRegex = new RegExp(`${selector}\\s*{[^}]*background\\s*:\\s*([^;}]+)`, 'i');
 
-    const match = cssString.match(cssRegex);
+            const match = cssString.match(cssRegex);
 
-    if (match?.[1]) {
-        const backgroundColor = match[1].trim();
-        if (hexColorRegex.test(backgroundColor)) {
-            return backgroundColor;
+            if (match?.[1]) {
+                const backgroundColor = match[1].trim();
+                if (hexColorRegex.test(backgroundColor)) {
+                    return backgroundColor;
+                }
+            }
         }
+    } catch (e) {
+        console.log('Failed to get backgroundColor', e);
     }
-
     // Return a default value if not found or not a valid hex color
     return '#ffffff';
 }
@@ -58,10 +63,10 @@ Sprig('addListener', 'visitor.id.updated', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'visitorIdUpdated', visitorId: payload.visitorId});
 });
 Sprig('addListener', 'sdk.ready', (payload) => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'sdkReady', maxMobileReplayDurationSeconds: JSON.stringify(payload.maxMobileReplayDurationSeconds), mobileReplaySettings: JSON.stringify(payload.mobileReplaySettings), cardBgColor: getBackgroundColor(S._config.customStyles, '.ul-card__container') });
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'sdkReady', maxMobileReplayDurationSeconds: JSON.stringify(payload.maxMobileReplayDurationSeconds), mobileReplaySettings: JSON.stringify(payload.mobileReplaySettings), cardBgColor: getBackgroundColor('.ul-card__container', S._config.customStyles) });
 });
 Sprig('addListener', 'replay.capture', (payload) => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'replayCapture', responseGroupUid: payload.responseGroupUid, hasQuestions: JSON.stringify(payload.hasQuestions), surveyId: JSON.stringify(payload.surveyId), uploadId: payload.uploadId, replayType: payload.type, seconds: JSON.stringify(payload.seconds), uploadUrl: payload.uploadUrl, generateVideoUploadUrlPayload: JSON.stringify(payload.generateVideoUploadUrlPayload) });
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'replayCapture', responseGroupUid: payload.responseGroupUid, hasQuestions: JSON.stringify(payload.hasQuestions), surveyId: JSON.stringify(payload.surveyId), uploadId: payload.uploadId, replayType: payload.replayType, seconds: JSON.stringify(payload.seconds), uploadUrl: payload.uploadUrl, generateVideoUploadUrlPayload: payload.generateVideoUploadUrlPayload });
 });
 Sprig('addListener', 'survey.height', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'setHeight', height: payload.contentFrameHeight.toString() });
