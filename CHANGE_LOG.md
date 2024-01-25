@@ -4,15 +4,20 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### 4.20.2
+
+- add: `x-ul-package-version` header to report mobile SDK plugin versions
+- fix: set default `cssString` in getBackgroundColor to prevent regex match failing
+
 ### 4.20.1
 
 fix: Added missing JS files
 
 ### 4.20.0
 
-add: Added the method dismissActiveSurvey to enable dismissing of an active survey
-add: Added async methods for sending visitor attributes
-chore: Update LICENSE
+- add: Added the method dismissActiveSurvey to enable dismissing of an active survey
+- add: Added async methods for sending visitor attributes
+- chore: Update LICENSE
 
 ### 4.19.3
 
