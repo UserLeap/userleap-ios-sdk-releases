@@ -4,6 +4,12 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### 4.21.0
+
+- add: Session replays.
+- fix: Prevent config from happening if it has already been called.
+- fix: Escape single quotes in eventName.
+
 ### 4.20.2
 
 - add: `x-ul-package-version` header to report mobile SDK plugin versions
