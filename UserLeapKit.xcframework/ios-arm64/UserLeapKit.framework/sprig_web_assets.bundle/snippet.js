@@ -83,8 +83,8 @@ Sprig('addListener', 'survey.presented', (payload) => {
 Sprig('addListener', 'survey.appeared', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyAppeared' });
 });
-Sprig('addListener', 'survey.willClose', (status) => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillDismiss'});
+Sprig('addListener', 'survey.willClose', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillDismiss', initiator: payload['initiator'] });
 });
 Sprig('addListener', 'survey.closed', (status) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyClosed'});
@@ -108,3 +108,8 @@ Sprig.mobileIdentifyAndSetAttributes = (userId, partnerAnonymousId, attributes) 
     if (partnerAnonymousId) payload.anonymousId = partnerAnonymousId;
     Sprig('identifyAndSetAttributes', payload);
 }
+Sprig.mobileCompleteSessionReplay = async (surveyId, responseGroupUuid, eventDigest, stateId) => {
+    const result = await Sprig._completeSessionReplay({ surveyId: surveyId, responseGroupUuid: responseGroupUuid, eventDigest: eventDigest});
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'completeSessionReplayCallback', result: result, stateId: stateId});
+}
+
