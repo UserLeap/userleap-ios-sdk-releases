@@ -4,6 +4,10 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### 4.21.1
+
+- fix: Fix for endpoint issue.
+
 ### 4.21.0
 
 - add: Session replays.
