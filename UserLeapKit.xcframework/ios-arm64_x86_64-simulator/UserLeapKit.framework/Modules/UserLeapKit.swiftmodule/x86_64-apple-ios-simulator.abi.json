@@ -7145,231 +7145,238 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 1047,
+      "offset": 570,
+      "length": 23,
+      "value": "\"https:\/\/api.sprig.com\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
+      "kind": "StringLiteral",
+      "offset": 1029,
       "length": 19,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 1058,
+      "offset": 1040,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 1065,
+      "offset": 1047,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 1296,
+      "offset": 1278,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 1901,
+      "offset": 1883,
       "length": 36,
       "value": "\"Error making postData network call\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 1971,
+      "offset": 1953,
       "length": 91,
       "value": "\"Error received making network call. Error was: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 2052,
+      "offset": 2034,
       "length": 8,
       "value": "\"(none)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 2061,
+      "offset": 2043,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2732,
+      "offset": 2714,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2746,
+      "offset": 2728,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 2781,
+      "offset": 2763,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2798,
+      "offset": 2780,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2803,
+      "offset": 2785,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 2840,
+      "offset": 2822,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2857,
+      "offset": 2839,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 2892,
+      "offset": 2874,
       "length": 14,
       "value": "\"Received 404\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 2955,
+      "offset": 2937,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 3232,
+      "offset": 3214,
       "length": 24,
       "value": "\"x-ul-mobile-user-agent\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 3295,
+      "offset": 3277,
       "length": 25,
       "value": "\"x-ul-mobile-sdk-version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 3356,
+      "offset": 3338,
       "length": 18,
       "value": "\"x-ul-app-version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 3410,
+      "offset": 3392,
       "length": 17,
       "value": "\"x-ul-os-version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 3462,
+      "offset": 3444,
       "length": 21,
       "value": "\"x-ul-environment-id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 3516,
+      "offset": 3498,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 3539,
+      "offset": 3521,
       "length": 17,
       "value": "\"accept-language\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 3731,
+      "offset": 3713,
       "length": 26,
       "value": "\"x-ul-installation-method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "FloatLiteral",
-      "offset": 4514,
+      "offset": 4496,
       "length": 3,
       "value": "1.1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4766,
+      "offset": 4748,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "FloatLiteral",
-      "offset": 4796,
+      "offset": 4778,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4829,
+      "offset": 4811,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 4833,
+      "offset": 4815,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 4838,
+      "offset": 4820,
       "length": 9,
       "value": "\";q=\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 4846,
+      "offset": 4828,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 4877,
+      "offset": 4859,
       "length": 4,
       "value": "\", \""
     },
@@ -7488,70 +7495,77 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2327,
+      "offset": 2162,
+      "length": 14,
+      "value": "\"sdk\/1\/errors\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
+      "kind": "StringLiteral",
+      "offset": 2290,
       "length": 12,
       "value": "\"x-ul-error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2340,
+      "offset": 2303,
       "length": 28,
       "value": "\"userleap-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2361,
+      "offset": 2324,
       "length": 1,
       "value": "\"-error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2743,
+      "offset": 2706,
       "length": 20,
       "value": "\"An error occurred:\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2802,
+      "offset": 2765,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2817,
+      "offset": 2780,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2834,
+      "offset": 2797,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2861,
+      "offset": 2824,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2900,
+      "offset": 2863,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Managers\/SGLoggingMgr.swift",
       "kind": "StringLiteral",
-      "offset": 2932,
+      "offset": 2895,
       "length": 2,
       "value": "\"\""
     },
@@ -10707,92 +10721,99 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
+      "kind": "StringLiteral",
+      "offset": 992,
+      "length": 37,
+      "value": "\"\/2\/environments\/integrations\/upload\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1094,
+      "offset": 1066,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1313,
+      "offset": 1285,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1351,
+      "offset": 1323,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1750,
+      "offset": 1722,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "Dictionary",
-      "offset": 2255,
+      "offset": 2166,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "StringLiteral",
-      "offset": 2654,
+      "offset": 2565,
       "length": 8,
       "value": "\"upload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "StringLiteral",
-      "offset": 2665,
+      "offset": 2576,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "StringLiteral",
-      "offset": 2813,
+      "offset": 2724,
       "length": 101,
       "value": "\"Error converting JSON response to dictionary while fetching media upload URL in fetchMediaUploadURL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "StringLiteral",
-      "offset": 2948,
+      "offset": 2859,
       "length": 121,
       "value": "\"Payload: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "StringLiteral",
-      "offset": 2999,
+      "offset": 2910,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "StringLiteral",
-      "offset": 3002,
+      "offset": 2913,
       "length": 4,
       "value": "\" JSON Response: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "StringLiteral",
-      "offset": 3065,
+      "offset": 2976,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadUrlManager.swift",
       "kind": "StringLiteral",
-      "offset": 3068,
+      "offset": 2979,
       "length": 51,
       "value": "\"\""
     },
@@ -11088,7 +11109,7 @@
       "kind": "StringLiteral",
       "offset": 797,
       "length": 8,
-      "value": "\"4.21.0\""
+      "value": "\"4.21.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Network\/UserAgent.swift",
