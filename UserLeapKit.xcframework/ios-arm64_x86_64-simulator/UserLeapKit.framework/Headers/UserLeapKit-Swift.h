@@ -506,6 +506,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
 - (NSArray<SGOptimizelyExperiment *> * _Nonnull)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes isOverride:(BOOL)isOverride;
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
@@ -1129,6 +1130,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// The survey request has been disabled.
   SurveyStateDisabled = 2,
 };
+
 
 
 
