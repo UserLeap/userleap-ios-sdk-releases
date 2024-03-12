@@ -55,5 +55,6 @@
   "4.20.1": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.20.1.zip",
   "4.20.2": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.20.2.zip",
   "4.21.0": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.21.0.zip",
-  "4.21.1": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.21.1.zip"
+  "4.21.1": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.21.1.zip",
+  "4.21.2-legacy": "https://github.com/UserLeap/userleap-ios-sdk-releases/archive/4.21.2-legacy.zip"
 }
