@@ -4,6 +4,10 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### 4.21.3
+
+- fix: Revert top level UIViewController check.
+
 ### 4.21.2
 
 - fix: Small bug fixes.
