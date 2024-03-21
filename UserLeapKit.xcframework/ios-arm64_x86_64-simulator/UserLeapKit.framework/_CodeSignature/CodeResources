@@ -22,15 +22,15 @@
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		PmjMQGiZTR7O3gJ6lN0bwtqjWr0=
+		No5w90HdzeoAnyrieJ7jF2iT81k=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		58gwu4oBUz2hSdJHKGXj9qjEolk=
+		paBPh3ew2eY77W34ChPXNbvykqc=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ep5DFw+jE8dPX6NUSWS5iICH/Q4=
+		lDLtCKpXAuPe067qGM2Oa/JN0xM=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nDih6MI4QP8ldbwfUTB3otzuydo=
+		sRqysyP7+ug3C4c90vj1qb3O5Ew=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ep5DFw+jE8dPX6NUSWS5iICH/Q4=
+		lDLtCKpXAuPe067qGM2Oa/JN0xM=
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,11 +66,15 @@
 		</data>
 		<key>Modules/UserLeapKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		v9dd6tSGtxAurgmGMgSyymHiFKo=
+		wXU+CmSI0GLVrhlVnbJhTHEAFc4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		2HSaH4oL79U/XXIfDa3W/xY9op4=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		vbMrGx+LDZrzKdaM5adWrOTiFmg=
 		</data>
 		<key>SGProperties.plist</key>
 		<data>
@@ -120,21 +124,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nzVSpf1a2n6PmkfO06msposfbyDRfZlInFOB08hOGMQ=
+			MJy1tDw5VoBZd0g1i9dZgWa/EgyB2lc0LYGS/G+I5tk=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IAhko+IWtllXsHvaaFI8YTBDUtiV4dBymtIBVn+gs/k=
+			16wJYaPpheZeGHJVDjluUa1g7Vq00kINMzqpTaTaUpY=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c/5zCmilgI9yKkRMscMgpnaQNm4uUwmZCxrgr14GHuA=
+			0Tx9gSVC19qgLJkR0zqWhrMIirPA+M9pJ6hPcPVaGsY=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -162,14 +166,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j8BhoLuyTww7aXM3Rhrj71dlPHM+nWjE6RN/j0CDWQU=
+			U+h5ucSPfD+HyQ3UnzMBmXmnjsI70HoYbcgekaI36NM=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c/5zCmilgI9yKkRMscMgpnaQNm4uUwmZCxrgr14GHuA=
+			0Tx9gSVC19qgLJkR0zqWhrMIirPA+M9pJ6hPcPVaGsY=
 			</data>
 		</dict>
 		<key>Modules/UserLeapKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -197,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8k+8MwV6cd46xpi8strr/BJHYwp8e/Kt5Lu1ahcc8M=
+			MKED2wsWsviNzmM7I9e1L2fOJAJt1pap9at3Tt5bG5A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -205,6 +209,13 @@
 			<key>hash2</key>
 			<data>
 			s3tw6eXaWLKk2GkWXzKnPB2SaMu3P46dOAgeUObM0Mc=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			18pWRT+egrNCVrV81j8h5Ej9FyS/iuALDY0ogZ52hHE=
 			</data>
 		</dict>
 		<key>SGProperties.plist</key>
