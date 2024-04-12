@@ -431,6 +431,8 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 - (void)setPreviewKey:(NSString * _Nonnull)previewKey;
 /// Clear the current user state and resets the visitor id
 - (void)logout;
+/// Turn off session replays capture.
+- (void)turnOffSessionReplayCapture;
 @end
 
 enum SprigAPIResultStatus : NSInteger;
@@ -621,6 +623,8 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)setPreviewKey:(NSString * _Nonnull)previewKey;
 /// Clear the current user state
 - (void)logout;
+/// Turn off session replays capture.
+- (void)turnOffSessionReplayCapture;
 @end
 
 #endif

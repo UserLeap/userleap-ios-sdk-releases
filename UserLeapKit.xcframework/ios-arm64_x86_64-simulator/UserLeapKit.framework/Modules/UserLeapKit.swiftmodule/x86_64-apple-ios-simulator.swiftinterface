@@ -54,6 +54,7 @@ import _StringProcessing
   @objc func setPartnerAnonymousId(_ identifier: Swift.String)
   @objc func setPreviewKey(_ previewKey: Swift.String)
   @objc func logout()
+  @objc func turnOffSessionReplayCapture()
 }
 @objc public protocol SprigPresentationAPI {
   @objc func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
@@ -167,6 +168,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
   @objc dynamic public func setPreviewKey(_ previewKey: Swift.String)
   @objc dynamic public func logout()
+  @objc dynamic public func turnOffSessionReplayCapture()
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")

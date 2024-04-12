@@ -59,11 +59,20 @@ function getBackgroundColor(selector, cssString = '') {
     return '#ffffff';
 }
 
+const stringifyProps = (obj, excludeProps = [ 'type' ]) => {
+    const stringified = {};
+    for (const k of Object.keys(obj)) {
+        if (excludeProps.includes(k)) continue;
+        stringified[k] = JSON.stringify(obj[k]);
+    }
+    return stringified;
+};
+
 Sprig('addListener', 'visitor.id.updated', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'visitorIdUpdated', visitorId: payload.visitorId});
 });
 Sprig('addListener', 'sdk.ready', (payload) => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'sdkReady', maxMobileReplayDurationSeconds: JSON.stringify(payload.maxMobileReplayDurationSeconds), mobileReplaySettings: JSON.stringify(payload.mobileReplaySettings), cardBgColor: getBackgroundColor('.ul-card__container', S._config.customStyles) });
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'sdkReady', ...stringifyProps(payload), cardBgColor: getBackgroundColor('.ul-card__container', S._config.customStyles) });
 });
 Sprig('addListener', 'replay.capture', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'replayCapture', responseGroupUid: payload.responseGroupUid, hasQuestions: JSON.stringify(payload.hasQuestions), surveyId: JSON.stringify(payload.surveyId), uploadId: payload.uploadId, replayType: payload.replayType, seconds: JSON.stringify(payload.seconds), uploadUrl: payload.uploadUrl, generateVideoUploadUrlPayload: payload.generateVideoUploadUrlPayload });
