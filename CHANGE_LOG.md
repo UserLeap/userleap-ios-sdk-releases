@@ -4,6 +4,10 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### 4.21.5
+- add: Ability to turn off session replay capture.
+- fix: Duplicate event listener callbacks fixed.
+
 ### 4.21.4
 - add: Privacy Manifest.
 - fix: Added logic to dimiss active survey if it is never presented.
