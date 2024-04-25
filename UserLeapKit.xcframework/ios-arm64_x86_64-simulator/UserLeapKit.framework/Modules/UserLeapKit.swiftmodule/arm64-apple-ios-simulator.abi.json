@@ -6613,134 +6613,176 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
+      "kind": "Array",
+      "offset": 1105,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1141,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "FloatLiteral",
-      "offset": 1620,
+      "offset": 2209,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1727,
+      "offset": 2316,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1750,
+      "offset": 2339,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1933,
+      "offset": 2522,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2524,
+      "offset": 3113,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3930,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "FloatLiteral",
-      "offset": 3600,
+      "offset": 4249,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 3651,
+      "offset": 4300,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 5480,
+      "offset": 4720,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5151,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6322,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 5749,
+      "offset": 6975,
       "length": 51,
       "value": "\"UIApplication.shared.getMainWindow() returned nil\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 5834,
+      "offset": 7060,
       "length": 85,
       "value": "\"UIApplication.shared.getMainWindow() return nil while trying to capture screenshot.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 6053,
+      "offset": 7279,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "Array",
-      "offset": 6390,
+      "offset": 7616,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 6521,
+      "offset": 7747,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 7194,
+      "offset": 8485,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "Array",
-      "offset": 7562,
+      "offset": 8853,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8243,
+      "offset": 9658,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8273,
+      "offset": 9900,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8395,
+      "offset": 9945,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8632,
+      "offset": 10067,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10304,
       "length": 4,
       "value": "true"
     },
@@ -9358,58 +9400,93 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 25886,
+      "offset": 25784,
+      "length": 22,
+      "value": "\"mobileReplaySettings\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 26040,
       "length": 26,
       "value": "\"maxMainThreadThresholdMs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 26526,
+      "offset": 26680,
       "length": 13,
       "value": "\"cardBgColor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 26555,
+      "offset": 26709,
       "length": 9,
       "value": "\"#ffffff\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 26850,
+      "offset": 27004,
       "length": 11,
       "value": "\"setHeight\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 26933,
+      "offset": 27087,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 26957,
+      "offset": 27111,
       "length": 5,
       "value": "\"400\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27180,
+      "offset": 27334,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 27540,
+      "offset": 27694,
       "length": 6,
       "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 28029,
+      "length": 13,
+      "value": "\"maskClasses\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "StringLiteral",
+      "offset": 28075,
+      "length": 16,
+      "value": "\"maskSecureText\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "Array",
+      "offset": 28130,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 28162,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayUploaderService.swift",
@@ -10681,224 +10758,252 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 12743,
+      "offset": 12384,
+      "length": 77,
+      "value": "\"Image size was \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12418,
+      "length": 1,
+      "value": "\"x\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12438,
+      "length": 1,
+      "value": "\". Status was \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12460,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12817,
       "length": 44,
       "value": "\"startingTime in processSingleFrame was nil\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 12821,
+      "offset": 12895,
       "length": 44,
       "value": "\"startingTime in processSingleFrame was nil\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13074,
+      "offset": 13148,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13218,
+      "offset": 13292,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13317,
+      "offset": 13391,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13630,
+      "offset": 13704,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14616,
+      "offset": 14690,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 16590,
+      "offset": 16664,
       "length": 30,
       "value": "\"Could not create video track\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 16654,
+      "offset": 16728,
       "length": 100,
       "value": "\"Could not create video track with \""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 16707,
+      "offset": 16781,
       "length": 5,
       "value": "\" input URLs and an output URL of \""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 16752,
+      "offset": 16826,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16828,
+      "offset": 16902,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 18234,
+      "offset": 18308,
       "length": 44,
       "value": "\"Error insertTimeRange while joining videos\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 18312,
+      "offset": 18386,
       "length": 105,
       "value": "\"Could not join videos with \""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 18358,
+      "offset": 18432,
       "length": 5,
       "value": "\" input URLs and an output URL of \""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 18403,
+      "offset": 18477,
       "length": 1,
       "value": "\". Error was: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18524,
+      "offset": 18598,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 18801,
+      "offset": 18875,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 18815,
+      "offset": 18889,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 19023,
+      "offset": 19097,
       "length": 59,
       "value": "\"VideoComposition renderSize was zero while joining videos\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 19092,
+      "offset": 19166,
       "length": 60,
       "value": "\"VideoComposition renderSize was zero while joining videos.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 19250,
+      "offset": 19324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 19509,
+      "offset": 19583,
       "length": 60,
       "value": "\"Could not create AVAssetExportSession while joining videos\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 19579,
+      "offset": 19653,
       "length": 61,
       "value": "\"Could not create AVAssetExportSession while joining videos.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 19738,
+      "offset": 19812,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 21188,
+      "offset": 21262,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 22036,
+      "offset": 22110,
       "length": 25,
       "value": "\"FINISHED-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "StringLiteral",
-      "offset": 22056,
+      "offset": 22130,
       "length": 1,
       "value": "\".mp4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23246,
+      "offset": 23320,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23329,
+      "offset": 23403,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "Array",
-      "offset": 23514,
+      "offset": 23588,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayAssetManager.swift",
       "kind": "Array",
-      "offset": 23551,
+      "offset": 23625,
       "length": 2,
       "value": "[]"
     },
@@ -11348,7 +11453,7 @@
       "kind": "StringLiteral",
       "offset": 797,
       "length": 8,
-      "value": "\"4.21.5\""
+      "value": "\"4.21.6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Network\/UserAgent.swift",

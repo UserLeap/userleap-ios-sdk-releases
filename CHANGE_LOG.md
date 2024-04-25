@@ -4,6 +4,10 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### 4.21.6
+- add: Replays: Added the ability to mask views based on class names.
+- fix: Replays: Stop touch capture on keyboard when displaying.
+
 ### 4.21.5
 - add: Ability to turn off session replay capture.
 - fix: Duplicate event listener callbacks fixed.
