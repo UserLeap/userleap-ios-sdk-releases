@@ -4,6 +4,9 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### 4.21.8
+- fix: Added thread validation when calling track event.
+
 ### 4.21.7
 - add: Replays: Added the ability to change SPS in the server config.
 
