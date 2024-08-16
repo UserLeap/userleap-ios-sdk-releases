@@ -4,21 +4,32 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### prerelease
+
+### 4.21.9
+
+- fix: Moved survey delay to native code
+
 ### 4.21.8
+
 - fix: Added thread validation when calling track event.
 
 ### 4.21.7
-- add: Replays: Added the ability to change SPS in the server config.
+
+add: Replays: Added the ability to change SPS in the server config.
 
 ### 4.21.6
+
 - add: Replays: Added the ability to mask views based on class names.
 - fix: Replays: Stop touch capture on keyboard when displaying.
 
 ### 4.21.5
+
 - add: Ability to turn off session replay capture.
 - fix: Duplicate event listener callbacks fixed.
 
 ### 4.21.4
+
 - add: Privacy Manifest.
 - fix: Added logic to dimiss active survey if it is never presented.
 

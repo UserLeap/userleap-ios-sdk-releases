@@ -9,6 +9,7 @@ function configure(environmentId, mobileHeadersJSON) {
     S.config = {
         _API_URL: 'https://api.sprig.com',
         envId: environmentId,
+        isMobileSDK: true,
         controllerSDKURL: 'shim.js',
         viewSDKURL: 'view.js',
     };
@@ -19,17 +20,33 @@ function configure(environmentId, mobileHeadersJSON) {
     anchor.parentNode.insertBefore(script, anchor);
 }
 
-function handleSurveyCallback(surveyState, callbackId) {
+function handleSurveyCallback(result, callbackId) {
     // no survey handler but the survey is shown
     if (!callbackId) {
         Sprig.dismissActiveSurvey()
         return;
     }
+    const surveyState = result.surveyState;
+    const surveyDelay = result.delay || 0
     if (surveyState !== 'ready') {
-        window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyCallback', callbackId, surveyState});
+        window.webkit.messageHandlers.sprigWebController.postMessage(
+            {
+                type: 'surveyCallback', 
+                callbackId, 
+                surveyState: surveyState,
+                delay: surveyDelay
+            }
+        );
     } else {
         const surveyReadyCallback = () => {
-            window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyCallback', callbackId, surveyState: 'ready'});
+            window.webkit.messageHandlers.sprigWebController.postMessage(
+                {
+                    type: 'surveyCallback', 
+                    callbackId, 
+                    surveyState: surveyState,
+                    delay: surveyDelay
+                }
+            );
             Sprig.removeListener('survey.appeared', surveyReadyCallback);
         };
         Sprig('addListener', 'survey.appeared', surveyReadyCallback);
@@ -104,12 +121,12 @@ Sprig.mobileTrackEvent = async (event, userId, partnerAnonymousId, properties, c
     if (partnerAnonymousId) payload.anonymousId = partnerAnonymousId;
     if (properties) payload.properties = properties;
     const result = await Sprig.identifyAndTrack(payload);
-    handleSurveyCallback(result.surveyState, callbackId);
+    handleSurveyCallback(result, callbackId);
 }
 Sprig.mobileDisplaySurvey = async (surveyId, callbackId) => {
     Sprig.dismissActiveSurvey();
     const result = await Sprig.displaySurvey(surveyId);
-    handleSurveyCallback(result.surveyState, callbackId);
+    handleSurveyCallback(result, callbackId);
 }
 Sprig.mobileIdentifyAndSetAttributes = (userId, partnerAnonymousId, attributes) => {
     const payload = { attributes };
@@ -117,8 +134,8 @@ Sprig.mobileIdentifyAndSetAttributes = (userId, partnerAnonymousId, attributes) 
     if (partnerAnonymousId) payload.anonymousId = partnerAnonymousId;
     Sprig('identifyAndSetAttributes', payload);
 }
-Sprig.mobileCompleteSessionReplay = async (surveyId, responseGroupUuid, eventDigest, stateId) => {
+Sprig.mobileCompleteSessionReplay = async (surveyId, responseGroupUuid, eventDigest) => {
     const result = await Sprig._completeSessionReplay({ surveyId: surveyId, responseGroupUuid: responseGroupUuid, eventDigest: eventDigest});
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'completeSessionReplayCallback', result: result, stateId: stateId});
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'completeSessionReplayCallback', result: result, responseGroupUuid: responseGroupUuid});
 }
 

@@ -1,16 +1,21 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
 import AVKit
 import CoreGraphics
 import Foundation
+import MapKit
 import Swift
 import UIKit
 @_exported import UserLeapKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+extension CoreGraphics.CGContext {
+  public func drawFlipped(image: CoreGraphics.CGImage, rect: CoreFoundation.CGRect)
+}
 @_hasMissingDesignatedInitializers @objc public class SprigAPIResult : ObjectiveC.NSObject {
   @objc public enum SprigAPIResultStatus : Swift.Int {
     case success
@@ -25,6 +30,8 @@ import _StringProcessing
   @objc public var errorMessage: Swift.String?
   @objc deinit
 }
+public typealias SprigSessionReplaySendApprovalBlock = ((_ approve: Swift.Bool) -> Swift.Void)
+public typealias SprigSessionReplayApprovalBlock = ((_ sendApprovalBlock: (_ approve: Swift.Bool) -> Swift.Void) -> Swift.Void)
 @objc public protocol SprigAPI {
   @objc func configure(withEnvironment environment: Swift.String)
   @objc func configure(withEnvironment environment: Swift.String, configuration: [Swift.String : Any]?)
@@ -42,11 +49,9 @@ import _StringProcessing
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Any])
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
   #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 13.0, *)
   @objc func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 13.0, *)
   @objc func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
   #endif
   @objc func removeVisitorAttributes(_ attributes: [Swift.String])
@@ -55,6 +60,7 @@ import _StringProcessing
   @objc func setPreviewKey(_ previewKey: Swift.String)
   @objc func logout()
   @objc func turnOffSessionReplayCapture()
+  @objc func setSessionReplayApprovalBlock(replayApprovalBlock: @escaping UserLeapKit.SprigSessionReplayApprovalBlock)
 }
 @objc public protocol SprigPresentationAPI {
   @objc func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
@@ -156,11 +162,9 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Any])
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
   #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 13.0, *)
   @objc dynamic public func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 13.0, *)
   @objc dynamic public func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
   #endif
   @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
@@ -169,6 +173,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func setPreviewKey(_ previewKey: Swift.String)
   @objc dynamic public func logout()
   @objc dynamic public func turnOffSessionReplayCapture()
+  @objc dynamic public func setSessionReplayApprovalBlock(replayApprovalBlock: @escaping UserLeapKit.SprigSessionReplayApprovalBlock)
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
