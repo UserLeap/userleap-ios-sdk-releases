@@ -411,7 +411,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 ///
 /// returns:
 /// SprigAPIResult containing success/failure value and any error message.
-- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler;
 /// Async set for an attribute with user id and/or partnerAnonymousId, returning a SprigAPIResult object.
 /// \param key Key for the visitor attribute being passed.
 ///
@@ -421,7 +421,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 ///
 /// returns:
 /// SprigAPIResult containing success/failure value and any error message.
-- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler;
 /// Remove multiple attributes
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets an external user id for the visitor
@@ -433,6 +433,12 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 - (void)logout;
 /// Turn off session replays capture.
 - (void)turnOffSessionReplayCapture;
+/// Sets a SprigSessionReplayApprovalBlock which will allow client apps to invoke the SprigSessionReplaySendApprovalBlock
+/// that is passed back to them with a value of true or false, indicating if they want the replay capture to proceeed.
+/// Use this if you want to approve a replay every time the SDK is told to start capturing screens for the replay
+/// by the Sprig services.
+/// Replays will happen automatically if this block is not set.
+- (void)setSessionReplayApprovalBlockWithReplayApprovalBlock:(void (^ _Nonnull)(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL)))replayApprovalBlock;
 @end
 
 enum SprigAPIResultStatus : NSInteger;
@@ -509,9 +515,16 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
 - (NSArray<SGOptimizelyExperiment *> * _Nonnull)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes isOverride:(BOOL)isOverride;
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
+@end
+
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 
@@ -536,12 +549,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 - (void)dismissActiveSurvey;
-@end
-
-
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
-- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
-- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 
@@ -598,7 +605,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///     Double
 ///   </li>
 /// </ul>
-- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler;
 /// Sets the passed attribute on the visitor.
 /// Allowed attribute value types are:
 /// <ul>
@@ -615,7 +622,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///     Double
 ///   </li>
 /// </ul>
-- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler;
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
@@ -625,6 +632,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)logout;
 /// Turn off session replays capture.
 - (void)turnOffSessionReplayCapture;
+/// Sets a SprigSessionReplayApprovalBlock which will allow client apps to invoke the SprigSessionReplaySendApprovalBlock
+/// that is passed back to them with a value of true or false, indicating if they want the replay capture to proceeed.
+/// Use this if you want to approve a replay every time the SDK is told to start capturing screens for the replay
+/// by the Sprig services.
+/// Replays will happen automatically if this block is not set.
+- (void)setSessionReplayApprovalBlockWithReplayApprovalBlock:(void (^ _Nonnull)(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL)))replayApprovalBlock;
 @end
 
 #endif
@@ -1048,7 +1061,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 ///
 /// returns:
 /// SprigAPIResult containing success/failure value and any error message.
-- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler;
 /// Async set for an attribute with user id and/or partnerAnonymousId, returning a SprigAPIResult object.
 /// \param key Key for the visitor attribute being passed.
 ///
@@ -1058,7 +1071,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 ///
 /// returns:
 /// SprigAPIResult containing success/failure value and any error message.
-- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler;
 /// Remove multiple attributes
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets an external user id for the visitor
@@ -1070,6 +1083,12 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 - (void)logout;
 /// Turn off session replays capture.
 - (void)turnOffSessionReplayCapture;
+/// Sets a SprigSessionReplayApprovalBlock which will allow client apps to invoke the SprigSessionReplaySendApprovalBlock
+/// that is passed back to them with a value of true or false, indicating if they want the replay capture to proceeed.
+/// Use this if you want to approve a replay every time the SDK is told to start capturing screens for the replay
+/// by the Sprig services.
+/// Replays will happen automatically if this block is not set.
+- (void)setSessionReplayApprovalBlockWithReplayApprovalBlock:(void (^ _Nonnull)(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL)))replayApprovalBlock;
 @end
 
 enum SprigAPIResultStatus : NSInteger;
@@ -1146,9 +1165,16 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
 - (NSArray<SGOptimizelyExperiment *> * _Nonnull)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes isOverride:(BOOL)isOverride;
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
+@end
+
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 
@@ -1173,12 +1199,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 - (void)dismissActiveSurvey;
-@end
-
-
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
-- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
-- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 
@@ -1235,7 +1255,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///     Double
 ///   </li>
 /// </ul>
-- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)setVisitorAttributesAsync:(NSDictionary<NSString *, id> * _Nonnull)attributes userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler;
 /// Sets the passed attribute on the visitor.
 /// Allowed attribute value types are:
 /// <ul>
@@ -1252,7 +1272,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 ///     Double
 ///   </li>
 /// </ul>
-- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)setVisitorAttributeAsyncWithKey:(NSString * _Nonnull)key value:(id _Nonnull)value completionHandler:(void (^ _Nonnull)(SprigAPIResult * _Nonnull))completionHandler;
 - (void)removeVisitorAttributes:(NSArray<NSString *> * _Nonnull)attributes;
 /// Sets the user identifier for this <code>UserLeap</code> visitor.
 - (void)setUserIdentifier:(NSString * _Nonnull)identifier;
@@ -1262,6 +1282,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)logout;
 /// Turn off session replays capture.
 - (void)turnOffSessionReplayCapture;
+/// Sets a SprigSessionReplayApprovalBlock which will allow client apps to invoke the SprigSessionReplaySendApprovalBlock
+/// that is passed back to them with a value of true or false, indicating if they want the replay capture to proceeed.
+/// Use this if you want to approve a replay every time the SDK is told to start capturing screens for the replay
+/// by the Sprig services.
+/// Replays will happen automatically if this block is not set.
+- (void)setSessionReplayApprovalBlockWithReplayApprovalBlock:(void (^ _Nonnull)(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL)))replayApprovalBlock;
 @end
 
 #endif
