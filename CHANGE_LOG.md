@@ -6,9 +6,13 @@
 
 ### prerelease
 
+### 4.22.0
+
+- add: Rerelease Session Replays. 
+
 ### 4.21.9
 
-- fix: Moved survey delay to native code
+- fix: Support survey delays greater than 2 seconds due to WebView limitations.
 
 ### 4.21.8
 
@@ -16,7 +20,7 @@
 
 ### 4.21.7
 
-add: Replays: Added the ability to change SPS in the server config.
+- add: Replays: Added the ability to change SPS in the server config.
 
 ### 4.21.6
 
