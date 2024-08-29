@@ -6,13 +6,15 @@
 
 ### prerelease
 
-### 4.22.0
+### 4.22.1
+- add: Fidelity enhancements for Session Replays.
 
-- add: Rerelease Session Replays. 
+### 4.22.0
+- add: Stability and performance enhancements for Session Replays.
 
 ### 4.21.9
 
-- fix: Support survey delays greater than 2 seconds due to WebView limitations.
+- fix: Support survey delays greater than 2 seconds due to WebView limitations
 
 ### 4.21.8
 

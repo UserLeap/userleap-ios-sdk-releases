@@ -13,9 +13,6 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-extension CoreGraphics.CGContext {
-  public func drawFlipped(image: CoreGraphics.CGImage, rect: CoreFoundation.CGRect)
-}
 @_hasMissingDesignatedInitializers @objc public class SprigAPIResult : ObjectiveC.NSObject {
   @objc public enum SprigAPIResultStatus : Swift.Int {
     case success
