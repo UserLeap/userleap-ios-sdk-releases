@@ -6,8 +6,12 @@
 
 ### prerelease
 
+### 4.22.2
+- add: Support for rendering of server images in session replays.
+- fix: Fix for crash when calling multiple SDK functions from background threads. 
+
 ### 4.22.1
-- add: Fidelity enhancements for Session Replays.
+- add: Session Replay fidelity enhancements around tinting symbols and text layout.
 
 ### 4.22.0
 - add: Stability and performance enhancements for Session Replays.
