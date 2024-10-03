@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.22.3
+- add: Check for available disk space before initiating session replay.
+
 ### 4.22.2
 - add: Support for rendering of server images in session replays.
 - fix: Fix for crash when calling multiple SDK functions from background threads. 
