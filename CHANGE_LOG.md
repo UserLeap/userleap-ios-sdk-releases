@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.23.0
+- add: Support for accordion display matrix questions.
+
 ### 4.22.3
 - add: Check for available disk space before initiating session replay.
 
