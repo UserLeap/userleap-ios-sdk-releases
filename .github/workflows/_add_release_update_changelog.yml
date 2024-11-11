@@ -11,6 +11,7 @@ on:
         required: true
         type: string
 
+jobs:
   create_new_version:
     runs-on: ubuntu-latest
     steps:
