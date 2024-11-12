@@ -2,12 +2,12 @@ name: Add iOS release to DB and Update changelog
 on:
   workflow_dispatch:
     inputs:
-      tag_name:
+      version:
         required: true
         type: string
   workflow_call:
     inputs:
-      tag_name:
+      version:
         required: true
         type: string
 jobs:
@@ -15,16 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Get tag
-        id: vars
-        run: echo "tag=$(echo "${{ inputs.tag_name }}" | awk -F'/v' '{print $2}')" >> $GITHUB_OUTPUT
       - name: Post New Version to API
         run: |
           RESPONSE=$(curl -s -w "\n%{http_code}" --request POST \
             --url https://api.sprig.com/internal/2/sdkRelease \
             --header 'Authorization: Bearer ${{ secrets.PROD_API_KEY }}' \
             --header 'Content-Type: application/json' \
-            --data "{ \"timestamp\": $(date +%s000), \"platform\": \"ios\", \"version\": \"${{ steps.vars.outputs.tag }}\" }")
+            --data "{ \"timestamp\": $(date +%s000), \"platform\": \"ios\", \"version\": \"${{ inputs.version }}\" }")
 
           HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
           BODY=$(echo "$RESPONSE" | head -n -1)
@@ -43,7 +40,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Update iOS ReadMe Changelog
         run: |
-          platformUrl="ios"
           curl --request PUT \
             --url https://dash.readme.com/api/v1/docs/ios-changelog \
             --header 'accept: application/json' \
