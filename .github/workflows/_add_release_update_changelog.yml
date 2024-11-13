@@ -1,0 +1,48 @@
+name: Add iOS release to DB and Update changelog
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        required: true
+        type: string
+  workflow_call:
+    inputs:
+      version:
+        required: true
+        type: string
+jobs:
+  create_new_version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Post New Version to API
+        run: |
+          RESPONSE=$(curl -s -w "\n%{http_code}" --request POST \
+            --url https://api.sprig.com/internal/2/sdkRelease \
+            --header 'Authorization: Bearer ${{ secrets.PROD_API_KEY }}' \
+            --header 'Content-Type: application/json' \
+            --data "{ \"timestamp\": $(date +%s000), \"platform\": \"ios\", \"version\": \"${{ inputs.version }}\" }")
+
+          HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | head -n -1)
+
+          echo "HTTP Status: $HTTP_STATUS"
+          echo "Response Body: $BODY"
+
+          if [[ "$HTTP_STATUS" != "200" ]]; then
+            echo "API call failed, issue with updating SdkVersion in postgres"
+            exit 1
+          fi
+
+  update_readme_docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update iOS ReadMe Changelog
+        run: |
+          curl --request PUT \
+            --url https://dash.readme.com/api/v1/docs/ios-changelog \
+            --header 'accept: application/json' \
+            --header 'authorization: Basic ${{ secrets.README_API_KEY }}' \
+            --header 'content-type: application/json' \
+            --data "$(printf '{"body": %s}' "$(awk '/^### prerelease/{p=1; next} /^### v[^[:space:]]/{p=0} !p' ./CHANGE_LOG.md | jq -s -R -r @json -c)")"
