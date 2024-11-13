@@ -45,4 +45,4 @@ jobs:
             --header 'accept: application/json' \
             --header 'authorization: Basic ${{ secrets.README_API_KEY }}' \
             --header 'content-type: application/json' \
-            --data "$(printf '{"body": %s}' "$(awk '/^### prerelease/{p=1; next} /^### v[^[:space:]]/{p=0} !p' ./CHANGE_LOG.md | jq -s -R -r @json -c)")"
+            --data "$(printf '{"body": %s}' "$(awk '/^### prerelease/{p=1; next} /^### /{p=0} !p' ./CHANGE_LOG.md | jq -s -R -r @json -c)")"
