@@ -5262,9 +5262,17 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "_SGRNViewProperties",
-                "printedName": "UserLeapKit._SGRNViewProperties",
-                "usr": "c:@M@UserLeapKit@objc(cs)_SGRNViewProperties"
+                "name": "Optional",
+                "printedName": "UserLeapKit._SGRNViewProperties?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_SGRNViewProperties",
+                    "printedName": "UserLeapKit._SGRNViewProperties",
+                    "usr": "c:@M@UserLeapKit@objc(cs)_SGRNViewProperties"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -5275,7 +5283,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@UserLeapKit@objc(pl)_SGRNExtractor(im)propertiesFromView:",
-            "mangledName": "$s11UserLeapKit14_SGRNExtractorP14propertiesFrom4viewAA19_SGRNViewPropertiesCSo6UIViewC_tF",
+            "mangledName": "$s11UserLeapKit14_SGRNExtractorP14propertiesFrom4viewAA19_SGRNViewPropertiesCSgSo6UIViewC_tF",
             "moduleName": "UserLeapKit",
             "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit._SGRNExtractor>",
             "sugared_genericSig": "<Self where Self : UserLeapKit._SGRNExtractor>",
@@ -11276,126 +11284,126 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 783,
+      "offset": 784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "Dictionary",
-      "offset": 1179,
+      "offset": 1180,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1221,
+      "offset": 1222,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1760,
+      "offset": 1761,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 1816,
+      "offset": 1817,
       "length": 17,
       "value": "\"sprigPreviewKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "Dictionary",
-      "offset": 2460,
+      "offset": 2461,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 2771,
+      "offset": 2772,
       "length": 26,
       "value": "\"x-ul-installation-method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 12368,
+      "offset": 12369,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 12413,
+      "offset": 12414,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 12461,
+      "offset": 12462,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 12509,
+      "offset": 12510,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 12550,
+      "offset": 12551,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 13731,
+      "offset": 13732,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 15084,
+      "offset": 15085,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 18133,
+      "offset": 18134,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 18239,
+      "offset": 18240,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 18298,
+      "offset": 18299,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "Array",
-      "offset": 18854,
+      "offset": 18855,
       "length": 2,
       "value": "[]"
     },
@@ -13168,7 +13176,7 @@
       "kind": "StringLiteral",
       "offset": 864,
       "length": 8,
-      "value": "\"4.23.2\""
+      "value": "\"4.23.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Network\/UserAgent.swift",

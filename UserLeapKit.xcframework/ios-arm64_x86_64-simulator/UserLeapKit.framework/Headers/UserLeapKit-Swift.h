@@ -668,7 +668,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 SWIFT_PROTOCOL("_TtP11UserLeapKit14_SGRNExtractor_")
 @protocol _SGRNExtractor
 - (_SGRNTextProperties * _Nonnull)textPropertiesFromView:(UIView * _Nonnull)passedView SWIFT_WARN_UNUSED_RESULT;
-- (_SGRNViewProperties * _Nonnull)propertiesFromView:(UIView * _Nonnull)passedView SWIFT_WARN_UNUSED_RESULT;
+- (_SGRNViewProperties * _Nullable)propertiesFromView:(UIView * _Nonnull)passedView SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class UIColor;
@@ -1369,7 +1369,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 SWIFT_PROTOCOL("_TtP11UserLeapKit14_SGRNExtractor_")
 @protocol _SGRNExtractor
 - (_SGRNTextProperties * _Nonnull)textPropertiesFromView:(UIView * _Nonnull)passedView SWIFT_WARN_UNUSED_RESULT;
-- (_SGRNViewProperties * _Nonnull)propertiesFromView:(UIView * _Nonnull)passedView SWIFT_WARN_UNUSED_RESULT;
+- (_SGRNViewProperties * _Nullable)propertiesFromView:(UIView * _Nonnull)passedView SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class UIColor;

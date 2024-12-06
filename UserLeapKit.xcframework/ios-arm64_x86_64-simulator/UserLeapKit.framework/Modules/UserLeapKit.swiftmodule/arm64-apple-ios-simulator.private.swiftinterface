@@ -140,7 +140,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
 }
 @objc public protocol _SGRNExtractor {
   @objc func textPropertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNTextProperties
-  @objc func propertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNViewProperties
+  @objc func propertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNViewProperties?
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Sprig : UserLeapKit.UserLeap {
   @objc deinit
