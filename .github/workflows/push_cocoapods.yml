@@ -1,0 +1,10 @@
+name: Push to Cocoapods 
+
+jobs:
+  push-cocoapods:
+    runs-on: macOS-latest
+    steps:
+      - name: Push to Cocoapod
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.POD_TRUNK_TOKEN }}
+        run: pod trunk push UserLeapKit.podspec
