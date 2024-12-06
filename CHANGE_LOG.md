@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.23.3
+- fix: Interface fix.
+
 ### 4.23.2
 - add: Functionality for React Native iOS replays.
 
