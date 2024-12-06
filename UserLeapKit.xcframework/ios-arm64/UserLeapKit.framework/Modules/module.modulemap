@@ -1,7 +1,7 @@
 framework module UserLeapKit {
   umbrella header "UserLeapKit.h"
-
   export *
+
   module * { export * }
 }
 
