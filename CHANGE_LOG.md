@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.23.2
+- add: Functionality for React Native iOS replays.
+
 ### 4.23.1
 - fix: Fix for threading issue triggered by config being called multiple times.
 

@@ -3,6 +3,14 @@ window.Sprig = function() {
 };
 let S = window.Sprig;
 S._queue = [];
+window.SprigLoggerCallback = function(message) {
+  window.webkit.messageHandlers.sprigWebController.postMessage(
+    {
+        type: 'logger', 
+        message
+    }
+);
+};
 
 function configure(environmentId, mobileHeadersJSON) {
     S.mobileHeadersJSON = mobileHeadersJSON;
@@ -137,8 +145,3 @@ Sprig.mobileIdentifyAndSetAttributes = (userId, partnerAnonymousId, attributes) 
     if (partnerAnonymousId) payload.anonymousId = partnerAnonymousId;
     Sprig('identifyAndSetAttributes', payload);
 }
-Sprig.mobileCompleteSessionReplay = async (surveyId, responseGroupUuid, eventDigest) => {
-    const result = await Sprig._completeSessionReplay({ surveyId: surveyId, responseGroupUuid: responseGroupUuid, eventDigest: eventDigest});
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'completeSessionReplayCallback', result: result, responseGroupUuid: responseGroupUuid});
-}
-
