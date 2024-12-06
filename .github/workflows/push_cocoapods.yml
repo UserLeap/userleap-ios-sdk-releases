@@ -6,6 +6,9 @@ jobs:
   push-cocoapods:
     runs-on: macOS-latest
     steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
       - name: Push to Cocoapod
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.POD_TRUNK_TOKEN }}
