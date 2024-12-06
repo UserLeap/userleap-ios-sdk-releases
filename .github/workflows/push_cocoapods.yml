@@ -1,4 +1,6 @@
 name: Push to Cocoapods 
+on:
+ workflow_dispatch:
 
 jobs:
   push-cocoapods:
