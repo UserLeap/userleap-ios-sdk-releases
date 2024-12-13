@@ -114,6 +114,12 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case surveyWillClose
   case surveyClosed
   case replayCapture
+  case replayCaptureStarted
+  case replayCaptureStopped
+  case replayCaptureCompleted
+  case replayRenderingCompleted
+  case replayUploadCompleted
+  case replayEventsUploadCompleted
   public var stringValue: Swift.String {
     get
   }

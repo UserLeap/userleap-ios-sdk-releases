@@ -322,6 +322,12 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventSurveyWillClose = 7,
   LifecycleEventSurveyClosed = 8,
   LifecycleEventReplayCapture = 9,
+  LifecycleEventReplayCaptureStarted = 10,
+  LifecycleEventReplayCaptureStopped = 11,
+  LifecycleEventReplayCaptureCompleted = 12,
+  LifecycleEventReplayRenderingCompleted = 13,
+  LifecycleEventReplayUploadCompleted = 14,
+  LifecycleEventReplayEventsUploadCompleted = 15,
 };
 
 
