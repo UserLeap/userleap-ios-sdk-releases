@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.23.5
+- add: Baseline support for SwiftUI in session replays.
+
 ### 4.23.4
 - fix: Fixed issues with session replays.
 
