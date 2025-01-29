@@ -126,6 +126,9 @@ Sprig('addListener', 'survey.willClose', (payload) => {
 Sprig('addListener', 'survey.closed', (status) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyClosed', surveyId: payload['survey.id'].toString()});
 });
+Sprig('addListener', 'question.answered', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'questionAnswered', surveyId: payload['survey.id'].toString()});
+});
 Sprig.mobileTrackEvent = async (event, userId, partnerAnonymousId, properties, callbackId) => {
     const payload = { eventName: event };
     if (userId) payload.userId = userId;
