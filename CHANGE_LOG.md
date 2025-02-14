@@ -6,8 +6,11 @@
 
 ### prerelease
 
+### 4.23.7
+- fix: Fix for session replays ignoring max duration value from server.
+
 ### 4.23.6
-- fix: Fix for session replays rendering issue.
+- fix: Fix for session replays capture issue where large amounts of text were causing replay capture to shut down in SwiftUI apps.
 
 ### 4.23.5
 - add: Baseline support for SwiftUI in session replays.
