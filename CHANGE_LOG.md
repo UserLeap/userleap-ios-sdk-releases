@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.23.8
+- fix: Fix for race condition that could potentially cause blank surveys.
+
 ### 4.23.7
 - fix: Fix for session replays ignoring max duration value from server.
 
