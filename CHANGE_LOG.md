@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.23.9
+- fix: Fix for bug that was keeping surveys displayed after the user tapped the close button.
+
 ### 4.23.8
 - fix: Fix for race condition that could potentially cause blank surveys.
 
