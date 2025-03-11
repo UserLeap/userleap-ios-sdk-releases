@@ -14136,7 +14136,7 @@
       "kind": "StringLiteral",
       "offset": 864,
       "length": 8,
-      "value": "\"4.23.8\""
+      "value": "\"4.23.9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Network\/UserAgent.swift",
