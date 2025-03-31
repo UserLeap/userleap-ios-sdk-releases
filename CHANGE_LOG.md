@@ -4,7 +4,9 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
-### prerelease
+### 4.23.10
+- add: Support for the new session replay privacy controls (basic / moderate / strict / mask classes / unmask classes).
+- fix: Fix for issue that was preventing surveys from displaying after calling track and then present.
 
 ### 4.23.9
 - fix: Fix for bug that was keeping surveys displayed after the user tapped the close button.
