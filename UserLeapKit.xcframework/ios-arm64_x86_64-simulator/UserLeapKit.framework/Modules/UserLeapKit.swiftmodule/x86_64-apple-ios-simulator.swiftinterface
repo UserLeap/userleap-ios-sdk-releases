@@ -111,6 +111,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case surveyWillPresent
   case surveyPresented
   case surveyAppeared
+  case surveyCloseRequested
   case surveyWillClose
   case surveyClosed
   case replayCapture

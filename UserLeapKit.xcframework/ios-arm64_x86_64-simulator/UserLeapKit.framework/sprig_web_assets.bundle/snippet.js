@@ -120,8 +120,11 @@ Sprig('addListener', 'survey.presented', (payload) => {
 Sprig('addListener', 'survey.appeared', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyAppeared', surveyId: payload['survey.id'].toString() });
 });
+Sprig('addListener', 'survey.closeRequested', (payload) => {
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyCloseRequested', initiator: payload['initiator'], surveyId: payload['survey.id'].toString() });
+});
 Sprig('addListener', 'survey.willClose', (payload) => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillDismiss', initiator: payload['initiator'], surveyId: payload['survey.id'].toString() });
+    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillClose', initiator: payload['initiator'], surveyId: payload['survey.id'].toString() });
 });
 Sprig('addListener', 'survey.closed', (status) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyClosed', surveyId: payload['survey.id'].toString()});
