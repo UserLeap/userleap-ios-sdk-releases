@@ -319,15 +319,16 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventSurveyWillPresent = 4,
   LifecycleEventSurveyPresented = 5,
   LifecycleEventSurveyAppeared = 6,
-  LifecycleEventSurveyWillClose = 7,
-  LifecycleEventSurveyClosed = 8,
-  LifecycleEventReplayCapture = 9,
-  LifecycleEventReplayCaptureStarted = 10,
-  LifecycleEventReplayCaptureStopped = 11,
-  LifecycleEventReplayCaptureCompleted = 12,
-  LifecycleEventReplayRenderingCompleted = 13,
-  LifecycleEventReplayUploadCompleted = 14,
-  LifecycleEventReplayEventsUploadCompleted = 15,
+  LifecycleEventSurveyCloseRequested = 7,
+  LifecycleEventSurveyWillClose = 8,
+  LifecycleEventSurveyClosed = 9,
+  LifecycleEventReplayCapture = 10,
+  LifecycleEventReplayCaptureStarted = 11,
+  LifecycleEventReplayCaptureStopped = 12,
+  LifecycleEventReplayCaptureCompleted = 13,
+  LifecycleEventReplayRenderingCompleted = 14,
+  LifecycleEventReplayUploadCompleted = 15,
+  LifecycleEventReplayEventsUploadCompleted = 16,
 };
 
 
@@ -546,12 +547,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
 @end
 
-
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
-- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
-- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
-@end
-
 @protocol _SGRNExtractor;
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
@@ -576,6 +571,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 - (void)dismissActiveSurvey;
 - (void)_passWithRnExtractor:(id <_SGRNExtractor> _Nonnull)extractor;
+@end
+
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 
@@ -1026,15 +1027,16 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventSurveyWillPresent = 4,
   LifecycleEventSurveyPresented = 5,
   LifecycleEventSurveyAppeared = 6,
-  LifecycleEventSurveyWillClose = 7,
-  LifecycleEventSurveyClosed = 8,
-  LifecycleEventReplayCapture = 9,
-  LifecycleEventReplayCaptureStarted = 10,
-  LifecycleEventReplayCaptureStopped = 11,
-  LifecycleEventReplayCaptureCompleted = 12,
-  LifecycleEventReplayRenderingCompleted = 13,
-  LifecycleEventReplayUploadCompleted = 14,
-  LifecycleEventReplayEventsUploadCompleted = 15,
+  LifecycleEventSurveyCloseRequested = 7,
+  LifecycleEventSurveyWillClose = 8,
+  LifecycleEventSurveyClosed = 9,
+  LifecycleEventReplayCapture = 10,
+  LifecycleEventReplayCaptureStarted = 11,
+  LifecycleEventReplayCaptureStopped = 12,
+  LifecycleEventReplayCaptureCompleted = 13,
+  LifecycleEventReplayRenderingCompleted = 14,
+  LifecycleEventReplayUploadCompleted = 15,
+  LifecycleEventReplayEventsUploadCompleted = 16,
 };
 
 
@@ -1253,12 +1255,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
 @end
 
-
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
-- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
-- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
-@end
-
 @protocol _SGRNExtractor;
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
@@ -1283,6 +1279,12 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 - (void)dismissActiveSurvey;
 - (void)_passWithRnExtractor:(id <_SGRNExtractor> _Nonnull)extractor;
+@end
+
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 
