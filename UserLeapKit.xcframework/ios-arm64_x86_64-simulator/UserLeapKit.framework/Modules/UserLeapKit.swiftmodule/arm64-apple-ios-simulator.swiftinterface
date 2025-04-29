@@ -206,7 +206,6 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @objc dynamic public func trackAndPresent(payload: UserLeapKit.EventPayload, from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
-  @objc dynamic public func presentDebugSurvey(from viewController: UIKit.UIViewController)
   @objc dynamic public func dismissActiveSurvey()
   @objc dynamic public func _pass(rnExtractor extractor: any UserLeapKit._SGRNExtractor)
 }

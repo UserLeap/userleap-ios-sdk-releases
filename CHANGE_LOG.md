@@ -4,9 +4,17 @@
 <!-- fix: A bug fix -->
 <!-- chore: Changes to the build process or auxiliary tools and libraries -->
 
+### prerelease
+
+
+### 4.24.0
+- add: Allow capturing of WKWebViews in session replays when unmasked.
+- fix: Prevent potential retain cycle if track event is called but config is never called.
+- fix: Fix for scenario where dismissing a second survey stops session replay capture triggered from an initial survey.
+
 ### 4.23.10
 - add: Support for the new session replay privacy controls (basic / moderate / strict / mask classes / unmask classes).
-- fix: Fix for issue that was preventing surveys from displaying after calling track and then present.
+- fix: Fix race condition which prevents surveys from displaying when calling presentSurvey after a delay
 
 ### 4.23.9
 - fix: Fix for bug that was keeping surveys displayed after the user tapped the close button.
