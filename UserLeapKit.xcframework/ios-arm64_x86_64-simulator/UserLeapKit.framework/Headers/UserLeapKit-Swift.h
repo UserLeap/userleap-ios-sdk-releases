@@ -542,6 +542,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
 - (NSArray<SGOptimizelyExperiment *> * _Nonnull)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes isOverride:(BOOL)isOverride;
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
@@ -565,10 +566,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// \param completion Invoked when survey questions have been fetched and it is about to present it
 ///
 - (void)presentSurveyWithId:(NSInteger)surveyId from:(UIViewController * _Nonnull)viewController fetchCompletion:(void (^ _Nullable)(void))fetchCompletion;
-/// Presents an example survey containing all the question types. Used for testing in debug.
-/// \param viewController The view controller from which to present the survey.
-///
-- (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 - (void)dismissActiveSurvey;
 - (void)_passWithRnExtractor:(id <_SGRNExtractor> _Nonnull)extractor;
 @end
@@ -1250,6 +1247,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 
 
 
+
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
 - (NSArray<SGOptimizelyExperiment *> * _Nonnull)integrateOptimizely:(NSObject * _Nonnull)optimizely userId:(NSString * _Nonnull)userId attributes:(NSDictionary<NSString *, id> * _Nonnull)attributes isOverride:(BOOL)isOverride;
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
@@ -1273,10 +1271,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// \param completion Invoked when survey questions have been fetched and it is about to present it
 ///
 - (void)presentSurveyWithId:(NSInteger)surveyId from:(UIViewController * _Nonnull)viewController fetchCompletion:(void (^ _Nullable)(void))fetchCompletion;
-/// Presents an example survey containing all the question types. Used for testing in debug.
-/// \param viewController The view controller from which to present the survey.
-///
-- (void)presentDebugSurveyFrom:(UIViewController * _Nonnull)viewController;
 - (void)dismissActiveSurvey;
 - (void)_passWithRnExtractor:(id <_SGRNExtractor> _Nonnull)extractor;
 @end
