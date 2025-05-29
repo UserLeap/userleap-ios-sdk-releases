@@ -1,12 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name UserLeapKit
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name UserLeapKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVFoundation
 import AVKit
 import CoreGraphics
 import Foundation
 import MapKit
+import Network
 import Swift
 import UIKit
 @_exported import UserLeapKit
@@ -28,8 +29,8 @@ import _SwiftConcurrencyShims
   @objc public var errorMessage: Swift.String?
   @objc deinit
 }
-public typealias SprigSessionReplaySendApprovalBlock = ((_ approve: Swift.Bool) -> Swift.Void)
-public typealias SprigSessionReplayApprovalBlock = ((_ sendApprovalBlock: (_ approve: Swift.Bool) -> Swift.Void) -> Swift.Void)
+public typealias SprigSessionReplaySendApprovalBlock = (_ approve: Swift.Bool) -> Swift.Void
+public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ approve: Swift.Bool) -> Swift.Void) -> Swift.Void
 @objc public protocol SprigAPI {
   @objc func configure(withEnvironment environment: Swift.String)
   @objc func configure(withEnvironment environment: Swift.String, configuration: [Swift.String : Any]?)
@@ -46,12 +47,8 @@ public typealias SprigSessionReplayApprovalBlock = ((_ sendApprovalBlock: (_ app
   @objc func setVisitorAttribute(key: Swift.String, intValue: Swift.Int)
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Any])
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
-  #if compiler(>=5.3) && $AsyncAwait
   @objc func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @objc func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
-  #endif
   @objc func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc func setUserIdentifier(_ identifier: Swift.String)
   @objc func setPartnerAnonymousId(_ identifier: Swift.String)
@@ -184,12 +181,8 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func setVisitorAttribute(key: Swift.String, boolValue: Swift.Bool)
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Any])
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
-  #if compiler(>=5.3) && $AsyncAwait
   @objc dynamic public func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @objc dynamic public func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
-  #endif
   @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
   @objc dynamic public func setPartnerAnonymousId(_ identifier: Swift.String)
@@ -204,6 +197,8 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
   @objc dynamic public func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
   @objc dynamic public func trackAndPresent(payload: UserLeapKit.EventPayload, from viewController: UIKit.UIViewController)
+  public func trackAndPresent(payload: UserLeapKit.EventPayload)
+  public func present()
   @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
   @objc dynamic public func dismissActiveSurvey()
