@@ -6,6 +6,12 @@
 
 ### prerelease
 
+### 4.24.1
+- add: Added new trackAndPresent and present public functions that allow client apps to present surveys without passing in a view controller.
+- add: Added retrying to configure the SDK when there is not initially connectivity.
+- add: Added respecting of content mode for images in session replays.
+- fix: Added masking of images captured by the device camera in session replays.
+- fix: Fixed issue that was preventing the passed block from being called when calling trackAndPresent.
 
 ### 4.24.0
 - add: Allow capturing of WKWebViews in session replays when unmasked.
