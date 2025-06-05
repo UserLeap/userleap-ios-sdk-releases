@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.24.2
+- add: Uploading of partial session replay clips after capture has been stopped due to time on main thread exceeding the threshold.
+
 ### 4.24.1
 - add: Added new trackAndPresent and present public functions that allow client apps to present surveys without passing in a view controller.
 - add: Added retrying to configure the SDK when there is not initially connectivity.
