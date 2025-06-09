@@ -6,6 +6,11 @@
 
 ### prerelease
 
+### 4.24.3
+- fix: Fix for issue where dismiss on page change was executed when the current view controller could not be retrieved.
+- fix: Fix for issue where two track events in rapid succession could cause a survey to dismiss.
+- fix: Fix for issue where a session replay could be stopped if the user quickly answered a question and then closed the survey.
+
 ### 4.24.2
 - add: Uploading of partial session replay clips after capture has been stopped due to time on main thread exceeding the threshold.
 
