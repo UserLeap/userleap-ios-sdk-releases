@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.24.4
+- fix: Changed logic in replays to only truncate text if it is masked.
+
 ### 4.24.3
 - fix: Fix for issue where dismiss on page change was executed when the current view controller could not be retrieved.
 - fix: Fix for issue where two track events in rapid succession could cause a survey to dismiss.
