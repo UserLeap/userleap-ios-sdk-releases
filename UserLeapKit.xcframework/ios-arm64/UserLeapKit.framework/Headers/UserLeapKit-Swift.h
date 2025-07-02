@@ -334,7 +334,13 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventReplayRenderingCompleted = 14,
   LifecycleEventReplayUploadCompleted = 15,
   LifecycleEventReplayEventsUploadCompleted = 16,
+  LifecycleEventLoggingEvent = 17,
 };
+
+SWIFT_CLASS("_TtC11UserLeapKit21LifecycleEventDataKey")
+@interface LifecycleEventDataKey : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 SWIFT_CLASS("_TtC11UserLeapKit22SGOptimizelyExperiment")
 @interface SGOptimizelyExperiment : NSObject
@@ -466,6 +472,8 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 /// by the Sprig services.
 /// Replays will happen automatically if this block is not set.
 - (void)setSessionReplayApprovalBlockWithReplayApprovalBlock:(void (^ _Nonnull)(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL)))replayApprovalBlock;
+/// Returns the SDK version.
+@property (nonatomic, readonly, copy) NSString * _Nonnull sdkVersion;
 @end
 
 enum SprigAPIResultStatus : NSInteger;
@@ -647,6 +655,8 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// by the Sprig services.
 /// Replays will happen automatically if this block is not set.
 - (void)setSessionReplayApprovalBlockWithReplayApprovalBlock:(void (^ _Nonnull)(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL)))replayApprovalBlock;
+/// Returns the SDK version.
+@property (nonatomic, readonly, copy) NSString * _Nonnull sdkVersion;
 @end
 
 @class UIView;

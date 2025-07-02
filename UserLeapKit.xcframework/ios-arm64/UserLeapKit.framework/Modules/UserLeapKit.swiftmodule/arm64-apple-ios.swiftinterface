@@ -56,6 +56,7 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   @objc func logout()
   @objc func turnOffSessionReplayCapture()
   @objc func setSessionReplayApprovalBlock(replayApprovalBlock: @escaping UserLeapKit.SprigSessionReplayApprovalBlock)
+  @objc var sdkVersion: Swift.String { get }
 }
 @objc public protocol SprigPresentationAPI {
   @objc func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
@@ -100,6 +101,11 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class LifecycleEventDataKey : ObjectiveC.NSObject {
+  public static let loggingEventMessage: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public enum LifecycleEvent : Swift.Int {
   case sdkReady
   case visitorIdUpdated
@@ -118,6 +124,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case replayRenderingCompleted
   case replayUploadCompleted
   case replayEventsUploadCompleted
+  case loggingEvent
   public var stringValue: Swift.String {
     get
   }
@@ -190,6 +197,9 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func logout()
   @objc dynamic public func turnOffSessionReplayCapture()
   @objc dynamic public func setSessionReplayApprovalBlock(replayApprovalBlock: @escaping UserLeapKit.SprigSessionReplayApprovalBlock)
+  @objc dynamic public var sdkVersion: Swift.String {
+    @objc get
+  }
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
