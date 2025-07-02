@@ -6,6 +6,12 @@
 
 ### prerelease
 
+### 4.24.5
+- fix: Fix for issue that was causing irregular survey height for initial question.
+- fix: Fix for issue where surveys would become partially dismissed if the keyboard was initially showing.
+- add: Made the SDK version available to host applications.
+- add: Added the ability for host applications to subscribe to a logging event for more detailed messages from the SDK.
+
 ### 4.24.4
 - fix: Changed logic in replays to only truncate text if it is masked.
 
