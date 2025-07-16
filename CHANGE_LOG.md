@@ -6,6 +6,10 @@
 
 ### prerelease
 
+### 4.24.6
+- fix: Fix for issue that prevented surveyClosed event from firing.
+- fix: Fix for issue where SDK would crash if passed a non String, Int or Bool value in the properties of a track event call.
+
 ### 4.24.5
 - fix: Fix for issue that was causing irregular survey height for initial question.
 - fix: Fix for issue where surveys would become partially dismissed if the keyboard was initially showing.
