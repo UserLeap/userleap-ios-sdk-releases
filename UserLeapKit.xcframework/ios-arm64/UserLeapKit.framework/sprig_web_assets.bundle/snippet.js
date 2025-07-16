@@ -126,7 +126,7 @@ Sprig('addListener', 'survey.closeRequested', (payload) => {
 Sprig('addListener', 'survey.willClose', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillClose', initiator: payload['initiator'], surveyId: payload['survey.id'].toString() });
 });
-Sprig('addListener', 'survey.closed', (status) => {
+Sprig('addListener', 'survey.closed', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyClosed', surveyId: payload['survey.id'].toString()});
 });
 Sprig('addListener', 'question.answered', (payload) => {
