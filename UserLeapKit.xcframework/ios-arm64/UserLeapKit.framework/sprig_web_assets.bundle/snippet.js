@@ -108,9 +108,6 @@ Sprig('addListener', 'survey.height', (payload) => {
 Sprig('addListener', 'survey.width', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'setWidth', height: payload.contentFrameWidth.toString(), surveyId: payload['survey.id'].toString() });
 });
-Sprig('addListener', 'survey.dimensions', (payload) => {
-    window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyDimensions', height: payload.contentFrameHeight.toString(), width: payload.contentFrameWidth.toString(), surveyId: payload['survey.id'].toString() });
-});
 Sprig('addListener', 'survey.will.present', (payload) => {
     window.webkit.messageHandlers.sprigWebController.postMessage({type: 'surveyWillPresent', surveyId: payload['survey.id'].toString() });
 });
