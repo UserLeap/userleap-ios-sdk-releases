@@ -110,7 +110,6 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case sdkReady
   case visitorIdUpdated
   case surveyHeight
-  case surveyDimensions
   case surveyWillPresent
   case surveyPresented
   case surveyAppeared
