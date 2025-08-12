@@ -6,6 +6,13 @@
 
 ### prerelease
 
+### 4.24.7
+- add: Updated WebSDK to v2.34.0.
+- add: Added the ability to capture SwiftUI text and images as images for Session Replays.
+- add: Added the SDK version to the debug logging output.
+- fix: Removed surveyDimensions lifecycle event that was not being emitted.
+- fix: Change to the way images are fed to the video writer for Session replays rendering.
+
 ### 4.24.6
 - fix: Fix for issue that prevented surveyClosed event from firing.
 - fix: Fix for issue where SDK would crash if passed a non String, Int or Bool value in the properties of a track event call.
