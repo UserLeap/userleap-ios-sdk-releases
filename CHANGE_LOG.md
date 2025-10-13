@@ -6,12 +6,20 @@
 
 ### prerelease
 
+### 4.25.0
+- add: Updated WebSDK to v2.36.1.
+- add: Support for new Rank Order question type.
+- add: Response piping support.
+- add: Removal of native modals coming from WKWebViews in Sprig replays.
+- fix: Visual and stability improvements to the Sprig Replays experience.
+- fix: Fix for surveys partially loading.
+
 ### 4.24.7
 - add: Updated WebSDK to v2.34.0.
 - add: Added the ability to capture SwiftUI text and images as images for Session Replays.
 - add: Added the SDK version to the debug logging output.
 - fix: Removed surveyDimensions lifecycle event that was not being emitted.
-- fix: Change to the way images are fed to the video writer for Session replays rendering.
+- fix: Change to the way images are fed to the video writer for Session Replays rendering.
 
 ### 4.24.6
 - fix: Fix for issue that prevented surveyClosed event from firing.
