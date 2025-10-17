@@ -27,7 +27,7 @@ jobs:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.POD_TRUNK_TOKEN }}
         run: pod trunk push UserLeapKit.podspec
 
-      - name: Add release to DB, update chagelog
-        uses: ./.github/workflows/_add_release_update_changelog.yml
-        with:
-          version: ${{ steps.get-version.outputs.version }}
+  add-release-to-db-update-chagelog:
+    uses: ./.github/workflows/_add_release_update_changelog.yml
+    with:
+      version: ${{ steps.get-version.outputs.version }}
