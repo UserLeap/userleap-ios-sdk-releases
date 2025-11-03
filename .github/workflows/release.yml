@@ -1,5 +1,6 @@
 name: Main Release
 on:
+  workflow_dispatch:
   push:
     branches:
       - "main"
@@ -28,6 +29,7 @@ jobs:
         run: pod trunk push UserLeapKit.podspec
 
   add-release-to-db-update-chagelog:
+    needs: make-release
     uses: ./.github/workflows/_add_release_update_changelog.yml
     with:
-      version: ${{ steps.get-version.outputs.version }}
+      version: ${{ needs.make-release.outputs.version }}
