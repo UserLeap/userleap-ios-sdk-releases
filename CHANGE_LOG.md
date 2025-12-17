@@ -6,10 +6,14 @@
 
 ### prerelease
 
+### 4.25.2
+- add: Updated WebSDK to v2.39.3.
+- add: Support for Conversational surveys.
+
 ### 4.25.1
 - add: Updated WebSDK to v2.37.1.
 - chore: Changed the mimimum supported iOS version to 16.0.
-- fix: Fixed issue where backgrounds for tab bars and alert views did not display in replays for iOS26.
+- fix: Fixed issue where backgrounds for tab bars and alert views did not display in replays for iOS26
 
 ### 4.25.0
 - add: Updated WebSDK to v2.36.1.
