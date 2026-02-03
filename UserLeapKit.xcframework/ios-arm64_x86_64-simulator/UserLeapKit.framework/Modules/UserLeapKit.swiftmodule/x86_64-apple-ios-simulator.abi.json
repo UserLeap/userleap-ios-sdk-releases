@@ -62,6 +62,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UserLeapKit"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2129,6 +2136,56 @@
             "declKind": "Func",
             "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)dismissActiveSurvey",
             "mangledName": "$s11UserLeapKit20SprigPresentationAPIP19dismissActiveSurveyyyF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseDisplayingSurveys",
+            "printedName": "pauseDisplayingSurveys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)pauseDisplayingSurveys",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP22pauseDisplayingSurveysyyF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unpauseDisplayingSurveys",
+            "printedName": "unpauseDisplayingSurveys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)unpauseDisplayingSurveys",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP24unpauseDisplayingSurveysyyF",
             "moduleName": "UserLeapKit",
             "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
             "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
@@ -8052,6 +8109,56 @@
           },
           {
             "kind": "Function",
+            "name": "pauseDisplayingSurveys",
+            "printedName": "pauseDisplayingSurveys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)pauseDisplayingSurveys",
+            "mangledName": "$s11UserLeapKit0aB0C22pauseDisplayingSurveysyyF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "pauseDisplayingSurveys",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unpauseDisplayingSurveys",
+            "printedName": "unpauseDisplayingSurveys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)unpauseDisplayingSurveys",
+            "mangledName": "$s11UserLeapKit0aB0C24unpauseDisplayingSurveysyyF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "unpauseDisplayingSurveys",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "_pass",
             "printedName": "_pass(rnExtractor:)",
             "children": [
@@ -8621,28 +8728,28 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1003,
+      "offset": 983,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1038,
+      "offset": 1018,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1076,
+      "offset": 1056,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayManager.swift",
       "kind": "Array",
-      "offset": 1382,
+      "offset": 1362,
       "length": 2,
       "value": "[]"
     },
@@ -8873,14 +8980,14 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 10055,
+      "offset": 10318,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 10116,
+      "offset": 10379,
       "length": 8,
       "value": "2"
     },
@@ -9167,525 +9274,91 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2613,
+      "offset": 2541,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 2631,
+      "offset": 2559,
       "length": 23,
       "value": "\"(no URL on navAction)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2831,
+      "offset": 2759,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2889,
+      "offset": 2817,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Dictionary",
-      "offset": 3018,
+      "offset": 2946,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3127,
+      "offset": 3055,
       "length": 81,
       "value": "\"Sprig.mobileHeaderJSON = '\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3205,
+      "offset": 3133,
       "length": 4,
       "value": "\"';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3302,
+      "offset": 3230,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3472,
+      "offset": 3400,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Array",
-      "offset": 3848,
+      "offset": 3776,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3888,
+      "offset": 3816,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 4033,
+      "offset": 3961,
       "length": 18,
       "value": "\"SGNetworkMonitor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 4088,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 19878,
-      "length": 16,
-      "value": "\"conversational\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 19915,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 20184,
-      "length": 18,
-      "value": "\"jsConsoleMessage\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 20238,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 20278,
-      "length": 7,
-      "value": "\"level\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 20383,
-      "length": 19,
-      "value": "\"surveyWillPresent\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20521,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 20559,
-      "length": 8,
-      "value": "\"layout\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20662,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 20721,
-      "length": 10,
-      "value": "\"surveyId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 21030,
-      "length": 31,
-      "value": "\"loadShouldDismissOnPageChange\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 21109,
-      "length": 21,
-      "value": "\"dismissOnPageChange\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 21167,
-      "length": 6,
-      "value": "\"true\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21226,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21302,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 21403,
-      "length": 16,
-      "value": "\"surveyCallback\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 21461,
-      "length": 12,
-      "value": "\"callbackId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 21522,
-      "length": 13,
-      "value": "\"surveyState\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 21584,
-      "length": 7,
-      "value": "\"delay\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21916,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22431,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 22607,
-      "length": 18,
-      "value": "\"questionAnswered\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 22671,
-      "length": 10,
-      "value": "\"surveyId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 22796,
-      "length": 50,
-      "value": "\"questionAnswered call did not contain a surveyId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 22867,
-      "length": 18,
-      "value": "\"Body was \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 22884,
-      "length": 51,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 23121,
-      "length": 22,
-      "value": "\"surveyCloseRequested\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 23189,
-      "length": 10,
-      "value": "\"surveyId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 23314,
-      "length": 54,
-      "value": "\"surveyCloseRequested call did not contain a surveyId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 23389,
-      "length": 18,
-      "value": "\"Body was \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 23406,
-      "length": 51,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 23531,
-      "length": 11,
-      "value": "\"initiator\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 23585,
-      "length": 18,
-      "value": "\"survey.completed\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24069,
-      "length": 18,
-      "value": "\"visitorIdUpdated\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24122,
-      "length": 11,
-      "value": "\"visitorId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24149,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24226,
-      "length": 15,
-      "value": "\"replayCapture\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24361,
-      "length": 31,
-      "value": "\"generateVideoUploadUrlPayload\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24456,
-      "length": 10,
-      "value": "\"surveyId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24581,
-      "length": 18,
-      "value": "\"responseGroupUid\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24657,
-      "length": 9,
-      "value": "\"seconds\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24782,
-      "length": 14,
-      "value": "\"hasQuestions\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24902,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 24964,
-      "length": 40,
-      "value": "\"Problem parsing replayCapture response\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 25025,
-      "length": 15,
-      "value": "\"Body: \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 25039,
-      "length": 51,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 26790,
-      "length": 10,
-      "value": "\"sdkReady\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 26825,
-      "length": 27,
-      "value": "\"Config tracking: sdkReady\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 26854,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 26891,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 27175,
-      "length": 21,
-      "value": "\"dismissOnPageChange\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 27407,
-      "length": 51,
-      "value": "\"Failed to fire dismissOnPageChange event \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 27457,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 27539,
-      "length": 24,
-      "value": "\"dismiss.on.page.change\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 27796,
-      "length": 22,
-      "value": "\"mobileReplaySettings\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 28016,
-      "length": 13,
-      "value": "\"cardBgColor\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 28045,
-      "length": 9,
-      "value": "\"#ffffff\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28122,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 28381,
-      "length": 11,
-      "value": "\"setHeight\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 28464,
-      "length": 8,
-      "value": "\"height\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28724,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 29084,
+      "offset": 4016,
       "length": 6,
       "value": "\"type\""
     },
@@ -9716,41 +9389,6 @@
       "offset": 178,
       "length": 21,
       "value": "\"errorFromUrlSession\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayUploaderService.swift",
-      "kind": "StringLiteral",
-      "offset": 716,
-      "length": 19,
-      "value": "\"UIBackgroundModes\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayUploaderService.swift",
-      "kind": "StringLiteral",
-      "offset": 787,
-      "length": 7,
-      "value": "\"fetch\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayUploaderService.swift",
-      "kind": "StringLiteral",
-      "offset": 874,
-      "length": 26,
-      "value": "\"com.userleap.UserLeapKit\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayUploaderService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 959,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSessionReplayUploaderService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1011,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayUploadProcessManager.swift",
@@ -9804,21 +9442,28 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1950,
+      "offset": 1686,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 3009,
+      "offset": 2003,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 3065,
+      "offset": 3118,
       "length": 17,
       "value": "\"sprigPreviewKey\""
     },
@@ -9915,29 +9560,22 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
-      "kind": "Dictionary",
-      "offset": 1640,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1699,
+      "offset": 1637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 37180,
+      "offset": 38892,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 37209,
+      "offset": 38921,
       "length": 5,
       "value": "false"
     },
@@ -10000,70 +9638,70 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 967,
+      "offset": 903,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1014,
+      "offset": 950,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1422,
+      "offset": 1358,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1459,
+      "offset": 1395,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1492,
+      "offset": 1428,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "StringLiteral",
-      "offset": 1521,
+      "offset": 1457,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1784,
+      "offset": 1720,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "Array",
-      "offset": 1832,
+      "offset": 1768,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "FloatLiteral",
-      "offset": 5080,
+      "offset": 5192,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGReplayRecordingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5126,
+      "offset": 5238,
       "length": 4,
       "value": "true"
     },
