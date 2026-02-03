@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.26.0
+- add: Support to pause and unpause surveys surveys.
+
 ### 4.25.2
 - add: Updated WebSDK to v2.39.3.
 - add: Support for Conversational surveys.
