@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name UserLeapKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -65,6 +65,8 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   @objc func presentSurvey(from viewController: UIKit.UIViewController)
   @objc func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)?)
   @objc func dismissActiveSurvey()
+  @objc func pauseDisplayingSurveys()
+  @objc func unpauseDisplayingSurveys()
 }
 @objc public class SGOptimizelyExperiment : ObjectiveC.NSObject, Swift.Codable {
   @objc public init(id: Swift.String, variation: Swift.String)
@@ -211,6 +213,8 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)
   @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
   @objc dynamic public func dismissActiveSurvey()
+  @objc dynamic public func pauseDisplayingSurveys()
+  @objc dynamic public func unpauseDisplayingSurveys()
   @objc dynamic public func _pass(rnExtractor extractor: any UserLeapKit._SGRNExtractor)
 }
 extension UserLeapKit.UserLeap {
