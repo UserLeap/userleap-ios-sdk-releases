@@ -19,7 +19,7 @@ function configure(environmentId, mobileHeadersJSON) {
         envId: environmentId,
         isMobileSDK: true,
         controllerSDKURL: 'shim.js',
-        viewSDKURL: 'view.js',
+        viewSDKURL: 'sprig-web-view-sdk-latest.js',
     };
     const script = document.createElement('script');
     script.async = 1;
