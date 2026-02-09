@@ -6,6 +6,10 @@
 
 ### prerelease
 
+### 4.26.1
+- add: Survey animation enhancements.
+- add: Updated WebSDK to v2.40.3.
+
 ### 4.26.0
 - add: Support to pause and unpause surveys.
 
