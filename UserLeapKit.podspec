@@ -22,5 +22,5 @@ from your UserLeap Sales contact.
     s.vendored_frameworks   = "UserLeapKit.xcframework"
     s.platform              = :ios
     s.swift_version         = "5.3"
-    s.ios.deployment_target = '10.3'
+    s.ios.deployment_target = '16.0'
 end
