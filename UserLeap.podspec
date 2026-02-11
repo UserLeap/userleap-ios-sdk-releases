@@ -25,5 +25,5 @@ from your UserLeap Sales contact.
     s.vendored_frameworks   = "UserLeapKit.framework"
     s.platform              = :ios
     s.swift_version         = "5.1.3"
-    s.ios.deployment_target = '16.0'
+    s.ios.deployment_target = '15.0'
 end
