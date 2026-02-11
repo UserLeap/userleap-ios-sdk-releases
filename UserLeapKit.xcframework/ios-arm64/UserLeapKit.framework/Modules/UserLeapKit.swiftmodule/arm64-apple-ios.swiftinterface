@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name UserLeapKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name UserLeapKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -19,9 +19,7 @@ import _SwiftConcurrencyShims
   @objc public enum SprigAPIResultStatus : Swift.Int {
     case success
     case failure
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -35,22 +33,12 @@ public typealias SprigSessionReplaySendApprovalBlock = (_ approve: Swift.Bool) -
 public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ approve: Swift.Bool) -> Swift.Void) -> Swift.Void
 @objc public protocol SprigAPI {
   @objc func configure(withEnvironment environment: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func configure(withEnvironment environment: Swift.String, configuration: [Swift.String : Any]?)
-  #endif
   @objc func setLocale(_ locale: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func track(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func track(eventName: Swift.String, properties: [Swift.String : Any], handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func track(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, properties: [Swift.String : Any]?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
-  #endif
   @objc func track(payload: UserLeapKit.EventPayload)
   @objc func setEmailAddress(_ emailAddress: Swift.String)
   @objc func setVisitorAttribute(key: Swift.String, value: Swift.String)
@@ -58,12 +46,8 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   @objc func setVisitorAttribute(key: Swift.String, boolValue: Swift.Bool)
   @objc func setVisitorAttribute(key: Swift.String, intValue: Swift.Int)
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Any])
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
-  #endif
   @objc func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
   @objc func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc func setUserIdentifier(_ identifier: Swift.String)
@@ -76,14 +60,10 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
 }
 @objc public protocol SprigPresentationAPI {
   @objc func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
-  #endif
   @objc func trackAndPresent(payload: UserLeapKit.EventPayload, from viewController: UIKit.UIViewController)
   @objc func presentSurvey(from viewController: UIKit.UIViewController)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)?)
-  #endif
   @objc func dismissActiveSurvey()
   @objc func pauseDisplayingSurveys()
   @objc func unpauseDisplayingSurveys()
@@ -102,9 +82,7 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   case noSurvey
   case ready
   case disabled
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: ObjectiveC.NSInteger)
-  #endif
   public typealias RawValue = ObjectiveC.NSInteger
   public var rawValue: ObjectiveC.NSInteger {
     get
@@ -122,9 +100,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   public var properties: [Swift.String : Any]?
   public var handler: ((UserLeapKit.SurveyState) -> Swift.Void)?
   public var shouldShowSurveyCallback: (() -> Swift.Bool)?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class LifecycleEventDataKey : ObjectiveC.NSObject {
@@ -153,12 +129,8 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   public var stringValue: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func fromString(_ type: Swift.String) -> UserLeapKit.LifecycleEvent?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -180,9 +152,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
 }
 @objc public protocol _SGRNExtractor {
   @objc func textPropertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNTextProperties
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func propertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNViewProperties?
-  #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Sprig : UserLeapKit.UserLeap {
   @objc deinit
@@ -191,40 +161,26 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc public static let shared: UserLeapKit.UserLeap
   @objc public var disableNetworkAccess: Swift.Bool
   @objc public static let previewKeyName: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var visitorIdentifier: Foundation.NSNumber? {
     @objc get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var visitorIdentifierString: Swift.String? {
     @objc get
   }
-  #endif
   @objc deinit
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func configure(withEnvironment environment: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func configure(withEnvironment environment: Swift.String, configuration: [Swift.String : Any]? = nil)
-  #endif
   @objc dynamic public func setLocale(_ locale: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, properties: [Swift.String : Any], handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use track with EventPayload instead")
   @objc dynamic public func track(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]?, handler: ((UserLeapKit.SurveyState) -> Swift.Void)?)
-  #endif
   @objc dynamic public func track(payload: UserLeapKit.EventPayload)
   @objc dynamic public func setEmailAddress(_ emailAddress: Swift.String)
   @objc dynamic public func setVisitorAttribute(key: Swift.String, value: Swift.String)
@@ -232,12 +188,8 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public func setVisitorAttribute(key: Swift.String, doubleValue: Swift.Double)
   @objc dynamic public func setVisitorAttribute(key: Swift.String, boolValue: Swift.Bool)
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Any])
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func setVisitorAttributes(_ attributes: [Swift.String : Swift.String], userId: Swift.String?, partnerAnonymousId: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func setVisitorAttributesAsync(_ attributes: [Swift.String : Any], userId: Swift.String?, partnerAnonymousId: Swift.String?) async -> UserLeapKit.SprigAPIResult
-  #endif
   @objc dynamic public func setVisitorAttributeAsync(key: Swift.String, value: Any) async -> UserLeapKit.SprigAPIResult
   @objc dynamic public func removeVisitorAttributes(_ attributes: [Swift.String])
   @objc dynamic public func setUserIdentifier(_ identifier: Swift.String)
@@ -253,17 +205,13 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
 extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
   @objc dynamic public func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
   @objc dynamic public func trackAndPresent(eventName: Swift.String, userId: Swift.String?, partnerAnonymousId: Swift.String?, from viewController: UIKit.UIViewController)
-  #endif
   @objc dynamic public func trackAndPresent(payload: UserLeapKit.EventPayload, from viewController: UIKit.UIViewController)
   public func trackAndPresent(payload: UserLeapKit.EventPayload)
   public func present()
   @objc dynamic public func presentSurvey(from viewController: UIKit.UIViewController)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func presentSurvey(withId surveyId: Swift.Int, from viewController: UIKit.UIViewController, fetchCompletion: (() -> Swift.Void)? = nil)
-  #endif
   @objc dynamic public func dismissActiveSurvey()
   @objc dynamic public func pauseDisplayingSurveys()
   @objc dynamic public func unpauseDisplayingSurveys()

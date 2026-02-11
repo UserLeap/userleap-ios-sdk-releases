@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.26.2
+- chore: Changed the mimimum supported iOS version to 15.0.
+
 ### 4.26.1
 - add: Survey animation enhancements.
 - add: Updated WebSDK to v2.40.3.
