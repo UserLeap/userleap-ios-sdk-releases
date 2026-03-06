@@ -6,8 +6,12 @@
 
 ### prerelease
 
+### 4.27.0
+- chore: Updated WebSDK to v2.41.3.
+- add: Updates to survey transition animations.
+
 ### 4.26.2
-- chore: Changed the mimimum supported iOS version to 15.0.
+- chore: Changed the minimum supported iOS version to 15.0.
 
 ### 4.26.1
 - add: Survey animation enhancements.
