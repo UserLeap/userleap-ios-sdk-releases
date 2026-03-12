@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.27.1
+- fix: For for sliding surveys when the keyboard is displayed.
+
 ### 4.27.0
 - chore: Updated WebSDK to v2.41.3.
 - add: Updates to survey transition animations.
