@@ -309,9 +309,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSString;
 enum SurveyState : NSInteger;
+@class SprigSurveyResult;
 SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
 @interface EventPayload : NSObject
-- (nonnull instancetype)initWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler resultHandler:(void (^ _Nullable)(SprigSurveyResult * _Nonnull))resultHandler OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -334,6 +335,8 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventReplayUploadCompleted = 14,
   LifecycleEventReplayEventsUploadCompleted = 15,
   LifecycleEventLoggingEvent = 16,
+  LifecycleEventSurveyCompleted = 17,
+  LifecycleEventSurveyStateReturned = 18,
 };
 
 SWIFT_CLASS("_TtC11UserLeapKit21LifecycleEventDataKey")
@@ -531,6 +534,12 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
 - (void)pauseDisplayingSurveys;
 /// Unpause surveys.
 - (void)unpauseDisplayingSurveys;
+@end
+
+SWIFT_CLASS("_TtC11UserLeapKit17SprigSurveyResult")
+@interface SprigSurveyResult : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 /// An enum that indicates whether a survey is ready to be displayed.
@@ -1018,9 +1027,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSString;
 enum SurveyState : NSInteger;
+@class SprigSurveyResult;
 SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
 @interface EventPayload : NSObject
-- (nonnull instancetype)initWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler resultHandler:(void (^ _Nullable)(SprigSurveyResult * _Nonnull))resultHandler OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1043,6 +1053,8 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventReplayUploadCompleted = 14,
   LifecycleEventReplayEventsUploadCompleted = 15,
   LifecycleEventLoggingEvent = 16,
+  LifecycleEventSurveyCompleted = 17,
+  LifecycleEventSurveyStateReturned = 18,
 };
 
 SWIFT_CLASS("_TtC11UserLeapKit21LifecycleEventDataKey")
@@ -1240,6 +1252,12 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
 - (void)pauseDisplayingSurveys;
 /// Unpause surveys.
 - (void)unpauseDisplayingSurveys;
+@end
+
+SWIFT_CLASS("_TtC11UserLeapKit17SprigSurveyResult")
+@interface SprigSurveyResult : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 /// An enum that indicates whether a survey is ready to be displayed.

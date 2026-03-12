@@ -82,11 +82,17 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   case noSurvey
   case ready
   case disabled
+  public func name() -> Swift.String
   public init?(rawValue: ObjectiveC.NSInteger)
   public typealias RawValue = ObjectiveC.NSInteger
   public var rawValue: ObjectiveC.NSInteger {
     get
   }
+}
+@_hasMissingDesignatedInitializers @objc public class SprigSurveyResult : ObjectiveC.NSObject {
+  public var surveyState: UserLeapKit.SurveyState
+  public var surveyId: Swift.Int?
+  @objc deinit
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @discardableResult
@@ -98,13 +104,18 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   public var userId: Swift.String?
   public var partnerAnonymousId: Swift.String?
   public var properties: [Swift.String : Any]?
+  @available(*, deprecated, message: "Use resultHandler instead.")
   public var handler: ((UserLeapKit.SurveyState) -> Swift.Void)?
+  public var resultHandler: ((UserLeapKit.SprigSurveyResult) -> Swift.Void)?
   public var shouldShowSurveyCallback: (() -> Swift.Bool)?
-  @objc public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil)
+  @objc public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil, resultHandler: ((UserLeapKit.SprigSurveyResult) -> Swift.Void)? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class LifecycleEventDataKey : ObjectiveC.NSObject {
   public static let loggingEventMessage: Swift.String
+  public static let eventType: Swift.String
+  public static let surveyId: Swift.String
+  public static let surveyState: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -126,6 +137,8 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case replayUploadCompleted
   case replayEventsUploadCompleted
   case loggingEvent
+  case surveyCompleted
+  case surveyStateReturned
   public var stringValue: Swift.String {
     get
   }

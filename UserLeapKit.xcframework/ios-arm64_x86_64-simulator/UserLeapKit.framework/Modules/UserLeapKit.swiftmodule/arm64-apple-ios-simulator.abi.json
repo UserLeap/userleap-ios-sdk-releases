@@ -2718,6 +2718,27 @@
             "fixedbinaryorder": 2
           },
           {
+            "kind": "Function",
+            "name": "name",
+            "printedName": "name()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11UserLeapKit11SurveyStateO4nameSSyF",
+            "mangledName": "$s11UserLeapKit11SurveyStateO4nameSSyF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -2850,6 +2871,312 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SprigSurveyResult",
+        "printedName": "SprigSurveyResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "surveyState",
+            "printedName": "surveyState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SurveyState",
+                "printedName": "UserLeapKit.SurveyState",
+                "usr": "c:@M@UserLeapKit@E@SurveyState"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit17SprigSurveyResultC11surveyStateAA0eH0Ovp",
+            "mangledName": "$s11UserLeapKit17SprigSurveyResultC11surveyStateAA0eH0Ovp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SurveyState",
+                    "printedName": "UserLeapKit.SurveyState",
+                    "usr": "c:@M@UserLeapKit@E@SurveyState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit17SprigSurveyResultC11surveyStateAA0eH0Ovg",
+                "mangledName": "$s11UserLeapKit17SprigSurveyResultC11surveyStateAA0eH0Ovg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SurveyState",
+                    "printedName": "UserLeapKit.SurveyState",
+                    "usr": "c:@M@UserLeapKit@E@SurveyState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit17SprigSurveyResultC11surveyStateAA0eH0Ovs",
+                "mangledName": "$s11UserLeapKit17SprigSurveyResultC11surveyStateAA0eH0Ovs",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit17SprigSurveyResultC11surveyStateAA0eH0OvM",
+                "mangledName": "$s11UserLeapKit17SprigSurveyResultC11surveyStateAA0eH0OvM",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "surveyId",
+            "printedName": "surveyId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit17SprigSurveyResultC8surveyIdSiSgvp",
+            "mangledName": "$s11UserLeapKit17SprigSurveyResultC8surveyIdSiSgvp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit17SprigSurveyResultC8surveyIdSiSgvg",
+                "mangledName": "$s11UserLeapKit17SprigSurveyResultC8surveyIdSiSgvg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit17SprigSurveyResultC8surveyIdSiSgvs",
+                "mangledName": "$s11UserLeapKit17SprigSurveyResultC8surveyIdSiSgvs",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit17SprigSurveyResultC8surveyIdSiSgvM",
+                "mangledName": "$s11UserLeapKit17SprigSurveyResultC8surveyIdSiSgvM",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SprigSurveyResult",
+                "printedName": "UserLeapKit.SprigSurveyResult",
+                "usr": "c:@M@UserLeapKit@objc(cs)SprigSurveyResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@UserLeapKit@objc(cs)SprigSurveyResult(im)init",
+            "mangledName": "$s11UserLeapKit17SprigSurveyResultCACycfc",
+            "moduleName": "UserLeapKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@UserLeapKit@objc(cs)SprigSurveyResult",
+        "mangledName": "$s11UserLeapKit17SprigSurveyResultC",
+        "moduleName": "UserLeapKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -3431,10 +3758,12 @@
             "usr": "s:11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvp",
             "mangledName": "$s11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvp",
             "moduleName": "UserLeapKit",
+            "deprecated": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3535,6 +3864,156 @@
                 "declKind": "Accessor",
                 "usr": "s:11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvM",
                 "mangledName": "$s11UserLeapKit12EventPayloadC7handleryAA11SurveyStateOcSgvM",
+                "moduleName": "UserLeapKit",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resultHandler",
+            "printedName": "resultHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserLeapKit.SprigSurveyResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserLeapKit.SprigSurveyResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SprigSurveyResult",
+                        "printedName": "UserLeapKit.SprigSurveyResult",
+                        "usr": "c:@M@UserLeapKit@objc(cs)SprigSurveyResult"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit12EventPayloadC13resultHandleryAA17SprigSurveyResultCcSgvp",
+            "mangledName": "$s11UserLeapKit12EventPayloadC13resultHandleryAA17SprigSurveyResultCcSgvp",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UserLeapKit.SprigSurveyResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UserLeapKit.SprigSurveyResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SprigSurveyResult",
+                            "printedName": "UserLeapKit.SprigSurveyResult",
+                            "usr": "c:@M@UserLeapKit@objc(cs)SprigSurveyResult"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC13resultHandleryAA17SprigSurveyResultCcSgvg",
+                "mangledName": "$s11UserLeapKit12EventPayloadC13resultHandleryAA17SprigSurveyResultCcSgvg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UserLeapKit.SprigSurveyResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UserLeapKit.SprigSurveyResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SprigSurveyResult",
+                            "printedName": "UserLeapKit.SprigSurveyResult",
+                            "usr": "c:@M@UserLeapKit@objc(cs)SprigSurveyResult"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC13resultHandleryAA17SprigSurveyResultCcSgvs",
+                "mangledName": "$s11UserLeapKit12EventPayloadC13resultHandleryAA17SprigSurveyResultCcSgvs",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit12EventPayloadC13resultHandleryAA17SprigSurveyResultCcSgvM",
+                "mangledName": "$s11UserLeapKit12EventPayloadC13resultHandleryAA17SprigSurveyResultCcSgvM",
                 "moduleName": "UserLeapKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3690,7 +4169,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(eventName:userId:partnerAnonymousId:properties:handler:)",
+            "printedName": "init(eventName:userId:partnerAnonymousId:properties:handler:resultHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3788,13 +4267,40 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserLeapKit.SprigSurveyResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserLeapKit.SprigSurveyResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SprigSurveyResult",
+                        "printedName": "UserLeapKit.SprigSurveyResult",
+                        "usr": "c:@M@UserLeapKit@objc(cs)SprigSurveyResult"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@UserLeapKit@objc(cs)EventPayload(im)initWithEventName:userId:partnerAnonymousId:properties:handler:",
-            "mangledName": "$s11UserLeapKit12EventPayloadC9eventName6userId016partnerAnonymousI010properties7handlerACSS_SSSgAISDySSypGSgyAA11SurveyStateOcSgtcfc",
+            "usr": "c:@M@UserLeapKit@objc(cs)EventPayload(im)initWithEventName:userId:partnerAnonymousId:properties:handler:resultHandler:",
+            "mangledName": "$s11UserLeapKit12EventPayloadC9eventName6userId016partnerAnonymousI010properties7handler13resultHandlerACSS_SSSgAJSDySSypGSgyAA11SurveyStateOcSgyAA05SprigP6ResultCcSgtcfc",
             "moduleName": "UserLeapKit",
-            "objc_name": "initWithEventName:userId:partnerAnonymousId:properties:handler:",
+            "objc_name": "initWithEventName:userId:partnerAnonymousId:properties:handler:resultHandler:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -3952,6 +4458,159 @@
                 "declKind": "Accessor",
                 "usr": "s:11UserLeapKit21LifecycleEventDataKeyC07loggingE7MessageSSvgZ",
                 "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC07loggingE7MessageSSvgZ",
+                "moduleName": "UserLeapKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventType",
+            "printedName": "eventType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit21LifecycleEventDataKeyC9eventTypeSSvpZ",
+            "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC9eventTypeSSvpZ",
+            "moduleName": "UserLeapKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit21LifecycleEventDataKeyC9eventTypeSSvgZ",
+                "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC9eventTypeSSvgZ",
+                "moduleName": "UserLeapKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "surveyId",
+            "printedName": "surveyId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit21LifecycleEventDataKeyC8surveyIdSSvpZ",
+            "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC8surveyIdSSvpZ",
+            "moduleName": "UserLeapKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit21LifecycleEventDataKeyC8surveyIdSSvgZ",
+                "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC8surveyIdSSvgZ",
+                "moduleName": "UserLeapKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "surveyState",
+            "printedName": "surveyState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit21LifecycleEventDataKeyC11surveyStateSSvpZ",
+            "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC11surveyStateSSvpZ",
+            "moduleName": "UserLeapKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit21LifecycleEventDataKeyC11surveyStateSSvgZ",
+                "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC11surveyStateSSvgZ",
                 "moduleName": "UserLeapKit",
                 "static": true,
                 "implicit": true,
@@ -4769,6 +5428,88 @@
               "ObjC"
             ],
             "fixedbinaryorder": 16
+          },
+          {
+            "kind": "Var",
+            "name": "surveyCompleted",
+            "printedName": "surveyCompleted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyCompleted",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO15surveyCompletedyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 17
+          },
+          {
+            "kind": "Var",
+            "name": "surveyStateReturned",
+            "printedName": "surveyStateReturned",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyStateReturned",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO19surveyStateReturnedyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -9144,239 +9885,267 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 142,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 10,
+      "value": "\"surveyId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 13,
+      "value": "\"survetState\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 178,
+      "offset": 313,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 204,
+      "offset": 339,
       "length": 12,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 226,
+      "offset": 361,
       "length": 17,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 253,
+      "offset": 388,
       "length": 15,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 278,
+      "offset": 413,
       "length": 14,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 302,
+      "offset": 437,
       "length": 20,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 332,
+      "offset": 467,
       "length": 15,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 357,
+      "offset": 492,
       "length": 12,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 379,
+      "offset": 514,
       "length": 13,
       "value": "9"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 402,
+      "offset": 537,
       "length": 20,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 432,
+      "offset": 567,
       "length": 20,
       "value": "11"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 462,
+      "offset": 597,
       "length": 22,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 494,
+      "offset": 629,
       "length": 24,
       "value": "13"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 528,
+      "offset": 663,
       "length": 21,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 559,
+      "offset": 694,
       "length": 27,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 596,
+      "offset": 731,
       "length": 12,
       "value": "16"
     },
     {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 753,
+      "length": 15,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 778,
+      "length": 19,
+      "value": "18"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 9369,
+      "offset": 9393,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2556,
+      "offset": 2571,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 2574,
+      "offset": 2589,
       "length": 23,
       "value": "\"(no URL on navAction)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2774,
+      "offset": 2789,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2832,
+      "offset": 2847,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Dictionary",
-      "offset": 2961,
+      "offset": 2976,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3070,
+      "offset": 3085,
       "length": 81,
       "value": "\"Sprig.mobileHeaderJSON = '\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3148,
+      "offset": 3163,
       "length": 4,
       "value": "\"';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3245,
+      "offset": 3260,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3415,
+      "offset": 3430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Array",
-      "offset": 3791,
+      "offset": 3806,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3831,
+      "offset": 3846,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3976,
+      "offset": 3991,
       "length": 18,
       "value": "\"SGNetworkMonitor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
-      "kind": "StringLiteral",
-      "offset": 4031,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "FloatLiteral",
-      "offset": 4245,
+      "offset": 4218,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4291,
+      "offset": 4264,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4344,
+      "offset": 4317,
       "length": 2,
       "value": "75"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4379,
+      "offset": 4352,
       "length": 5,
       "value": "false"
     },
@@ -9438,50 +10207,57 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
+      "kind": "Dictionary",
+      "offset": 1330,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1263,
+      "offset": 1390,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "IntegerLiteral",
-      "offset": 1579,
+      "offset": 1706,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1633,
+      "offset": 1760,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1686,
+      "offset": 1813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 2003,
+      "offset": 2130,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 3062,
+      "offset": 3189,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 3118,
+      "offset": 3245,
       "length": 17,
       "value": "\"sprigPreviewKey\""
     },
@@ -9775,14 +10551,14 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "BooleanLiteral",
-      "offset": 968,
+      "offset": 995,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1015,
+      "offset": 1042,
       "length": 1,
       "value": "0"
     }

@@ -35,14 +35,16 @@ function handleSurveyCallback(result, callbackId) {
         return;
     }
     const surveyState = result.surveyState;
-    const surveyDelay = result.delay || 0
+    const surveyDelay = result.delay || 0;
+    const surveyId = result.surveyId || 0;
     if (surveyState !== 'ready') {
         window.webkit.messageHandlers.sprigWebController.postMessage(
             {
                 type: 'surveyCallback', 
                 callbackId, 
                 surveyState: surveyState,
-                delay: surveyDelay
+                delay: surveyDelay,
+                surveyId: surveyId
             }
         );
     } else {
@@ -52,7 +54,8 @@ function handleSurveyCallback(result, callbackId) {
                     type: 'surveyCallback', 
                     callbackId, 
                     surveyState: surveyState,
-                    delay: surveyDelay
+                    delay: surveyDelay,
+                    surveyId: surveyId
                 }
             );
             Sprig.removeListener('survey.appeared', surveyReadyCallback);
