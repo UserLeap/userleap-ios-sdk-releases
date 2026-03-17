@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.27.2
+- add: Additional debug logging for surveys.
+
 ### 4.27.1
 - fix: For for sliding surveys when the keyboard is displayed.
 
