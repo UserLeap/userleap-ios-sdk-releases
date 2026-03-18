@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.27.3
+- add: Added additional survey state logging.
+
 ### 4.27.2
 - add: Additional debug logging for surveys.
 
