@@ -82,7 +82,9 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   case noSurvey
   case ready
   case disabled
+  case previousSurveyReady
   public func name() -> Swift.String
+  public static func stateFromString(_ name: Swift.String) -> UserLeapKit.SurveyState?
   public init?(rawValue: ObjectiveC.NSInteger)
   public typealias RawValue = ObjectiveC.NSInteger
   public var rawValue: ObjectiveC.NSInteger {

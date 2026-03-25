@@ -550,6 +550,8 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
   SurveyStateReady = 1,
 /// The survey request has been disabled.
   SurveyStateDisabled = 2,
+/// A track event with a survey associated with it was received but there was a prior survey in the queue.
+  SurveyStatePreviousSurveyReady = 3,
 };
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigOptimizelyIntegrationAPI>
