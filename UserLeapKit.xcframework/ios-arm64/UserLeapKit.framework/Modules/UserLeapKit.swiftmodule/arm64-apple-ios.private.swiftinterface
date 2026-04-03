@@ -92,8 +92,8 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   }
 }
 @_hasMissingDesignatedInitializers @objc public class SprigSurveyResult : ObjectiveC.NSObject {
-  public var surveyState: UserLeapKit.SurveyState
-  public var surveyId: Swift.Int?
+  @objc public var surveyState: UserLeapKit.SurveyState
+  @objc public var surveyId: Swift.Int
   @objc deinit
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
@@ -102,26 +102,26 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc dynamic public func integrateOptimizelyExperiments(_ experiments: [UserLeapKit.SGOptimizelyExperiment], _ isOverride: Swift.Bool)
 }
 @objc public class EventPayload : ObjectiveC.NSObject {
-  public var eventName: Swift.String
-  public var userId: Swift.String?
-  public var partnerAnonymousId: Swift.String?
-  public var properties: [Swift.String : Any]?
+  @objc public var eventName: Swift.String
+  @objc public var userId: Swift.String?
+  @objc public var partnerAnonymousId: Swift.String?
+  @objc public var properties: [Swift.String : Any]?
   @available(*, deprecated, message: "Use resultHandler instead.")
-  public var handler: ((UserLeapKit.SurveyState) -> Swift.Void)?
-  public var resultHandler: ((UserLeapKit.SprigSurveyResult) -> Swift.Void)?
-  public var shouldShowSurveyCallback: (() -> Swift.Bool)?
+  @objc public var handler: ((UserLeapKit.SurveyState) -> Swift.Void)?
+  @objc public var resultHandler: ((UserLeapKit.SprigSurveyResult) -> Swift.Void)?
+  @objc public var shouldShowSurveyCallback: (() -> Swift.Bool)?
   @objc public init(eventName: Swift.String, userId: Swift.String? = nil, partnerAnonymousId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, handler: ((UserLeapKit.SurveyState) -> Swift.Void)? = nil, resultHandler: ((UserLeapKit.SprigSurveyResult) -> Swift.Void)? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class LifecycleEventDataKey : ObjectiveC.NSObject {
-  public static let loggingEventMessage: Swift.String
-  public static let eventType: Swift.String
-  public static let surveyId: Swift.String
-  public static let surveyState: Swift.String
+  @objc public static let loggingEventMessage: Swift.String
+  @objc public static let eventType: Swift.String
+  @objc public static let surveyId: Swift.String
+  @objc public static let surveyState: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum LifecycleEvent : Swift.Int {
+@objc public enum LifecycleEvent : Swift.Int, Swift.CaseIterable {
   case sdkReady
   case visitorIdUpdated
   case surveyHeight
@@ -141,15 +141,33 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case loggingEvent
   case surveyCompleted
   case surveyStateReturned
+  case unknown
   public var stringValue: Swift.String {
     get
   }
   public static func fromString(_ type: Swift.String) -> UserLeapKit.LifecycleEvent?
+  public var stringName: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
+  public typealias AllCases = [UserLeapKit.LifecycleEvent]
   public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [UserLeapKit.LifecycleEvent] {
+    get
+  }
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc public class LifecycleEventUtil : ObjectiveC.NSObject {
+  @objc public static func all() -> [Swift.Int]
+  @objc public static func allAsStrings() -> [Swift.String]
+  @objc public static func allNameStrings() -> [Swift.String]
+  @objc public static func fromString(_ type: Swift.String) -> UserLeapKit.LifecycleEvent
+  @objc public static func stringValue(_ event: UserLeapKit.LifecycleEvent) -> Swift.String
+  @objc public static func stringName(_ event: UserLeapKit.LifecycleEvent) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class _SGRNTextProperties : ObjectiveC.NSObject {
   @objc public var text: Swift.String?
