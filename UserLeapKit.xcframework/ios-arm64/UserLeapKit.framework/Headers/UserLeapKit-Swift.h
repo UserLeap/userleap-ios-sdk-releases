@@ -312,6 +312,13 @@ enum SurveyState : NSInteger;
 @class SprigSurveyResult;
 SWIFT_CLASS("_TtC11UserLeapKit12EventPayload")
 @interface EventPayload : NSObject
+@property (nonatomic, copy) NSString * _Nonnull eventName;
+@property (nonatomic, copy) NSString * _Nullable userId;
+@property (nonatomic, copy) NSString * _Nullable partnerAnonymousId;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable properties;
+@property (nonatomic, copy) void (^ _Nullable handler)(enum SurveyState) SWIFT_DEPRECATED_MSG("Use resultHandler instead.");
+@property (nonatomic, copy) void (^ _Nullable resultHandler)(SprigSurveyResult * _Nonnull);
+@property (nonatomic, copy) BOOL (^ _Nullable shouldShowSurveyCallback)(void);
 - (nonnull instancetype)initWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId properties:(NSDictionary<NSString *, id> * _Nullable)properties handler:(void (^ _Nullable)(enum SurveyState))handler resultHandler:(void (^ _Nullable)(SprigSurveyResult * _Nonnull))resultHandler OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -337,10 +344,30 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventLoggingEvent = 16,
   LifecycleEventSurveyCompleted = 17,
   LifecycleEventSurveyStateReturned = 18,
+  LifecycleEventUnknown = 19,
 };
 
 SWIFT_CLASS("_TtC11UserLeapKit21LifecycleEventDataKey")
 @interface LifecycleEventDataKey : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull loggingEventMessage;)
++ (NSString * _Nonnull)loggingEventMessage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull eventType;)
++ (NSString * _Nonnull)eventType SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyId;)
++ (NSString * _Nonnull)surveyId SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyState;)
++ (NSString * _Nonnull)surveyState SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC11UserLeapKit18LifecycleEventUtil")
+@interface LifecycleEventUtil : NSObject
++ (NSArray<NSNumber *> * _Nonnull)all SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<NSString *> * _Nonnull)allAsStrings SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<NSString *> * _Nonnull)allNameStrings SWIFT_WARN_UNUSED_RESULT;
++ (enum LifecycleEvent)fromString:(NSString * _Nonnull)type SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stringValue:(enum LifecycleEvent)event SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)stringName:(enum LifecycleEvent)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -538,6 +565,8 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
 
 SWIFT_CLASS("_TtC11UserLeapKit17SprigSurveyResult")
 @interface SprigSurveyResult : NSObject
+@property (nonatomic) enum SurveyState surveyState;
+@property (nonatomic) NSInteger surveyId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

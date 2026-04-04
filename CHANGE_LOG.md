@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.29.0
+- chore: Updated WebSDK to v2.43.0.
+
 ### 4.28.0
 - chore: Updated WebSDK to v2.42.1.
 - add: Returning new previousSurveyReady survey state.
