@@ -2196,6 +2196,37 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "overrideUserInterfaceMode",
+            "printedName": "overrideUserInterfaceMode(mode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SprigUserInterfaceMode",
+                "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UserLeapKit@objc(pl)SprigPresentationAPI(im)overrideUserInterfaceModeWithMode:",
+            "mangledName": "$s11UserLeapKit20SprigPresentationAPIP08overrideA13InterfaceMode4modeyAA0dahI0O_tF",
+            "moduleName": "UserLeapKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit.SprigPresentationAPI>",
+            "sugared_genericSig": "<Self where Self : UserLeapKit.SprigPresentationAPI>",
+            "protocolReq": true,
+            "objc_name": "overrideUserInterfaceModeWithMode:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -3244,6 +3275,269 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SprigUserInterfaceMode",
+        "printedName": "SprigUserInterfaceMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unspecified",
+            "printedName": "unspecified",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.SprigUserInterfaceMode.Type) -> UserLeapKit.SprigUserInterfaceMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SprigUserInterfaceMode",
+                    "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                    "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.SprigUserInterfaceMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SprigUserInterfaceMode",
+                        "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                        "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode@SprigUserInterfaceModeUnspecified",
+            "mangledName": "$s11UserLeapKit05SprigA13InterfaceModeO11unspecifiedyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "light",
+            "printedName": "light",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.SprigUserInterfaceMode.Type) -> UserLeapKit.SprigUserInterfaceMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SprigUserInterfaceMode",
+                    "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                    "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.SprigUserInterfaceMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SprigUserInterfaceMode",
+                        "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                        "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode@SprigUserInterfaceModeLight",
+            "mangledName": "$s11UserLeapKit05SprigA13InterfaceModeO5lightyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "dark",
+            "printedName": "dark",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.SprigUserInterfaceMode.Type) -> UserLeapKit.SprigUserInterfaceMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SprigUserInterfaceMode",
+                    "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                    "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.SprigUserInterfaceMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SprigUserInterfaceMode",
+                        "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                        "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode@SprigUserInterfaceModeDark",
+            "mangledName": "$s11UserLeapKit05SprigA13InterfaceModeO4darkyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UserLeapKit.SprigUserInterfaceMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SprigUserInterfaceMode",
+                    "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                    "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11UserLeapKit05SprigA13InterfaceModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11UserLeapKit05SprigA13InterfaceModeO8rawValueACSgSi_tcfc",
+            "moduleName": "UserLeapKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11UserLeapKit05SprigA13InterfaceModeO8rawValueSivp",
+            "mangledName": "$s11UserLeapKit05SprigA13InterfaceModeO8rawValueSivp",
+            "moduleName": "UserLeapKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11UserLeapKit05SprigA13InterfaceModeO8rawValueSivg",
+                "mangledName": "$s11UserLeapKit05SprigA13InterfaceModeO8rawValueSivg",
+                "moduleName": "UserLeapKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode",
+        "mangledName": "$s11UserLeapKit05SprigA13InterfaceModeO",
+        "moduleName": "UserLeapKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -9492,6 +9786,37 @@
           },
           {
             "kind": "Function",
+            "name": "overrideUserInterfaceMode",
+            "printedName": "overrideUserInterfaceMode(mode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SprigUserInterfaceMode",
+                "printedName": "UserLeapKit.SprigUserInterfaceMode",
+                "usr": "c:@M@UserLeapKit@E@SprigUserInterfaceMode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UserLeapKit@objc(cs)UserLeap(im)overrideUserInterfaceModeWithMode:",
+            "mangledName": "$s11UserLeapKit0aB0C08overrideA13InterfaceMode4modeyAA05SprigaeF0O_tF",
+            "moduleName": "UserLeapKit",
+            "objc_name": "overrideUserInterfaceModeWithMode:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "_pass",
             "printedName": "_pass(rnExtractor:)",
             "children": [
@@ -10303,23 +10628,37 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 10318,
+      "offset": 10394,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 10379,
+      "offset": 10455,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 10508,
+      "offset": 10584,
       "length": 19,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11562,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SprigAPI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11577,
+      "length": 4,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
@@ -10646,112 +10985,112 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2571,
+      "offset": 2636,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 2589,
+      "offset": 2654,
       "length": 23,
       "value": "\"(no URL on navAction)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2789,
+      "offset": 2854,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2847,
+      "offset": 2912,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Dictionary",
-      "offset": 2976,
+      "offset": 3041,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3085,
+      "offset": 3150,
       "length": 81,
       "value": "\"Sprig.mobileHeaderJSON = '\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3163,
+      "offset": 3228,
       "length": 4,
       "value": "\"';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3260,
+      "offset": 3325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3430,
+      "offset": 3495,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "Array",
-      "offset": 3746,
+      "offset": 3811,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3786,
+      "offset": 3851,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "StringLiteral",
-      "offset": 3931,
+      "offset": 3996,
       "length": 18,
       "value": "\"SGNetworkMonitor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "FloatLiteral",
-      "offset": 4158,
+      "offset": 4223,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4204,
+      "offset": 4269,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4257,
+      "offset": 4322,
       "length": 2,
       "value": "75"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigWebController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4292,
+      "offset": 4357,
       "length": 5,
       "value": "false"
     },
@@ -10925,57 +11264,57 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
-      "kind": "StringLiteral",
-      "offset": 1215,
-      "length": 13,
-      "value": "\"RCTTextView\""
+      "kind": "Array",
+      "offset": 1212,
+      "length": 44,
+      "value": "[\"RCTTextView\", \"RCTParagraphComponentView\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 1270,
+      "offset": 1298,
       "length": 15,
       "value": "\"CGDrawingView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "Array",
-      "offset": 1324,
+      "offset": 1352,
       "length": 25,
       "value": "[\"PLExpandableImageView\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 1413,
       "length": 11,
       "value": "\"WKWebView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "Array",
-      "offset": 1517,
+      "offset": 1545,
       "length": 64,
       "value": "[\"WKScrollView\", \"WKContentView\", \"_UIContextMenuContainerView\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1637,
+      "offset": 1665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 38896,
+      "offset": 38987,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 38925,
+      "offset": 39016,
       "length": 5,
       "value": "false"
     },
@@ -11157,14 +11496,14 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "BooleanLiteral",
-      "offset": 995,
+      "offset": 1060,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebController\/SprigSurveyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1042,
+      "offset": 1107,
       "length": 1,
       "value": "0"
     }

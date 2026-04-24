@@ -536,6 +536,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit29SprigOptimizelyIntegrationAPI_")
 @end
 
 @class UIViewController;
+enum SprigUserInterfaceMode : NSInteger;
 SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
 @protocol SprigPresentationAPI
 /// tracks an event , and show the survey immediately when it is available
@@ -561,6 +562,7 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit20SprigPresentationAPI_")
 - (void)pauseDisplayingSurveys;
 /// Unpause surveys.
 - (void)unpauseDisplayingSurveys;
+- (void)overrideUserInterfaceModeWithMode:(enum SprigUserInterfaceMode)mode;
 @end
 
 SWIFT_CLASS("_TtC11UserLeapKit17SprigSurveyResult")
@@ -570,6 +572,12 @@ SWIFT_CLASS("_TtC11UserLeapKit17SprigSurveyResult")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, SprigUserInterfaceMode, open) {
+  SprigUserInterfaceModeUnspecified = 0,
+  SprigUserInterfaceModeLight = 1,
+  SprigUserInterfaceModeDark = 2,
+};
 
 /// An enum that indicates whether a survey is ready to be displayed.
 typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
@@ -612,6 +620,8 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)pauseDisplayingSurveys;
 /// Unpause surveys.
 - (void)unpauseDisplayingSurveys;
+/// Override the system user interface style (dark / light mode)
+- (void)overrideUserInterfaceModeWithMode:(enum SprigUserInterfaceMode)mode;
 - (void)_passWithRnExtractor:(id <_SGRNExtractor> _Nonnull)extractor;
 @end
 
