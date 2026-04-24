@@ -67,6 +67,7 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   @objc func dismissActiveSurvey()
   @objc func pauseDisplayingSurveys()
   @objc func unpauseDisplayingSurveys()
+  @objc func overrideUserInterfaceMode(mode: UserLeapKit.SprigUserInterfaceMode)
 }
 @objc public class SGOptimizelyExperiment : ObjectiveC.NSObject, Swift.Codable {
   @objc public init(id: Swift.String, variation: Swift.String)
@@ -95,6 +96,16 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   @objc public var surveyState: UserLeapKit.SurveyState
   @objc public var surveyId: Swift.Int
   @objc deinit
+}
+@objc public enum SprigUserInterfaceMode : ObjectiveC.NSInteger {
+  case unspecified
+  case light
+  case dark
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @discardableResult
@@ -248,6 +259,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @objc dynamic public func dismissActiveSurvey()
   @objc dynamic public func pauseDisplayingSurveys()
   @objc dynamic public func unpauseDisplayingSurveys()
+  @objc dynamic public func overrideUserInterfaceMode(mode: UserLeapKit.SprigUserInterfaceMode)
   @objc dynamic public func _pass(rnExtractor extractor: any UserLeapKit._SGRNExtractor)
 }
 extension UserLeapKit.UserLeap {
@@ -260,6 +272,9 @@ extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.RawRepresentab
 extension UserLeapKit.SurveyState : Swift.Equatable {}
 extension UserLeapKit.SurveyState : Swift.Hashable {}
 extension UserLeapKit.SurveyState : Swift.RawRepresentable {}
+extension UserLeapKit.SprigUserInterfaceMode : Swift.Equatable {}
+extension UserLeapKit.SprigUserInterfaceMode : Swift.Hashable {}
+extension UserLeapKit.SprigUserInterfaceMode : Swift.RawRepresentable {}
 extension UserLeapKit.LifecycleEvent : Swift.Equatable {}
 extension UserLeapKit.LifecycleEvent : Swift.Hashable {}
 extension UserLeapKit.LifecycleEvent : Swift.RawRepresentable {}
