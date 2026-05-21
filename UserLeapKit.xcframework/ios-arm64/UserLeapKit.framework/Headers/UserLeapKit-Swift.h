@@ -596,6 +596,13 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
 @end
 
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+/// Register event listeners
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
+/// Unregister event listeners
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
+@end
+
 @protocol _SGRNExtractor;
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
@@ -623,13 +630,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// Override the system user interface style (dark / light mode)
 - (void)overrideUserInterfaceModeWithMode:(enum SprigUserInterfaceMode)mode;
 - (void)_passWithRnExtractor:(id <_SGRNExtractor> _Nonnull)extractor;
-@end
-
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
-/// Register event listeners
-- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
-/// Unregister event listeners
-- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigAPI>
