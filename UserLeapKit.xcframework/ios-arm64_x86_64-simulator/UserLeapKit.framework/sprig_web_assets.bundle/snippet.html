@@ -1,21 +1,25 @@
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1.0,user-scalable=no" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1.0,user-scalable=no" />
 </head>
 <style>
     body {
-      width: 100%;
-      min-height: 185px;
-      overflow: auto;
-      margin: 0;
-      height: auto !important;
+        width: 100%;
+        min-height: 185px;
+        overflow: auto;
+        margin: 0;
+        height: auto !important;
     }
+
     .ul-app__container {
         max-height: 100vh !important;
         position: relative;
         top: 1px;
     }
+
     .ul-card__container--mobile {
         margin-top: 0 !important;
         box-shadow: none !important;
@@ -23,11 +27,20 @@
         border-bottom-left-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
     }
+
     .ul-conversational-ui {
         min-height: 90svh !important;
     }
-  </style>
+
+    @media screen and (max-width: 450px) {
+        .ul-card__container--mobile {
+            padding-bottom: 34px !important;
+        }
+    }
+</style>
 <script src="snippet.js"></script>
+
 <body>
 </body>
+
 </html>

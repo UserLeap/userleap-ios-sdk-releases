@@ -6,6 +6,11 @@
 
 ### prerelease
 
+### 4.31.0
+- chore: Updated WebSDK to v2.45.0.
+- fix: Fix for issue that was causing a white bar at the bottom of surveys when in dark mode.
+- fix: Fix for survey height and animation issues. 
+
 ### 4.30.0
 - chore: Updated WebSDK to v2.44.0.
 
