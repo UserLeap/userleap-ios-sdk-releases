@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.32.1
+- chore: Updated WebSDK to v2.46.1.
+
 ### 4.32.0
 - chore: Updated WebSDK to v2.46.0.
 
