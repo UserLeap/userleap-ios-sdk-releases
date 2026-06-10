@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.32.2
+- chore: Removed WebSDK logging. 
+
 ### 4.32.1
 - chore: Updated WebSDK to v2.46.1.
 
