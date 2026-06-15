@@ -10578,43 +10578,50 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1874,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1919,
+      "offset": 1951,
       "length": 7,
       "value": "\"photo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1946,
+      "offset": 1978,
       "length": 7,
       "value": "\"globe\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1978,
+      "offset": 2010,
       "length": 6,
       "value": "\"leaf\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2005,
+      "offset": 2037,
       "length": 10,
       "value": "\"keyboard\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2035,
+      "offset": 2067,
       "length": 5,
       "value": "\"map\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2068,
+      "offset": 2100,
       "length": 7,
       "value": "\"video\""
     },
@@ -10656,105 +10663,112 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 809,
+      "offset": 745,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 847,
+      "offset": 783,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 820,
       "length": 5,
       "value": "\"err\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 852,
       "length": 6,
       "value": "\"meta\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 953,
+      "offset": 889,
       "length": 5,
       "value": "\"vid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 930,
       "length": 7,
       "value": "\"envId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 1030,
+      "offset": 966,
       "length": 8,
       "value": "\"method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 1078,
+      "offset": 1014,
       "length": 20,
       "value": "\"additional.details\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 1125,
+      "offset": 1061,
       "length": 6,
       "value": "\"file\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 1159,
+      "offset": 1095,
       "length": 7,
       "value": "\"stack\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 1193,
+      "offset": 1129,
       "length": 6,
       "value": "\"tags\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 1232,
+      "offset": 1168,
       "length": 13,
       "value": "\"device.name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1219,
       "length": 18,
       "value": "\"device.OSVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1278,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1787,
+      "offset": 1760,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Services\/SGLoggingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2156,
+      "offset": 2619,
       "length": 4,
       "value": "true"
     },
@@ -11293,14 +11307,14 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 43991,
+      "offset": 43942,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 44020,
+      "offset": 43971,
       "length": 5,
       "value": "false"
     },
