@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.32.3
+- chore: Changes to error logging. 
+
 ### 4.32.2
 - chore: Removed WebSDK logging. 
 
