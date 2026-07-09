@@ -152,6 +152,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case loggingEvent
   case surveyCompleted
   case surveyStateReturned
+  case questionAnswered
   case unknown
   public var stringValue: Swift.String {
     get

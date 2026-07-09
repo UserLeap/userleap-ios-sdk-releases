@@ -344,7 +344,8 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventLoggingEvent = 16,
   LifecycleEventSurveyCompleted = 17,
   LifecycleEventSurveyStateReturned = 18,
-  LifecycleEventUnknown = 19,
+  LifecycleEventQuestionAnswered = 19,
+  LifecycleEventUnknown = 20,
 };
 
 SWIFT_CLASS("_TtC11UserLeapKit21LifecycleEventDataKey")
