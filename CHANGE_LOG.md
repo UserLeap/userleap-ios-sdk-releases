@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.33.1
+- chore: Updated WebSDK to v2.49.0.
+
 ### 4.33.0
 - chore: Updated WebSDK to v2.48.2.
 - add: questionAnswered lifecycle event added.
