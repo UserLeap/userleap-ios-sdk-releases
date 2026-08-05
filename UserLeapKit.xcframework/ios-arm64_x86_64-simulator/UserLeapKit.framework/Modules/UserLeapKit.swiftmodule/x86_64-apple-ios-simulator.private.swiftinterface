@@ -9,12 +9,34 @@ import Foundation
 import MapKit
 import Network
 import Swift
+import SwiftUI
 import UIKit
 @_exported import UserLeapKit
 import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func sprigSnapshot(zIndex: Swift.Int = 0) -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func sprigSnapshotText(zIndex: Swift.Int = 0) -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func sprigSnapshotImage(zIndex: Swift.Int = 0) -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func sprigSnapshotPlaceholder(zIndex: Swift.Int = 0, color: SwiftUICore.Color = Color(.systemGray)) -> some SwiftUICore.View
+  
+}
+public enum SGSnapshotType {
+  case view
+  case placeholder
+  case text
+  case image
+  public static func == (a: UserLeapKit.SGSnapshotType, b: UserLeapKit.SGSnapshotType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers @objc public class SprigAPIResult : ObjectiveC.NSObject {
   @objc public enum SprigAPIResultStatus : Swift.Int {
     case success
@@ -57,6 +79,7 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
   @objc func turnOffSessionReplayCapture()
   @objc func setSessionReplayApprovalBlock(replayApprovalBlock: @escaping UserLeapKit.SprigSessionReplayApprovalBlock)
   @objc var sdkVersion: Swift.String { get }
+  @objc func showReplayCaptureLogging(_ show: Swift.Bool)
 }
 @objc public protocol SprigPresentationAPI {
   @objc func trackAndPresent(eventName: Swift.String, from viewController: UIKit.UIViewController)
@@ -199,6 +222,17 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc func textPropertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNTextProperties
   @objc func propertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNViewProperties?
 }
+public enum SGSUIMaskedSnapshotType {
+  case none
+  case placeholder
+  case text
+  case image
+  public static func == (a: UserLeapKit.SGSUIMaskedSnapshotType, b: UserLeapKit.SGSUIMaskedSnapshotType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Sprig : UserLeapKit.UserLeap {
   @objc deinit
 }
@@ -212,6 +246,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc public var visitorIdentifierString: Swift.String? {
     @objc get
   }
+  @objc public func _pass(rnExtractor extractor: any UserLeapKit._SGRNExtractor)
   @objc deinit
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
@@ -246,6 +281,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigAPI {
   @objc dynamic public var sdkVersion: Swift.String {
     @objc get
   }
+  @objc dynamic public func showReplayCaptureLogging(_ show: Swift.Bool)
 }
 extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @available(*, deprecated, message: "Use trackAndPresent with EventPayload instead")
@@ -261,12 +297,13 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigPresentationAPI {
   @objc dynamic public func pauseDisplayingSurveys()
   @objc dynamic public func unpauseDisplayingSurveys()
   @objc dynamic public func overrideUserInterfaceMode(mode: UserLeapKit.SprigUserInterfaceMode)
-  @objc dynamic public func _pass(rnExtractor extractor: any UserLeapKit._SGRNExtractor)
 }
 extension UserLeapKit.UserLeap {
   @objc dynamic public func registerEventListener(for eventType: UserLeapKit.LifecycleEvent, listener: @escaping (Swift.Dictionary<Swift.String, Any>) -> Swift.Void)
   @objc dynamic public func unregisterAllEventListeners(for eventType: UserLeapKit.LifecycleEvent)
 }
+extension UserLeapKit.SGSnapshotType : Swift.Equatable {}
+extension UserLeapKit.SGSnapshotType : Swift.Hashable {}
 extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.Equatable {}
 extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.Hashable {}
 extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.RawRepresentable {}
@@ -279,3 +316,5 @@ extension UserLeapKit.SprigUserInterfaceMode : Swift.RawRepresentable {}
 extension UserLeapKit.LifecycleEvent : Swift.Equatable {}
 extension UserLeapKit.LifecycleEvent : Swift.Hashable {}
 extension UserLeapKit.LifecycleEvent : Swift.RawRepresentable {}
+extension UserLeapKit.SGSUIMaskedSnapshotType : Swift.Equatable {}
+extension UserLeapKit.SGSUIMaskedSnapshotType : Swift.Hashable {}

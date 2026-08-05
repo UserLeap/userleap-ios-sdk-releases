@@ -380,6 +380,7 @@ SWIFT_CLASS("_TtC11UserLeapKit22SGOptimizelyExperiment")
 @end
 
 @class NSNumber;
+@protocol _SGRNExtractor;
 /// The primary class used to interact with UserLeap surveys. Use <code>UserLeap.shared</code>.
 SWIFT_CLASS("_TtC11UserLeapKit8UserLeap")
 @interface UserLeap : NSObject
@@ -394,6 +395,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// The user identifier used internally by UserLeap
 @property (nonatomic, readonly, strong) NSNumber * _Nullable visitorIdentifier;
 @property (nonatomic, readonly, copy) NSString * _Nullable visitorIdentifierString;
+- (void)_passWithRnExtractor:(id <_SGRNExtractor> _Nonnull)extractor;
 @end
 
 SWIFT_CLASS("_TtC11UserLeapKit5Sprig")
@@ -504,6 +506,8 @@ SWIFT_PROTOCOL("_TtP11UserLeapKit8SprigAPI_")
 - (void)setSessionReplayApprovalBlockWithReplayApprovalBlock:(void (^ _Nonnull)(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL)))replayApprovalBlock;
 /// Returns the SDK version.
 @property (nonatomic, readonly, copy) NSString * _Nonnull sdkVersion;
+/// Show verbose replay capture logging.
+- (void)showReplayCaptureLogging:(BOOL)show;
 @end
 
 enum SprigAPIResultStatus : NSInteger;
@@ -604,7 +608,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
-@protocol _SGRNExtractor;
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
@@ -630,7 +633,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)unpauseDisplayingSurveys;
 /// Override the system user interface style (dark / light mode)
 - (void)overrideUserInterfaceModeWithMode:(enum SprigUserInterfaceMode)mode;
-- (void)_passWithRnExtractor:(id <_SGRNExtractor> _Nonnull)extractor;
 @end
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigAPI>
@@ -721,6 +723,8 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)setSessionReplayApprovalBlockWithReplayApprovalBlock:(void (^ _Nonnull)(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL)))replayApprovalBlock;
 /// Returns the SDK version.
 @property (nonatomic, readonly, copy) NSString * _Nonnull sdkVersion;
+/// Show verbose SwiftUI replay capture logging.
+- (void)showReplayCaptureLogging:(BOOL)show;
 @end
 
 @class UIView;
