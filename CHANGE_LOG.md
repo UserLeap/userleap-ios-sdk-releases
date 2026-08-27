@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.35.0
+- chore: Updated WebSDK to v2.51.0.
+
 ### 4.34.0
 - add: Added SwiftUI support for text and image capture in session replays when running on iOS26 or above.
 
