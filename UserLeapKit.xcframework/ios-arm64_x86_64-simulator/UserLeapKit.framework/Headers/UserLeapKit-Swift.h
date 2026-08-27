@@ -328,23 +328,23 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventSdkReady = 0,
   LifecycleEventVisitorIdUpdated = 1,
   LifecycleEventSurveyHeight = 2,
-  LifecycleEventSurveyWillPresent = 3,
-  LifecycleEventSurveyPresented = 4,
-  LifecycleEventSurveyAppeared = 5,
-  LifecycleEventSurveyCloseRequested = 6,
-  LifecycleEventSurveyWillClose = 7,
-  LifecycleEventSurveyClosed = 8,
-  LifecycleEventReplayCapture = 9,
-  LifecycleEventReplayCaptureStarted = 10,
-  LifecycleEventReplayCaptureStopped = 11,
-  LifecycleEventReplayCaptureCompleted = 12,
-  LifecycleEventReplayRenderingCompleted = 13,
-  LifecycleEventReplayUploadCompleted = 14,
-  LifecycleEventReplayEventsUploadCompleted = 15,
-  LifecycleEventLoggingEvent = 16,
-  LifecycleEventSurveyCompleted = 17,
-  LifecycleEventSurveyStateReturned = 18,
-  LifecycleEventQuestionAnswered = 19,
+  LifecycleEventSurveyAppeared = 3,
+  LifecycleEventSurveyCloseRequested = 4,
+  LifecycleEventSurveyWillClose = 5,
+  LifecycleEventSurveyClosed = 6,
+  LifecycleEventReplayCapture = 7,
+  LifecycleEventReplayCaptureStarted = 8,
+  LifecycleEventReplayCaptureStopped = 9,
+  LifecycleEventReplayCaptureCompleted = 10,
+  LifecycleEventReplayRenderingCompleted = 11,
+  LifecycleEventReplayUploadCompleted = 12,
+  LifecycleEventReplayEventsUploadCompleted = 13,
+  LifecycleEventLoggingEvent = 14,
+  LifecycleEventSurveyCompleted = 15,
+  LifecycleEventSurveyStateReturned = 16,
+  LifecycleEventQuestionAnswered = 17,
+  LifecycleEventSurveyReturned = 18,
+  LifecycleEventSurveyDidNotAppear = 19,
   LifecycleEventUnknown = 20,
 };
 
@@ -358,6 +358,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)surveyId SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyState;)
 + (NSString * _Nonnull)surveyState SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyDidNotAppearReason;)
++ (NSString * _Nonnull)surveyDidNotAppearReason SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -601,13 +603,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
 @end
 
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
-/// Register event listeners
-- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
-/// Unregister event listeners
-- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
-@end
-
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
@@ -633,6 +628,13 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)unpauseDisplayingSurveys;
 /// Override the system user interface style (dark / light mode)
 - (void)overrideUserInterfaceModeWithMode:(enum SprigUserInterfaceMode)mode;
+@end
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+/// Register event listeners
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
+/// Unregister event listeners
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigAPI>
@@ -1092,23 +1094,23 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventSdkReady = 0,
   LifecycleEventVisitorIdUpdated = 1,
   LifecycleEventSurveyHeight = 2,
-  LifecycleEventSurveyWillPresent = 3,
-  LifecycleEventSurveyPresented = 4,
-  LifecycleEventSurveyAppeared = 5,
-  LifecycleEventSurveyCloseRequested = 6,
-  LifecycleEventSurveyWillClose = 7,
-  LifecycleEventSurveyClosed = 8,
-  LifecycleEventReplayCapture = 9,
-  LifecycleEventReplayCaptureStarted = 10,
-  LifecycleEventReplayCaptureStopped = 11,
-  LifecycleEventReplayCaptureCompleted = 12,
-  LifecycleEventReplayRenderingCompleted = 13,
-  LifecycleEventReplayUploadCompleted = 14,
-  LifecycleEventReplayEventsUploadCompleted = 15,
-  LifecycleEventLoggingEvent = 16,
-  LifecycleEventSurveyCompleted = 17,
-  LifecycleEventSurveyStateReturned = 18,
-  LifecycleEventQuestionAnswered = 19,
+  LifecycleEventSurveyAppeared = 3,
+  LifecycleEventSurveyCloseRequested = 4,
+  LifecycleEventSurveyWillClose = 5,
+  LifecycleEventSurveyClosed = 6,
+  LifecycleEventReplayCapture = 7,
+  LifecycleEventReplayCaptureStarted = 8,
+  LifecycleEventReplayCaptureStopped = 9,
+  LifecycleEventReplayCaptureCompleted = 10,
+  LifecycleEventReplayRenderingCompleted = 11,
+  LifecycleEventReplayUploadCompleted = 12,
+  LifecycleEventReplayEventsUploadCompleted = 13,
+  LifecycleEventLoggingEvent = 14,
+  LifecycleEventSurveyCompleted = 15,
+  LifecycleEventSurveyStateReturned = 16,
+  LifecycleEventQuestionAnswered = 17,
+  LifecycleEventSurveyReturned = 18,
+  LifecycleEventSurveyDidNotAppear = 19,
   LifecycleEventUnknown = 20,
 };
 
@@ -1122,6 +1124,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)surveyId SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyState;)
 + (NSString * _Nonnull)surveyState SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyDidNotAppearReason;)
++ (NSString * _Nonnull)surveyDidNotAppearReason SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1365,13 +1369,6 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)integrateOptimizelyExperiments:(NSArray<SGOptimizelyExperiment *> * _Nonnull)experiments :(BOOL)isOverride;
 @end
 
-@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
-/// Register event listeners
-- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
-/// Unregister event listeners
-- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
-@end
-
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigPresentationAPI>
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
 - (void)trackAndPresentWithEventName:(NSString * _Nonnull)eventName userId:(NSString * _Nullable)userId partnerAnonymousId:(NSString * _Nullable)partnerAnonymousId from:(UIViewController * _Nonnull)viewController SWIFT_DEPRECATED_MSG("Use trackAndPresent with EventPayload instead");
@@ -1397,6 +1394,13 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 - (void)unpauseDisplayingSurveys;
 /// Override the system user interface style (dark / light mode)
 - (void)overrideUserInterfaceModeWithMode:(enum SprigUserInterfaceMode)mode;
+@end
+
+@interface UserLeap (SWIFT_EXTENSION(UserLeapKit))
+/// Register event listeners
+- (void)registerEventListenerFor:(enum LifecycleEvent)eventType listener:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))listener;
+/// Unregister event listeners
+- (void)unregisterAllEventListenersFor:(enum LifecycleEvent)eventType;
 @end
 
 @interface UserLeap (SWIFT_EXTENSION(UserLeapKit)) <SprigAPI>
