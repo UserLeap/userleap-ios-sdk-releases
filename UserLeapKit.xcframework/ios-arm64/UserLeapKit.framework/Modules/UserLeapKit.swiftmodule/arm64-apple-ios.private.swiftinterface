@@ -152,6 +152,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc public static let eventType: Swift.String
   @objc public static let surveyId: Swift.String
   @objc public static let surveyState: Swift.String
+  @objc public static let surveyDidNotAppearReason: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -159,8 +160,6 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case sdkReady
   case visitorIdUpdated
   case surveyHeight
-  case surveyWillPresent
-  case surveyPresented
   case surveyAppeared
   case surveyCloseRequested
   case surveyWillClose
@@ -176,6 +175,8 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case surveyCompleted
   case surveyStateReturned
   case questionAnswered
+  case surveyReturned
+  case surveyDidNotAppear
   case unknown
   public var stringValue: Swift.String {
     get
