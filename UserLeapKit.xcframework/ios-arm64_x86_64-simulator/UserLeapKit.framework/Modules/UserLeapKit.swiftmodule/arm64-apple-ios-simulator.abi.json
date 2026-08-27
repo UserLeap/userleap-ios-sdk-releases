@@ -5366,6 +5366,59 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "surveyDidNotAppearReason",
+            "printedName": "surveyDidNotAppearReason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UserLeapKit@objc(cs)LifecycleEventDataKey(cpy)surveyDidNotAppearReason",
+            "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC24surveyDidNotAppearReasonSSvpZ",
+            "moduleName": "UserLeapKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UserLeapKit@objc(cs)LifecycleEventDataKey(cm)surveyDidNotAppearReason",
+                "mangledName": "$s11UserLeapKit21LifecycleEventDataKeyC24surveyDidNotAppearReasonSSvgZ",
+                "moduleName": "UserLeapKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -5601,88 +5654,6 @@
           },
           {
             "kind": "Var",
-            "name": "surveyWillPresent",
-            "printedName": "surveyWillPresent",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LifecycleEvent",
-                    "printedName": "UserLeapKit.LifecycleEvent",
-                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UserLeapKit.LifecycleEvent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LifecycleEvent",
-                        "printedName": "UserLeapKit.LifecycleEvent",
-                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyWillPresent",
-            "mangledName": "$s11UserLeapKit14LifecycleEventO17surveyWillPresentyA2CmF",
-            "moduleName": "UserLeapKit",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 3
-          },
-          {
-            "kind": "Var",
-            "name": "surveyPresented",
-            "printedName": "surveyPresented",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LifecycleEvent",
-                    "printedName": "UserLeapKit.LifecycleEvent",
-                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UserLeapKit.LifecycleEvent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LifecycleEvent",
-                        "printedName": "UserLeapKit.LifecycleEvent",
-                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyPresented",
-            "mangledName": "$s11UserLeapKit14LifecycleEventO15surveyPresentedyA2CmF",
-            "moduleName": "UserLeapKit",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 4
-          },
-          {
-            "kind": "Var",
             "name": "surveyAppeared",
             "printedName": "surveyAppeared",
             "children": [
@@ -5720,7 +5691,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -5761,7 +5732,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -5802,7 +5773,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -5843,7 +5814,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -5884,7 +5855,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -5925,7 +5896,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -5966,7 +5937,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -6007,7 +5978,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -6048,7 +6019,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -6089,7 +6060,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -6130,7 +6101,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -6171,7 +6142,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -6212,7 +6183,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -6253,7 +6224,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -6290,6 +6261,88 @@
             "declKind": "EnumElement",
             "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventQuestionAnswered",
             "mangledName": "$s11UserLeapKit14LifecycleEventO16questionAnsweredyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 17
+          },
+          {
+            "kind": "Var",
+            "name": "surveyReturned",
+            "printedName": "surveyReturned",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyReturned",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO14surveyReturnedyA2CmF",
+            "moduleName": "UserLeapKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
+          },
+          {
+            "kind": "Var",
+            "name": "surveyDidNotAppear",
+            "printedName": "surveyDidNotAppear",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserLeapKit.LifecycleEvent.Type) -> UserLeapKit.LifecycleEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LifecycleEvent",
+                    "printedName": "UserLeapKit.LifecycleEvent",
+                    "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UserLeapKit.LifecycleEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LifecycleEvent",
+                        "printedName": "UserLeapKit.LifecycleEvent",
+                        "usr": "c:@M@UserLeapKit@E@LifecycleEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@UserLeapKit@E@LifecycleEvent@LifecycleEventSurveyDidNotAppear",
+            "mangledName": "$s11UserLeapKit14LifecycleEventO18surveyDidNotAppearyA2CmF",
             "moduleName": "UserLeapKit",
             "declAttributes": [
               "ObjC"
@@ -11176,71 +11229,71 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
-      "kind": "FloatLiteral",
+      "kind": "IntegerLiteral",
       "offset": 196,
-      "length": 18,
-      "value": "0.9764705882352941"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
-      "kind": "FloatLiteral",
-      "offset": 223,
-      "length": 18,
-      "value": "0.7764705882352941"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 249,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
-      "kind": "IntegerLiteral",
-      "offset": 259,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
       "kind": "FloatLiteral",
-      "offset": 315,
+      "offset": 206,
+      "length": 5,
+      "value": "0.773"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
+      "kind": "FloatLiteral",
+      "offset": 219,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
+      "kind": "IntegerLiteral",
+      "offset": 231,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
+      "kind": "FloatLiteral",
+      "offset": 287,
       "length": 19,
       "value": "0.10980392156862745"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
       "kind": "FloatLiteral",
-      "offset": 343,
+      "offset": 315,
       "length": 17,
       "value": "0.396078431372549"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
       "kind": "FloatLiteral",
-      "offset": 368,
+      "offset": 340,
       "length": 17,
       "value": "0.596078431372549"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
       "kind": "FloatLiteral",
-      "offset": 394,
+      "offset": 366,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
       "kind": "FloatLiteral",
-      "offset": 572,
+      "offset": 544,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Extensions\/UIColor+SG.swift",
       "kind": "FloatLiteral",
-      "offset": 710,
+      "offset": 682,
       "length": 3,
       "value": "1.0"
     },
@@ -11611,28 +11664,21 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2181,
-      "length": 6,
-      "value": "\"leaf\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 2208,
+      "offset": 2177,
       "length": 10,
       "value": "\"keyboard\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2238,
+      "offset": 2207,
       "length": 5,
       "value": "\"map\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/Resources\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2271,
+      "offset": 2240,
       "length": 7,
       "value": "\"video\""
     },
@@ -11862,141 +11908,148 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 26,
+      "value": "\"surveyDidNotAppearReason\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 351,
+      "offset": 433,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 377,
+      "offset": 459,
       "length": 12,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 399,
-      "length": 17,
+      "offset": 481,
+      "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 426,
-      "length": 15,
+      "offset": 505,
+      "length": 20,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 451,
-      "length": 14,
+      "offset": 535,
+      "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 475,
-      "length": 20,
+      "offset": 560,
+      "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 505,
-      "length": 15,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 530,
-      "length": 12,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 552,
+      "offset": 582,
       "length": 13,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 575,
-      "length": 20,
-      "value": "10"
+      "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 20,
-      "value": "11"
+      "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 635,
+      "length": 20,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
       "length": 22,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 697,
+      "length": 24,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 731,
+      "length": 21,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 667,
-      "length": 24,
+      "offset": 762,
+      "length": 27,
       "value": "13"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 701,
-      "length": 21,
+      "offset": 799,
+      "length": 12,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 732,
-      "length": 27,
+      "offset": 821,
+      "length": 15,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 769,
-      "length": 12,
+      "offset": 846,
+      "length": 19,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 791,
-      "length": 15,
+      "offset": 875,
+      "length": 16,
       "value": "17"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 816,
-      "length": 19,
+      "offset": 901,
+      "length": 14,
       "value": "18"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 845,
-      "length": 16,
+      "offset": 925,
+      "length": 18,
       "value": "19"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/LifecycleEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 871,
+      "offset": 953,
       "length": 7,
       "value": "20"
     },
@@ -12205,50 +12258,50 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1576,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 1575,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "IntegerLiteral",
-      "offset": 1892,
+      "offset": 1887,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1945,
+      "offset": 1940,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1998,
+      "offset": 1993,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 2315,
+      "offset": 2310,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 3378,
+      "offset": 3373,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 3434,
+      "offset": 3429,
       "length": 17,
       "value": "\"sprigPreviewKey\""
     },
@@ -12290,112 +12343,119 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 479,
+      "offset": 485,
+      "length": 4,
+      "value": "1011"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 524,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "FloatLiteral",
-      "offset": 729,
+      "offset": 774,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "FloatLiteral",
-      "offset": 790,
+      "offset": 835,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 929,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "FloatLiteral",
-      "offset": 921,
+      "offset": 966,
       "length": 11,
       "value": "16.70703125"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "FloatLiteral",
-      "offset": 965,
+      "offset": 1010,
       "length": 8,
       "value": "6.453125"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 1176,
+      "offset": 1221,
       "length": 20,
       "value": "\"SwiftUI.ImageLayer\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 1238,
+      "offset": 1283,
       "length": 15,
       "value": "\"RCTScrollView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "Array",
-      "offset": 1289,
+      "offset": 1334,
       "length": 44,
       "value": "[\"RCTTextView\", \"RCTParagraphComponentView\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 1375,
+      "offset": 1420,
       "length": 15,
       "value": "\"CGDrawingView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "Array",
-      "offset": 1429,
+      "offset": 1474,
       "length": 25,
       "value": "[\"PLExpandableImageView\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 1490,
+      "offset": 1535,
       "length": 11,
       "value": "\"WKWebView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "Array",
-      "offset": 1622,
+      "offset": 1667,
       "length": 64,
       "value": "[\"WKScrollView\", \"WKContentView\", \"_UIContextMenuContainerView\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1742,
+      "offset": 1787,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 46848,
+      "offset": 48168,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 46877,
+      "offset": 48197,
       "length": 5,
       "value": "false"
     },
