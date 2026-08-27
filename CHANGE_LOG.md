@@ -6,6 +6,11 @@
 
 ### prerelease
 
+### 4.35.0
+- chore: Updated WebSDK to v2.51.0.
+- add: Refactor of the survey lifecycle events for better accuracy with the addition of the new surveyReturned event, the removal of surveyWillPresent, a change to when the surveyAppeared emits and the addition of the new surveyDidNotAppear event.
+- add: Passing the surveyId of the previous survey when a previosSurveyAvailable state is returned.
+
 ### 4.34.0
 - add: Added SwiftUI support for text and image capture in session replays when running on iOS26 or above.
 
