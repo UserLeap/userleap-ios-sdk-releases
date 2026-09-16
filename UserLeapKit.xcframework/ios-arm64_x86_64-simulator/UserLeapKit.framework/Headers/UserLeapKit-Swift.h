@@ -345,7 +345,8 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventQuestionAnswered = 17,
   LifecycleEventSurveyReturned = 18,
   LifecycleEventSurveyDidNotAppear = 19,
-  LifecycleEventUnknown = 20,
+  LifecycleEventDisplayInAppBrowser = 20,
+  LifecycleEventUnknown = 21,
 };
 
 SWIFT_CLASS("_TtC11UserLeapKit21LifecycleEventDataKey")
@@ -358,6 +359,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)surveyId SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyState;)
 + (NSString * _Nonnull)surveyState SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull url;)
++ (NSString * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyDidNotAppearReason;)
 + (NSString * _Nonnull)surveyDidNotAppearReason SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1111,7 +1114,8 @@ typedef SWIFT_ENUM(NSInteger, LifecycleEvent, open) {
   LifecycleEventQuestionAnswered = 17,
   LifecycleEventSurveyReturned = 18,
   LifecycleEventSurveyDidNotAppear = 19,
-  LifecycleEventUnknown = 20,
+  LifecycleEventDisplayInAppBrowser = 20,
+  LifecycleEventUnknown = 21,
 };
 
 SWIFT_CLASS("_TtC11UserLeapKit21LifecycleEventDataKey")
@@ -1124,6 +1128,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)surveyId SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyState;)
 + (NSString * _Nonnull)surveyState SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull url;)
++ (NSString * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull surveyDidNotAppearReason;)
 + (NSString * _Nonnull)surveyDidNotAppearReason SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
