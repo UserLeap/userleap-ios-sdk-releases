@@ -6,6 +6,11 @@
 
 ### prerelease
 
+### 4.36.0
+- chore: Updated WebSDK to v2.53.0.
+- add: Added the ability to launch an in-app web browser for URL Prompt question types.
+- add: Added new lifecycle event displayInAppBrowser which fires when the in-app experience is triggered.
+
 ### 4.35.0
 - chore: Updated WebSDK to v2.51.0.
 - add: Refactor of the survey lifecycle events for better accuracy with the addition of the new surveyReturned event, the removal of surveyWillPresent, a change to when the surveyAppeared emits and the addition of the new surveyDidNotAppear event.
