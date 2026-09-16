@@ -152,6 +152,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc public static let eventType: Swift.String
   @objc public static let surveyId: Swift.String
   @objc public static let surveyState: Swift.String
+  @objc public static let url: Swift.String
   @objc public static let surveyDidNotAppearReason: Swift.String
   @objc override dynamic public init()
   @objc deinit
@@ -177,6 +178,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   case questionAnswered
   case surveyReturned
   case surveyDidNotAppear
+  case displayInAppBrowser
   case unknown
   public var stringValue: Swift.String {
     get
@@ -205,6 +207,10 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc override dynamic public init()
   @objc deinit
 }
+
+
+
+
 @_inheritsConvenienceInitializers @objc public class _SGRNTextProperties : ObjectiveC.NSObject {
   @objc public var text: Swift.String?
   @objc public var color: UIKit.UIColor?
