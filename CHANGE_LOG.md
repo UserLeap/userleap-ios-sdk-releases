@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.36.1
+- fix: Fix for survey layout issue when resizing the host app on iPad.
+
 ### 4.36.0
 - chore: Updated WebSDK to v2.53.0.
 - add: Added the ability to launch an in-app web browser for URL Prompt question types.
