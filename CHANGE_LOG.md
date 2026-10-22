@@ -6,6 +6,14 @@
 
 ### prerelease
 
+### 4.36.2
+- chore: Upgrade Web SDK to 2.55.1
+- fix: Fix for surveys initially animating down when running in debug mode in XCode.
+- fix: Fix for WKWebviews being unintentionally masked in session replays. 
+- change: Methods trackAndPresent() and present() now present from the top-most view controller and take into account the view controller being dismissed.
+- fix: Surveys are no longer presented on top of alerts.
+- fix: Fix for potential JS injection via parameters passed by the host application.
+
 ### 4.36.1
 - fix: Fix for survey layout issue when resizing the host app on iPad.
 
@@ -17,7 +25,7 @@
 ### 4.35.0
 - chore: Updated WebSDK to v2.51.0.
 - add: Refactor of the survey lifecycle events for better accuracy with the addition of the new surveyReturned event, the removal of surveyWillPresent, a change to when the surveyAppeared emits and the addition of the new surveyDidNotAppear event.
-- add: Passing the surveyId of the previous survey when a previosSurveyAvailable state is returned.
+- add: Passing the surveyId of the previous survey when a previousSurveyReady state is returned.
 
 ### 4.34.0
 - add: Added SwiftUI support for text and image capture in session replays when running on iOS26 or above.
