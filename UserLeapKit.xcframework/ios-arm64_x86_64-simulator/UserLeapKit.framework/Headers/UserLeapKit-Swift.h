@@ -622,7 +622,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// \param completion Invoked when survey questions have been fetched and it is about to present it
 ///
 - (void)presentSurveyWithId:(NSInteger)surveyId from:(UIViewController * _Nonnull)viewController fetchCompletion:(void (^ _Nullable)(void))fetchCompletion;
-/// Dismisses the active survey.
+/// Dismisses the active survey and any pending callbacks.
 - (void)dismissActiveSurvey;
 /// Pause all surveys from displaying until unpauseDisplayingSurveys() is called.
 /// This also clears any active and pending surveys.
@@ -1391,7 +1391,7 @@ typedef SWIFT_ENUM(NSInteger, SurveyState, open) {
 /// \param completion Invoked when survey questions have been fetched and it is about to present it
 ///
 - (void)presentSurveyWithId:(NSInteger)surveyId from:(UIViewController * _Nonnull)viewController fetchCompletion:(void (^ _Nullable)(void))fetchCompletion;
-/// Dismisses the active survey.
+/// Dismisses the active survey and any pending callbacks.
 - (void)dismissActiveSurvey;
 /// Pause all surveys from displaying until unpauseDisplayingSurveys() is called.
 /// This also clears any active and pending surveys.
