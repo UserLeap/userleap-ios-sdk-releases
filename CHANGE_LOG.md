@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.36.3
+- chore: Upgrade Web SDK to 2.55.3
+
 ### 4.36.2
 - chore: Upgrade Web SDK to 2.55.1
 - fix: Fix for surveys initially animating down when running in debug mode in XCode.
