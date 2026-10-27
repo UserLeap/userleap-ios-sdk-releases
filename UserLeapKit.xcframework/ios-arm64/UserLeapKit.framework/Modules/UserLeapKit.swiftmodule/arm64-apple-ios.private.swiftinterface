@@ -207,10 +207,6 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc override dynamic public init()
   @objc deinit
 }
-
-
-
-
 @_inheritsConvenienceInitializers @objc public class _SGRNTextProperties : ObjectiveC.NSObject {
   @objc public var text: Swift.String?
   @objc public var color: UIKit.UIColor?
@@ -309,6 +305,10 @@ extension UserLeapKit.UserLeap {
   @objc dynamic public func registerEventListener(for eventType: UserLeapKit.LifecycleEvent, listener: @escaping (Swift.Dictionary<Swift.String, Any>) -> Swift.Void)
   @objc dynamic public func unregisterAllEventListeners(for eventType: UserLeapKit.LifecycleEvent)
 }
+
+
+
+
 extension UserLeapKit.SGSnapshotType : Swift.Equatable {}
 extension UserLeapKit.SGSnapshotType : Swift.Hashable {}
 extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.Equatable {}
