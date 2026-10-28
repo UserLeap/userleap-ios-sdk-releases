@@ -130,10 +130,6 @@ public typealias SprigSessionReplayApprovalBlock = (_ sendApprovalBlock: (_ appr
     get
   }
 }
-
-
-
-
 extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @discardableResult
   @objc dynamic public func integrateOptimizely(_ optimizely: ObjectiveC.NSObject, userId: Swift.String, attributes: Swift.Dictionary<Swift.String, Any>, isOverride: Swift.Bool) -> [UserLeapKit.SGOptimizelyExperiment]
@@ -226,7 +222,7 @@ extension UserLeapKit.UserLeap : UserLeapKit.SprigOptimizelyIntegrationAPI {
   @objc deinit
 }
 @objc public protocol _SGRNExtractor {
-  @objc func textPropertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNTextProperties
+  @objc func textPropertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNTextProperties?
   @objc func propertiesFrom(view passedView: UIKit.UIView) -> UserLeapKit._SGRNViewProperties?
 }
 public enum SGSUIMaskedSnapshotType {
@@ -309,6 +305,10 @@ extension UserLeapKit.UserLeap {
   @objc dynamic public func registerEventListener(for eventType: UserLeapKit.LifecycleEvent, listener: @escaping (Swift.Dictionary<Swift.String, Any>) -> Swift.Void)
   @objc dynamic public func unregisterAllEventListeners(for eventType: UserLeapKit.LifecycleEvent)
 }
+
+
+
+
 extension UserLeapKit.SGSnapshotType : Swift.Equatable {}
 extension UserLeapKit.SGSnapshotType : Swift.Hashable {}
 extension UserLeapKit.SprigAPIResult.SprigAPIResultStatus : Swift.Equatable {}

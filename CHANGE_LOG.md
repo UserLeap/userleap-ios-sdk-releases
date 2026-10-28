@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.36.4
+- fix: Fix for crash when text is nil in React Native host applications using session replays. 
+
 ### 4.36.3
 - chore: Upgrade Web SDK to 2.55.3
 

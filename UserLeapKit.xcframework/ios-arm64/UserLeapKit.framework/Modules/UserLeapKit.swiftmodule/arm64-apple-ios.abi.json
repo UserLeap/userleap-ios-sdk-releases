@@ -8181,9 +8181,17 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "_SGRNTextProperties",
-                "printedName": "UserLeapKit._SGRNTextProperties",
-                "usr": "c:@M@UserLeapKit@objc(cs)_SGRNTextProperties"
+                "name": "Optional",
+                "printedName": "UserLeapKit._SGRNTextProperties?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_SGRNTextProperties",
+                    "printedName": "UserLeapKit._SGRNTextProperties",
+                    "usr": "c:@M@UserLeapKit@objc(cs)_SGRNTextProperties"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -8194,7 +8202,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@UserLeapKit@objc(pl)_SGRNExtractor(im)textPropertiesFromView:",
-            "mangledName": "$s11UserLeapKit14_SGRNExtractorP18textPropertiesFrom4viewAA09_SGRNTextF0CSo6UIViewC_tF",
+            "mangledName": "$s11UserLeapKit14_SGRNExtractorP18textPropertiesFrom4viewAA09_SGRNTextF0CSgSo6UIViewC_tF",
             "moduleName": "UserLeapKit",
             "genericSig": "<τ_0_0 where τ_0_0 : UserLeapKit._SGRNExtractor>",
             "sugared_genericSig": "<Self where Self : UserLeapKit._SGRNExtractor>",
@@ -10945,15 +10953,15 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "UserLeapKit"
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "UserLeapKit"
       },
@@ -12675,86 +12683,79 @@
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 919,
+      "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 985,
+      "offset": 986,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "Dictionary",
-      "offset": 1389,
+      "offset": 1390,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "Dictionary",
-      "offset": 1516,
+      "offset": 1517,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "IntegerLiteral",
-      "offset": 1575,
+      "offset": 1576,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "IntegerLiteral",
-      "offset": 1887,
+      "offset": 1888,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1940,
+      "offset": 1941,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 1993,
+      "offset": 1994,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 2246,
+      "offset": 2247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "BooleanLiteral",
-      "offset": 3264,
+      "offset": 3265,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/UserLeap.swift",
       "kind": "StringLiteral",
-      "offset": 3320,
+      "offset": 3321,
       "length": 17,
       "value": "\"sprigPreviewKey\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/DividerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 73,
-      "length": 3,
-      "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/WebBrowserView.swift",
@@ -12797,6 +12798,62 @@
       "offset": 4378,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 375,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 415,
+      "length": 2,
+      "value": "75"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
+      "kind": "StringLiteral",
+      "offset": 4758,
+      "length": 23,
+      "value": "\"http:\/\/www.reverb.com\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4796,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4817,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4835,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4855,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4906,
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/TopToolbarView.swift",
@@ -12883,67 +12940,18 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 375,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 415,
-      "length": 2,
-      "value": "75"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
-      "kind": "StringLiteral",
-      "offset": 4758,
-      "length": 23,
-      "value": "\"http:\/\/www.reverb.com\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4796,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4817,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4835,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4855,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/BottomToolbarView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4906,
-      "length": 2,
-      "value": "30"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/LoadingErrorView.swift",
       "kind": "BooleanLiteral",
       "offset": 1735,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/WebBrowser\/Views\/DividerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 73,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/sdk\/sdk\/sdk\/platform\/ios\/UserLeapKit\/SessionReplay\/SGSnapshotRecorder.swift",
