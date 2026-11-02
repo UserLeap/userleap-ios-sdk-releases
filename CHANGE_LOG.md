@@ -6,6 +6,9 @@
 
 ### prerelease
 
+### 4.36.5
+- fix: Fix and changes around surveys getting stuck while displayed.
+
 ### 4.36.4
 - fix: Fix for crash when text is nil in React Native host applications using session replays. 
 
