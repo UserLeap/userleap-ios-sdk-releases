@@ -6,6 +6,10 @@
 
 ### prerelease
 
+### 4.36.6
+- chore: Upgrade Web SDK to v2.56.2
+- fix: An active survey will now dismiss if the host app is backgrounded.
+
 ### 4.36.5
 - fix: Fix and changes around surveys getting stuck while displayed.
 
